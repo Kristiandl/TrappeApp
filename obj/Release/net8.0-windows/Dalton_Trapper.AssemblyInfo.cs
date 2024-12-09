@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrappeApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c15e5a83b6f3c191e5ed5c6a282e7004b148ee7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrappeApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrappeApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

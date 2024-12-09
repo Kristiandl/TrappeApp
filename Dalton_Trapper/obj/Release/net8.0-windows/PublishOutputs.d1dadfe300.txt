@@ -1,0 +1,13 @@
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\cfg_Agressiv.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\cfg_EkstraAgressiv.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\cfg_Standard.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\Repos_Doc_Template - Deploy.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\Repos_Doc_Template.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\TrappeApp.exe
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\TrappeApp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\TrappeApp.deps.json
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\TrappeApp.runtimeconfig.json
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\TrappeApp.pdb
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\FemDesign.Core.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\FuzzySharp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\app.publish\Newtonsoft.Json.dll

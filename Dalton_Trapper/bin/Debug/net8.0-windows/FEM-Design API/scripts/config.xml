@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <CONFIG p2:type="ConcreteDesignConfig" type="ECRCCONFIG" s2ndOrder="0" crackw_q="true" crackw_f="false" crackw_c="false" fReopeningCracks="true" xmlns:p2="http://www.w3.org/2001/XMLSchema-instance" />
+</configs>

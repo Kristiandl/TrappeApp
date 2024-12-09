@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="Dalton_Trapper.View.Projektering"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Dalton_Trapper.ViewModel"
+             xmlns:util="clr-namespace:Dalton_Trapper.Utilities"
+             xmlns:uc="clr-namespace:Dalton_Trapper.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="800"
+             d:DesignWidth="1300"
+             Style="{StaticResource Page_Style}">
+
+    <UserControl.DataContext>
+        <vm:ProjekteringVM />
+    </UserControl.DataContext>
+    <UserControl.Resources>
+        <Style TargetType="ListViewItem" x:Key="listViewDoubleClick">
+            <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Margin="15,65,15,15" >
+        <StackPanel Orientation="Vertical">
+            <!-- Projektinformationer -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,15" DataContext="{Binding ProjectInfo}">
+                <uc:InputBox Label="Sagsnummer" Text="{Binding ProjectNumber, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                             LabelWidth="150" InputWidth="100" Margin="0,0,35,0"/>
+                <uc:InputBox Label="Projektnavn" Text="{Binding ProjectName, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                             LabelWidth="110" InputWidth="415"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,25">
+                <uc:InputComboBox Label="Konsekvensklasse" 
+                                  Items="{Binding KonsekvensklasseListe}" 
+                                  SelectedItem="{Binding ProjectInfo.Konsekvensklasse, Mode=TwoWay}" 
+                                  LabelWidth="150" InputWidth="100" ContentWidth="42" Margin="0,0,35,0"/>
+                <uc:InputComboBox Label="Miljøklasse" 
+                                  Items="{Binding MiljøklasseListe}" 
+                                  SelectedItem="{Binding ProjectInfo.Miljøklasse, Mode=TwoWay}" 
+                                  LabelWidth="110" InputWidth="170" ContentWidth="113" Margin="0,0,35,0"/>
+                <uc:InputBox Label="Nyttelast [kN/m2]" Text="{Binding ProjectInfo.Liveload, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                             LabelWidth="160" InputWidth="50"/>
+            </StackPanel>
+
+            <!-- Midtersektion - overskrifter -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Tegninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,230,0"/>
+                <TextBlock Text="Beregninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,550,0"/>
+                <TextBlock Text="Opret ny beregning" Style="{StaticResource Text_Style_TabText_Header}"/>
+            </StackPanel>
+            
+            <!-- Midtersektion - Indhold -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,25" >
+                <StackPanel Orientation="Vertical" Margin="0,0,87,0">
+                    <ListView ItemsSource="{Binding Drawings}" Width="230" Height="400" 
+                              ItemContainerStyle="{StaticResource listViewDoubleClick}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding FileName}" FontSize="16"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <ListView ItemsSource="{Binding Calculations}" Width="430" Height="400" 
+                              ItemContainerStyle="{StaticResource listViewDoubleClick}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding FileName}" FontSize="16"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                   
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Genveje -->
+            <StackPanel>
+                <TextBlock Text="Genveje" Style="{StaticResource Text_Style_TabText_Header}"/>
+                <TextBlock >
+                    <Hyperlink Command="{Binding CommandBeregningsark}" TextDecorations="None">
+                        <TextBlock Text=" - Beregningsark" Style="{StaticResource Text_Style_Shortcuts}"/>
+                    </Hyperlink>
+                </TextBlock>
+                <TextBlock>
+                    <Hyperlink Command="{Binding CommandDorneBrand}" TextDecorations="None">
+                        <TextBlock Text=" - Dorne - Brandrapporter" Style="{StaticResource Text_Style_Shortcuts}"/>
+                    </Hyperlink>
+                </TextBlock>
+                <TextBlock>
+                    <Hyperlink Command="{Binding CommandIngeniørEkstern}" TextDecorations="None">
+                        <TextBlock Text=" - Ingeniør ekstern mappen" Style="{StaticResource Text_Style_Shortcuts}"/>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

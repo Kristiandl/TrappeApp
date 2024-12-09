@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fdscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fdscriptheader>
+    <title>FEM-Design script</title>
+    <version>2300</version>
+    <module>SFRAME</module>
+    <logfile>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Debug\net8.0-windows\FEM-Design API\logfile.log</logfile>
+  </fdscriptheader>
+  <cmdopen command="; CXL CS2SHELL OPEN">
+    <filename>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Debug\net8.0-windows\FEM-Design API\model.struxml</filename>
+  </cmdopen>
+</fdscript>

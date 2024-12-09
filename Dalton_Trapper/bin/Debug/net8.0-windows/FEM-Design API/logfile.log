@@ -1,0 +1,1802 @@
+step: cmdopen
+t: 12/02 14.01.19.003
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/02 14.01.22.124
+Script file finished
+step: cmdconfig
+t: 12/02 14.01.22.831
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/02 14.01.22.833
+Script file finished
+step: cmdlistgen
+t: 12/02 14.01.23.242
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.01.23.257
+step: cmdlistgen
+t: 12/02 14.01.23.259
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.01.23.262
+Script file finished
+step: cmdopen
+t: 12/02 14.01.45.970
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/02 14.01.49.041
+Script file finished
+step: cmdconfig
+t: 12/02 14.01.49.648
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/02 14.01.49.652
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/02 14.01.50.134
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/02 14.01.59.460
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/02 14.02.00.035
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/02 14.02.00.925
+Script file finished
+step: cmdlistgen
+t: 12/02 14.02.00.966
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.02.01.067
+step: cmdlistgen
+t: 12/02 14.02.01.069
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.02.01.095
+Script file finished
+step: cmdopen
+t: 12/02 14.02.24.217
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/02 14.02.26.829
+Script file finished
+step: cmdconfig
+t: 12/02 14.02.27.372
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/02 14.02.27.375
+Script file finished
+step: cmdlistgen
+t: 12/02 14.02.27.777
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.02.27.787
+step: cmdlistgen
+t: 12/02 14.02.27.788
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.02.27.790
+Script file finished
+step: cmdopen
+t: 12/02 14.05.58.271
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/02 14.06.01.633
+Script file finished
+step: cmdconfig
+t: 12/02 14.06.02.448
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/02 14.06.02.455
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/02 14.06.02.969
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/02 14.06.12.085
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/02 14.06.12.815
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/02 14.06.13.909
+Script file finished
+step: cmdlistgen
+t: 12/02 14.06.13.948
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.06.14.055
+step: cmdlistgen
+t: 12/02 14.06.14.056
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.06.14.105
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/02 14.26.28.744
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/02 14.26.31.531
+Script file finished
+step: cmdconfig
+t: 12/02 14.26.32.238
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/02 14.26.32.246
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/02 14.26.32.707
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/02 14.26.41.536
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/02 14.26.42.197
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/02 14.26.43.141
+Script file finished
+step: cmdlistgen
+t: 12/02 14.26.43.179
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.26.43.289
+step: cmdlistgen
+t: 12/02 14.26.43.290
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.26.43.316
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/02 14.39.19.044
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/02 14.39.21.846
+Script file finished
+step: cmdconfig
+t: 12/02 14.39.22.630
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/02 14.39.22.635
+Script file finished
+step: cmdlistgen
+t: 12/02 14.39.23.032
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.39.23.043
+step: cmdlistgen
+t: 12/02 14.39.23.044
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.39.23.047
+Script file finished
+step: cmdopen
+t: 12/02 14.39.32.717
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/02 14.39.35.525
+Script file finished
+step: cmdconfig
+t: 12/02 14.39.35.991
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/02 14.39.35.995
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/02 14.39.36.478
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/02 14.39.45.380
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/02 14.39.45.940
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/02 14.39.46.852
+Script file finished
+step: cmdlistgen
+t: 12/02 14.39.46.892
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.39.46.991
+step: cmdlistgen
+t: 12/02 14.39.46.994
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/02 14.39.47.022
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 08.29.11.374
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 08.29.14.152
+Script file finished
+step: cmdconfig
+t: 12/03 08.29.15.016
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 08.29.15.021
+Script file finished
+step: cmdprojdescr
+t: 12/03 08.29.15.420
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 08.29.15.421
+aborting script execution
+Script file finished
+step: cmdlistgen
+t: 12/03 08.29.15.827
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.29.15.838
+step: cmdlistgen
+t: 12/03 08.29.15.839
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.29.15.843
+Script file finished
+step: cmdopen
+t: 12/03 08.29.27.702
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 08.29.30.363
+Script file finished
+step: cmdconfig
+t: 12/03 08.29.31.041
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 08.29.31.045
+Script file finished
+step: cmdprojdescr
+t: 12/03 08.29.31.435
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 08.29.31.438
+aborting script execution
+Script file finished
+step: cmdlistgen
+t: 12/03 08.29.31.838
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.29.31.838
+step: cmdlistgen
+t: 12/03 08.29.31.838
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.29.31.838
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 08.33.57.463
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 08.34.00.778
+Script file finished
+step: cmdconfig
+t: 12/03 08.34.01.302
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 08.34.01.302
+Script file finished
+step: cmdprojdescr
+t: 12/03 08.34.01.701
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 08.34.01.702
+aborting script execution
+Script file finished
+step: cmdlistgen
+t: 12/03 08.34.02.111
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.34.02.125
+step: cmdlistgen
+t: 12/03 08.34.02.126
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.34.02.130
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 08.36.41.871
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 08.36.44.620
+Script file finished
+step: cmdconfig
+t: 12/03 08.36.45.414
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 08.36.45.414
+Script file finished
+step: cmdprojdescr
+t: 12/03 08.36.45.832
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 08.36.45.832
+aborting script execution
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 08.36.46.292
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 08.36.55.979
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 08.36.56.660
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 08.36.57.510
+Script file finished
+step: cmdlistgen
+t: 12/03 08.36.57.567
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.36.57.674
+step: cmdlistgen
+t: 12/03 08.36.57.674
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.36.57.698
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 08.39.20.969
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 08.39.23.659
+Script file finished
+step: cmdconfig
+t: 12/03 08.39.24.527
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 08.39.24.527
+Script file finished
+step: cmdprojdescr
+t: 12/03 08.39.24.924
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 08.39.24.924
+aborting script execution
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 08.39.25.404
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 08.39.34.976
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 08.39.35.732
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 08.39.36.637
+Script file finished
+step: cmdlistgen
+t: 12/03 08.39.36.732
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.39.36.846
+step: cmdlistgen
+t: 12/03 08.39.36.847
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.39.36.873
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 08.47.52.647
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 08.47.54.965
+Script file finished
+step: cmdconfig
+t: 12/03 08.47.55.456
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 08.47.55.459
+Script file finished
+step: cmdprojdescr
+t: 12/03 08.47.55.857
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 08.47.55.859
+aborting script execution
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 08.47.56.321
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 08.48.04.859
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 08.48.05.474
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 08.48.06.352
+Script file finished
+step: cmdlistgen
+t: 12/03 08.48.06.397
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.48.06.558
+step: cmdlistgen
+t: 12/03 08.48.06.559
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.48.06.598
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 08.53.59.972
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 08.54.02.541
+Script file finished
+step: cmdconfig
+t: 12/03 08.54.03.223
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 08.54.03.230
+Script file finished
+step: cmdprojdescr
+t: 12/03 08.54.03.624
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 08.54.03.625
+aborting script execution
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 08.54.04.107
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 08.54.13.040
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 08.54.13.595
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 08.54.14.464
+Script file finished
+step: cmdlistgen
+t: 12/03 08.54.14.524
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.54.14.624
+step: cmdlistgen
+t: 12/03 08.54.14.625
+cmdlistgen:'$ MODULECOM LISTGEN'
+t: 12/03 08.54.14.648
+Script file finished
+step: cmdopen
+t: 12/03 09.17.12.856
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.17.15.516
+Script file finished
+step: cmdconfig
+t: 12/03 09.17.16.164
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.17.16.172
+Script file finished
+step: cmdprojdescr
+t: 12/03 09.17.16.565
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 09.17.16.566
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 09.17.17.025
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 09.17.30.881
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 09.17.31.420
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 09.17.32.316
+Script file finished
+step: cmdlistgen
+t: 12/03 09.17.32.401
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.17.32.505
+step: cmdlistgen
+t: 12/03 09.17.32.506
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.17.32.533
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 09.21.14.286
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.21.17.285
+Script file finished
+step: cmdconfig
+t: 12/03 09.21.17.755
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.21.17.761
+Script file finished
+step: cmdopen
+t: 12/03 09.23.48.732
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.23.51.337
+Script file finished
+step: cmdconfig
+t: 12/03 09.23.51.843
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.23.51.849
+Script file finished
+step: cmdopen
+t: 12/03 09.25.25.236
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.25.29.371
+Script file finished
+step: cmdconfig
+t: 12/03 09.25.29.918
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.25.29.922
+Script file finished
+step: cmdopen
+t: 12/03 09.26.29.549
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.26.32.290
+Script file finished
+step: cmdconfig
+t: 12/03 09.26.32.730
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.26.32.735
+Script file finished
+step: cmdprojdescr
+t: 12/03 09.26.33.144
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 09.26.33.145
+Script file finished
+step: cmdlistgen
+t: 12/03 09.26.33.551
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.26.33.564
+step: cmdlistgen
+t: 12/03 09.26.33.566
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.26.33.570
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 09.28.09.517
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.28.12.100
+Script file finished
+step: cmdconfig
+t: 12/03 09.28.12.684
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.28.12.685
+Script file finished
+step: cmdopen
+t: 12/03 09.36.14.671
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.36.17.649
+Script file finished
+step: cmdconfig
+t: 12/03 09.36.18.438
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.36.18.445
+Script file finished
+step: cmdprojdescr
+t: 12/03 09.36.18.839
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 09.36.18.841
+Script file finished
+step: cmdlistgen
+t: 12/03 09.36.19.257
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.36.19.268
+step: cmdlistgen
+t: 12/03 09.36.19.270
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.36.19.276
+Script file finished
+step: cmdopen
+t: 12/03 09.36.29.084
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.36.31.637
+Script file finished
+step: cmdconfig
+t: 12/03 09.36.32.328
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.36.32.333
+Script file finished
+step: cmdprojdescr
+t: 12/03 09.36.32.731
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 09.36.32.733
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 09.36.33.205
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 09.36.46.185
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 09.36.46.755
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 09.36.47.673
+Script file finished
+step: cmdlistgen
+t: 12/03 09.36.47.760
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.36.47.857
+step: cmdlistgen
+t: 12/03 09.36.47.858
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.36.47.881
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 09.38.52.913
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.38.55.559
+Script file finished
+step: cmdconfig
+t: 12/03 09.38.56.269
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.38.56.276
+Script file finished
+step: cmdprojdescr
+t: 12/03 09.38.56.670
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 09.38.56.671
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 09.38.57.149
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 09.39.10.376
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 09.39.10.882
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 09.39.11.780
+Script file finished
+step: cmdlistgen
+t: 12/03 09.39.11.833
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.39.11.938
+step: cmdlistgen
+t: 12/03 09.39.11.939
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.39.11.963
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 09.40.36.634
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 09.40.39.386
+Script file finished
+step: cmdconfig
+t: 12/03 09.40.40.080
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 09.40.40.082
+Script file finished
+step: cmdprojdescr
+t: 12/03 09.40.40.479
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 09.40.40.480
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 09.40.40.964
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 09.40.53.747
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 09.40.54.285
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 09.40.55.147
+Script file finished
+step: cmdlistgen
+t: 12/03 09.40.55.195
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.40.55.291
+step: cmdlistgen
+t: 12/03 09.40.55.292
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 09.40.55.318
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 10.42.39.211
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 10.42.42.305
+Script file finished
+step: cmdconfig
+t: 12/03 10.42.42.914
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 10.42.42.918
+Script file finished
+step: cmdprojdescr
+t: 12/03 10.42.43.311
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 10.42.43.313
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 10.42.43.771
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 10.42.56.558
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 10.42.57.108
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 10.42.58.429
+Script file finished
+step: cmdlistgen
+t: 12/03 10.42.58.542
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 10.42.58.751
+step: cmdlistgen
+t: 12/03 10.42.58.753
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 10.42.58.817
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 10.51.15.879
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 10.51.18.542
+Script file finished
+step: cmdconfig
+t: 12/03 10.51.19.330
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 10.51.19.341
+Script file finished
+step: cmdprojdescr
+t: 12/03 10.51.19.728
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 10.51.19.729
+Script file finished
+step: cmdlistgen
+t: 12/03 10.51.20.130
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 10.51.20.143
+aborting script execution
+Script file finished
+step: cmdopen
+t: 12/03 10.51.40.953
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 10.51.43.491
+Script file finished
+step: cmdconfig
+t: 12/03 10.51.44.153
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 10.51.44.160
+Script file finished
+step: cmdprojdescr
+t: 12/03 10.51.44.553
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 10.51.44.554
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 10.51.45.019
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 10.51.58.029
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 10.51.58.557
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 10.51.59.479
+Script file finished
+step: cmdlistgen
+t: 12/03 10.51.59.534
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 10.51.59.635
+step: cmdlistgen
+t: 12/03 10.51.59.636
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 10.51.59.663
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 10.53.14.429
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 10.53.17.060
+Script file finished
+step: cmdconfig
+t: 12/03 10.53.17.818
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 10.53.17.830
+Script file finished
+step: cmdprojdescr
+t: 12/03 10.53.18.220
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 10.53.18.222
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 10.53.18.700
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 10.53.31.608
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 10.53.32.222
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 10.53.33.127
+Script file finished
+step: cmdlistgen
+t: 12/03 10.53.33.188
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 10.53.33.283
+step: cmdlistgen
+t: 12/03 10.53.33.285
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 10.53.33.310
+Script file finished
+step: cmdopen
+t: 12/03 11.41.18.384
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 11.41.21.075
+Script file finished
+step: cmdconfig
+t: 12/03 11.41.21.841
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 11.41.21.845
+Script file finished
+step: cmdprojdescr
+t: 12/03 11.41.22.243
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 11.41.22.245
+Script file finished
+step: cmdlistgen
+t: 12/03 11.41.22.653
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 11.41.22.665
+step: cmdlistgen
+t: 12/03 11.41.22.666
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 11.41.22.671
+Script file finished
+step: cmdopen
+t: 12/03 13.15.26.949
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 13.15.30.018
+Script file finished
+step: cmdconfig
+t: 12/03 13.15.30.789
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 13.15.30.796
+Script file finished
+step: cmdconfig
+t: 12/03 13.15.31.183
+cmdconfig:'$ MODULECOM APPLYCFG'
+error reading cfg file
+t: 12/03 13.15.31.198
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 13.15.31.588
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 13.15.31.590
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 13.15.32.066
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.15.45.171
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 13.15.45.794
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.15.46.812
+Script file finished
+step: cmdlistgen
+t: 12/03 13.15.46.894
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.15.46.994
+step: cmdlistgen
+t: 12/03 13.15.46.995
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.15.47.022
+Script file finished
+step: cmdopen
+t: 12/03 13.20.04.207
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 13.20.07.142
+Script file finished
+step: cmdconfig
+t: 12/03 13.20.07.848
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 13.20.07.855
+Script file finished
+step: cmdconfig
+t: 12/03 13.20.08.252
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 13.20.08.261
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 13.20.08.668
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 13.20.08.669
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 13.20.09.164
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.20.22.339
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 13.20.23.056
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.20.24.032
+Script file finished
+step: cmdlistgen
+t: 12/03 13.20.24.135
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.20.24.255
+step: cmdlistgen
+t: 12/03 13.20.24.256
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.20.24.280
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 13.49.07.720
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 13.49.10.390
+Script file finished
+step: cmdconfig
+t: 12/03 13.49.11.153
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 13.49.11.160
+Script file finished
+step: cmdconfig
+t: 12/03 13.49.11.554
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 13.49.11.560
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 13.49.11.957
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 13.49.11.959
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 13.49.12.442
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.49.21.764
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 13.49.22.377
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.49.23.209
+Script file finished
+step: cmdlistgen
+t: 12/03 13.49.23.300
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.49.23.439
+step: cmdlistgen
+t: 12/03 13.49.23.440
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.49.23.466
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 13.52.43.046
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 13.52.45.807
+Script file finished
+step: cmdconfig
+t: 12/03 13.52.46.533
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 13.52.46.541
+Script file finished
+step: cmdconfig
+t: 12/03 13.52.46.938
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 13.52.46.944
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 13.52.47.348
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 13.52.47.349
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 13.52.47.839
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.52.57.065
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 13.52.57.702
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.52.58.617
+Script file finished
+step: cmdlistgen
+t: 12/03 13.52.58.677
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.52.58.772
+step: cmdlistgen
+t: 12/03 13.52.58.774
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.52.58.830
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 13.53.43.517
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 13.53.46.043
+Script file finished
+step: cmdconfig
+t: 12/03 13.53.46.705
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 13.53.46.707
+Script file finished
+step: cmdconfig
+t: 12/03 13.53.47.111
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 13.53.47.117
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 13.53.47.525
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 13.53.47.527
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 13.53.48.110
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.53.57.314
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 13.53.57.857
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.53.58.716
+Script file finished
+step: cmdlistgen
+t: 12/03 13.53.58.793
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.53.58.890
+step: cmdlistgen
+t: 12/03 13.53.58.892
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.53.58.915
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 13.55.49.028
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 13.55.52.042
+Script file finished
+step: cmdconfig
+t: 12/03 13.55.52.591
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 13.55.52.599
+Script file finished
+step: cmdconfig
+t: 12/03 13.55.52.990
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 13.55.52.997
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 13.55.53.412
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 13.55.53.413
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 13.55.53.881
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.56.06.880
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 13.56.07.739
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 13.56.08.761
+Script file finished
+step: cmdlistgen
+t: 12/03 13.56.08.853
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.56.08.999
+step: cmdlistgen
+t: 12/03 13.56.09.001
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 13.56.09.028
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 14.05.12.862
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.05.15.722
+Script file finished
+step: cmdconfig
+t: 12/03 14.05.16.622
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.05.16.629
+Script file finished
+step: cmdconfig
+t: 12/03 14.05.17.023
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.05.17.030
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.05.17.426
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.05.17.427
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.05.17.978
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.05.31.109
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.05.31.779
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.05.32.770
+Script file finished
+step: cmdlistgen
+t: 12/03 14.05.32.833
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.05.32.932
+step: cmdlistgen
+t: 12/03 14.05.32.933
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.05.32.958
+Script file finished
+step: cmdlistgen
+t: 12/03 14.05.39.004
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.05.39.016
+Script file finished
+step: cmdopen
+t: 12/03 14.18.54.379
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.18.57.136
+Script file finished
+step: cmdconfig
+t: 12/03 14.18.57.821
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.18.57.825
+Script file finished
+step: cmdconfig
+t: 12/03 14.18.58.222
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.18.58.230
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.18.58.629
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.18.58.630
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.18.59.105
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.19.12.731
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.19.13.459
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.19.14.230
+Script file finished
+step: cmdlistgen
+t: 12/03 14.19.14.311
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.19.14.416
+step: cmdlistgen
+t: 12/03 14.19.14.417
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.19.14.443
+Script file finished
+step: cmdlistgen
+t: 12/03 14.19.14.676
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.19.14.684
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 14.19.58.717
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.20.01.463
+Script file finished
+step: cmdconfig
+t: 12/03 14.20.02.152
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.20.02.154
+Script file finished
+step: cmdconfig
+t: 12/03 14.20.02.568
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.20.02.574
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.20.02.973
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.20.02.975
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.20.03.559
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.20.12.755
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.20.13.314
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.20.14.202
+Script file finished
+step: cmdlistgen
+t: 12/03 14.20.14.289
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.20.14.381
+step: cmdlistgen
+t: 12/03 14.20.14.382
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.20.14.409
+Script file finished
+step: cmdlistgen
+t: 12/03 14.20.14.596
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.20.14.602
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 14.22.57.144
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.23.00.025
+Script file finished
+step: cmdconfig
+t: 12/03 14.23.00.744
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.23.00.750
+Script file finished
+step: cmdconfig
+t: 12/03 14.23.01.136
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.23.01.143
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.23.01.546
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.23.01.547
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.23.02.023
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.23.11.549
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.23.12.106
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.23.12.885
+Script file finished
+step: cmdlistgen
+t: 12/03 14.23.12.971
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.23.13.068
+step: cmdlistgen
+t: 12/03 14.23.13.070
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.23.13.095
+Script file finished
+step: cmdlistgen
+t: 12/03 14.23.13.320
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.23.13.327
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 14.26.20.710
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.26.23.880
+Script file finished
+step: cmdconfig
+t: 12/03 14.26.24.773
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.26.24.778
+Script file finished
+step: cmdconfig
+t: 12/03 14.26.25.172
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.26.25.180
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.26.25.578
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.26.25.579
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.26.26.068
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.26.39.262
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.26.39.809
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.26.40.746
+Script file finished
+step: cmdlistgen
+t: 12/03 14.26.40.811
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.26.40.912
+step: cmdlistgen
+t: 12/03 14.26.40.913
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.26.40.939
+Script file finished
+step: cmdlistgen
+t: 12/03 14.26.41.240
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.26.41.246
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 14.30.25.622
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.30.28.631
+Script file finished
+step: cmdconfig
+t: 12/03 14.30.29.331
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.30.29.335
+Script file finished
+step: cmdconfig
+t: 12/03 14.30.29.732
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.30.29.738
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.30.30.136
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.30.30.137
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.30.30.705
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.30.44.819
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.30.45.824
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.30.46.876
+Script file finished
+step: cmdlistgen
+t: 12/03 14.30.47.066
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.30.47.227
+step: cmdlistgen
+t: 12/03 14.30.47.228
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.30.47.264
+Script file finished
+step: cmdlistgen
+t: 12/03 14.30.47.454
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.30.47.461
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 14.32.08.602
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.32.11.280
+Script file finished
+step: cmdconfig
+t: 12/03 14.32.12.194
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.32.12.201
+Script file finished
+step: cmdconfig
+t: 12/03 14.32.12.594
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.32.12.603
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.32.12.998
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.32.12.999
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.32.13.502
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.32.26.629
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.32.27.342
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.32.28.132
+Script file finished
+step: cmdlistgen
+t: 12/03 14.32.28.244
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.32.28.342
+step: cmdlistgen
+t: 12/03 14.32.28.343
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.32.28.371
+Script file finished
+step: cmdlistgen
+t: 12/03 14.32.28.706
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.32.28.713
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 14.35.07.011
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.35.09.763
+Script file finished
+step: cmdconfig
+t: 12/03 14.35.10.464
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.35.10.473
+Script file finished
+step: cmdconfig
+t: 12/03 14.35.10.867
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.35.10.875
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.35.11.279
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.35.11.281
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.35.11.750
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.35.24.694
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.35.25.286
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.35.26.174
+Script file finished
+step: cmdlistgen
+t: 12/03 14.35.26.222
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.35.26.325
+step: cmdlistgen
+t: 12/03 14.35.26.326
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.35.26.352
+Script file finished
+step: cmdlistgen
+t: 12/03 14.35.26.712
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.35.26.720
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/03 14.36.18.634
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/03 14.36.21.184
+Script file finished
+step: cmdconfig
+t: 12/03 14.36.21.852
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/03 14.36.21.856
+Script file finished
+step: cmdconfig
+t: 12/03 14.36.22.261
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/03 14.36.22.270
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/03 14.36.22.661
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/03 14.36.22.662
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 12/03 14.36.23.157
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.36.32.408
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 12/03 14.36.33.142
+cmdcalculation:'; CXL $MODULE CALC'
+t: 12/03 14.36.33.892
+Script file finished
+step: cmdlistgen
+t: 12/03 14.36.33.945
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.36.34.046
+step: cmdlistgen
+t: 12/03 14.36.34.047
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.36.34.072
+Script file finished
+step: cmdlistgen
+t: 12/03 14.36.34.240
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/03 14.36.34.245
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 12/04 10.16.53.198
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/04 10.16.57.450
+Script file finished
+step: cmdconfig
+t: 12/04 10.16.57.962
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/04 10.16.57.971
+Script file finished
+step: cmdconfig
+t: 12/04 10.16.58.366
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/04 10.16.58.376
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/04 10.16.58.773
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/04 10.16.58.775
+Script file finished
+step: cmdlistgen
+t: 12/04 10.16.59.172
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 10.16.59.187
+step: cmdlistgen
+t: 12/04 10.16.59.188
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 10.16.59.195
+Script file finished
+step: cmdlistgen
+t: 12/04 10.16.59.581
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 10.16.59.587
+Script file finished
+step: cmdopen
+t: 12/04 10.18.08.164
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/04 10.18.10.682
+Script file finished
+step: cmdconfig
+t: 12/04 10.18.11.308
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/04 10.18.11.308
+Script file finished
+step: cmdconfig
+t: 12/04 10.18.11.702
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 12/04 10.18.11.709
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/04 10.18.12.108
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/04 10.18.12.109
+Script file finished
+step: cmdlistgen
+t: 12/04 10.18.12.522
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 10.18.12.532
+step: cmdlistgen
+t: 12/04 10.18.12.533
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 10.18.12.538
+Script file finished
+step: cmdlistgen
+t: 12/04 10.18.12.920
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 10.18.12.929
+Script file finished
+step: cmdopen
+t: 12/04 14.14.17.924
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 12/04 14.14.20.684
+Script file finished
+step: cmdconfig
+t: 12/04 14.14.21.514
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 12/04 14.14.21.519
+Script file finished
+step: cmdconfig
+t: 12/04 14.14.21.916
+cmdconfig:'$ MODULECOM APPLYCFG'
+error reading cfg file
+t: 12/04 14.14.21.920
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 12/04 14.14.22.321
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 12/04 14.14.22.322
+Script file finished
+step: cmdlistgen
+t: 12/04 14.14.22.727
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 14.14.22.737
+step: cmdlistgen
+t: 12/04 14.14.22.738
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 14.14.22.744
+Script file finished
+step: cmdlistgen
+t: 12/04 14.14.23.127
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 12/04 14.14.23.131
+Script file finished

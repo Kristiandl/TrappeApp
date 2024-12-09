@@ -1,0 +1,56 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="TabItem_Style" TargetType="TabItem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Border
+                        Name="Border"
+                        BorderThickness="0,1,1,0"
+                        BorderBrush="#444554"
+                        CornerRadius="8,8,0,0"
+                        Background="{TemplateBinding Background}"
+                        Height="{TemplateBinding Height}"
+                        Width="{TemplateBinding Width}"
+                        Margin="0">
+
+                        <ContentPresenter
+                            x:Name="ContentHeader"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            ContentSource="Header"
+                            Margin="10,2">
+                            <ContentPresenter.Style>
+                                <Style TargetType="ContentPresenter">
+                                    <!-- Default text styling -->
+                                    <Setter Property="TextElement.FontWeight" Value="Normal" />
+                                    <Setter Property="TextElement.Foreground" Value="#DBDBDB" />
+                                </Style>
+                            </ContentPresenter.Style>
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="FontFamily" Value="/Fonts/#Rubik" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Height" Value="30" />
+
+        <Style.Triggers>
+            <!-- When TabItem is selected -->
+            <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="True">
+                <Setter Property="Background" Value="#444554" />
+                <Setter Property="Height" Value="40" />
+            </DataTrigger>
+
+            <!-- When TabItem is not selected -->
+            <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="False">
+                <Setter Property="Height" Value="30" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

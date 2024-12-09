@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Dalton_Trapper.UserControls.InputRadioButtonBoolean"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Dalton_Trapper.UserControls"
+             mc:Ignorable="d" 
+             x:Name="Root2"
+             d:DesignHeight="450" d:DesignWidth="600">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <!-- Label -->
+            <ColumnDefinition Width="200" />
+            <!-- Radio Buttons -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Label -->
+        <TextBlock Text="{Binding Label, ElementName=Root2}"
+               FontSize="16"
+               Foreground="#DBDBDB"
+               VerticalAlignment="Center" />
+
+        <!-- Radio Buttons -->
+        <StackPanel Grid.Column="1"
+                Orientation="Horizontal"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            <RadioButton x:Name="YesRadioButton" 
+                     Content="Ja"
+                     IsChecked="{Binding IsYesChecked, ElementName=Root2, Mode=TwoWay}"
+                     Margin="0,0,10,0"
+                     Foreground="#DBDBDB"
+                     Background="#444554"/>
+            <RadioButton x:Name="NoRadioButton"
+                     Content="Nej"
+                     IsChecked="{Binding IsNoChecked, ElementName=Root2, Mode=TwoWay}"
+                     GroupName="YesNo"
+                     Foreground="#DBDBDB"
+                     Background="#444554" />
+        </StackPanel>
+    </Grid>
+</UserControl>

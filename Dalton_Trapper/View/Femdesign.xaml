@@ -1,0 +1,605 @@
+﻿<UserControl x:Class="Dalton_Trapper.View.Femdesign"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Dalton_Trapper.ViewModel"
+             xmlns:util="clr-namespace:Dalton_Trapper.Utilities"
+             xmlns:uc="clr-namespace:Dalton_Trapper.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="800"
+             d:DesignWidth="1300"
+             Style="{StaticResource Page_Style}">
+
+    <UserControl.Resources>
+        <util:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <util:EnumToBooleanConverter x:Key="EnumToBooleanConverter"/>
+        <util:BoolRadioButtonToVisibilityConverter x:Key="BoolRadioButtonToVisibilityConverter" />
+        <CollectionViewSource x:Key="CoordCollection" Source="{Binding Coord}"/>
+        <CollectionViewSource x:Key="FormCollection" Source="{Binding FormOptions}"/>
+        <CollectionViewSource x:Key="KvalitetListe" Source="{Binding KvalitetListe}"/>
+    </UserControl.Resources>
+    
+    <Grid Margin="15,65,15,15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="InputColumn" Width="640"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition x:Name="VisualiseringColumn" Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Column="1" Fill="#444554" Panel.ZIndex="-1"/>    
+        <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" BorderThickness="0">
+
+            <TabControl x:Name="TabControl" Background="Transparent" BorderBrush="#444554" BorderThickness="0,2,0,0">
+
+                <!-- Geometri tab-->
+                <TabItem Header="Geometri" Style="{StaticResource TabItem_Style}" >
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel HorizontalAlignment="Left" Margin="5,5,0,2">
+                            <uc:InputBox Label="Elementnavn" Text="{Binding SlabName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                         LabelWidth="275" InputWidth="130"/>
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Left" Margin="5,2,0,2">
+                            <uc:InputBox Label="Pladetykkelse [mm]" Text="{Binding PlateThickness, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                         LabelWidth="275" InputWidth="130"/>
+                        </StackPanel>
+
+                        <StackPanel HorizontalAlignment="Left" Margin="5,2,0,10">
+                            <uc:InputComboBox Label="Betonstyrke" 
+                                              Items="{Binding BetonstyrkeListe}" 
+                                              SelectedItem="{Binding Betonstyrke, Mode=TwoWay}" 
+                                              LabelWidth="275" InputWidth="130" ContentWidth="72"/>
+                        </StackPanel>
+
+                        <TextBlock Text="Indtast koordinater for plade MED uret." Style="{StaticResource Text_Style_TabText}" />
+                        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Coord}" 
+                                  SelectionUnit="FullRow" SelectionMode="Extended" RowHeaderWidth="0"
+                                  Width="220" CanUserAddRows="True" HorizontalAlignment="Left"
+                                  CanUserDeleteRows="True" IsReadOnly="False" CanUserSortColumns="False"
+                                  Style="{StaticResource DataGridStyle}"
+                                  util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Header="ID" Width="1.1*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding ID}" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Header="X [mm]" Width="2*" Binding="{Binding X}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Y [mm]" Width="2*" Binding="{Binding Y}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTemplateColumn Width="Auto">
+                                    <!-- Add button -->
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.AddRowCommandCoord, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\add_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Add row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <!-- Delete button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.DeleteRowCommandCoord, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\delete_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Delete row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <!-- Curved lines datagrid -->
+                        <TextBlock Text="Definér eventuelle buede linjer MED uret. " Style="{StaticResource Text_Style_TabText}" />
+                        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding CurvedLines}" 
+                              SelectionUnit="FullRow" SelectionMode="Extended" RowHeaderWidth="0"
+                              Width="400" CanUserAddRows="True" HorizontalAlignment="Left" 
+                              CanUserDeleteRows="True" IsReadOnly="False" CanUserSortColumns="False"
+                              Style="{StaticResource DataGridStyleLeft}"
+                              util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                            <DataGrid.Columns>
+                                <DataGridComboBoxColumn Header="Fra" Width="1*"
+                                                    SelectedItemBinding="{Binding P1}" SelectedValuePath ="ID" 
+                                                    DisplayMemberPath="ID" 
+                                                    ItemsSource="{Binding Source={StaticResource CoordCollection}}"/>
+                                <DataGridComboBoxColumn Header="Til" Width="1*" 
+                                                    SelectedItemBinding="{Binding P2}" 
+                                                    SelectedValuePath ="ID" DisplayMemberPath="ID" 
+                                                    ItemsSource="{Binding Source={StaticResource CoordCollection}}"
+                                                    />
+                                <DataGridTextColumn Header="Radius [mm]" Width="1.5*" 
+                                                Binding="{Binding Radius}"/>
+                                <DataGridComboBoxColumn Header="Form" Width="1.5*" 
+                                                    SelectedValueBinding="{Binding Form}" 
+                                                    ItemsSource="{Binding Source={StaticResource FormCollection}}"/>
+                                <!-- Add button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.AddRowCommandCurvedLine, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\add_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Add row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <!-- Delete button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.DeleteRowCommandCurvedLine, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\delete_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Delete row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem>
+
+
+                <!-- Supports tab-->
+                <TabItem Header="Understøtninger" Style="{StaticResource TabItem_Style}">
+                    <StackPanel>
+                        <TextBlock Text="Indtast koordinater for punktunderstøtninger:" Style="{StaticResource Text_Style_TabText}"/>
+                        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding PointSupports}" 
+                              SelectionUnit="FullRow" SelectionMode="Extended" RowHeaderWidth="0"
+                              Width="250" CanUserAddRows="True" HorizontalAlignment="Left" Margin="10,0,0,25"
+                              CanUserDeleteRows="True" IsReadOnly="False" CanUserSortColumns="False"
+                              Style="{StaticResource DataGridStyle}" 
+                              util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Header="ID" Width="1.1*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding ID}" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Header="X [mm]" Width="2*" Binding="{Binding X}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Y [mm]" Width="2*" Binding="{Binding Y}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <!-- Add button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.AddRowCommandPointSupport, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\add_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Add row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <!-- Delete button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.DeleteRowCommandPointSupport, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\delete_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Delete row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock Text="Indtast koordinater for linjeunderstøtninger:" Style="{StaticResource Text_Style_TabText}"/>
+                        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding LineSupports}" 
+                              SelectionUnit="FullRow" SelectionMode="Extended" RowHeaderWidth="0"
+                              Width="400" CanUserAddRows="True" HorizontalAlignment="Left" Margin="10,0,0,0"
+                              CanUserDeleteRows="True" IsReadOnly="False" CanUserSortColumns="False"
+                              Style="{StaticResource DataGridStyle}" 
+                              util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                            <DataGrid.Columns >
+                                <DataGridTemplateColumn Header="ID" Width="1.1*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding ID}" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Header="X1 [mm]" Width="2*" Binding="{Binding X}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Y1 [mm]" Width="2*" Binding="{Binding Y}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="X2 [mm]" Width="2*" Binding="{Binding X2}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Y2 [mm]" Width="2*" Binding="{Binding Y2}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <!-- Add button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.AddRowCommandLineSupport, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\add_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Add row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <!-- Delete button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.DeleteRowCommandLineSupport, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\delete_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Delete row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem>
+
+                <!-- Loading tab -->
+                <TabItem Header="Laster" Style="{StaticResource TabItem_Style}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="280"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Top -->
+                        <StackPanel Orientation="Vertical" >
+                            <StackPanel HorizontalAlignment="Left" Margin="5,5,0,2">
+                                <uc:InputComboBox Label="Konsekvensklasse" 
+                                              Items="{Binding KonsekvensklasseListe}" 
+                                              SelectedItem="{Binding Konsekvensklasse, Mode=TwoWay}"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Left" Margin="5,2,0,2">
+                                <uc:InputBox Label="Karakteristisk nyttelast [kN/m2]" Text="{Binding PlateLiveLoad, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                             LabelWidth="340" InputWidth="130"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="5,2,0,2">
+                                <uc:InputBox Label="Andel af nyttelast som langtidslast - ψ2" Text="{Binding Psi_2q, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                             LabelWidth="340" InputWidth="130"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Left" Margin="5,2,0,2">
+                                <uc:InputBox Label="Fri permanent last [kN/m2]" Text="{Binding ExtraG, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                             LabelWidth="340" InputWidth="130"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Left" Margin="5,2,0,2">
+                                <uc:InputBox Label="Karakteristisk snelast [kN/m2]" Text="{Binding Sk, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                             LabelWidth="340" InputWidth="130"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Left" Margin="5,2,0,2">
+                                <uc:InputBox Label="Karakteristisk snelast - ophobning [kN/m2]" Text="{Binding Sk_ophobning, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                             LabelWidth="340" InputWidth="130"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Border BorderBrush="#444554" BorderThickness="0,0,0,1"/>
+
+                        <!-- Bottom -->
+                        <Grid Grid.Row="1">
+                            <StackPanel>
+                                <TextBlock Text="Punktlaster:" Style="{StaticResource Text_Style_TabText}"/>
+                                <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding PointLoads}" 
+                                      SelectionUnit="FullRow" SelectionMode="Extended" RowHeaderWidth="0"
+                                      Width="380" CanUserAddRows="True" HorizontalAlignment="Left" Margin="10,0,0,25"
+                                      CanUserDeleteRows="True" IsReadOnly="False" CanUserSortColumns="False"
+                                      Style="{StaticResource DataGridStyle}"
+                                      util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                                    <DataGrid.Columns>
+                                        <DataGridTemplateColumn Header="ID" Width="1.1*">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding ID}" HorizontalAlignment="Center"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTextColumn Header="X [mm]" Width="2*" Binding="{Binding X}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <DataGridTextColumn Header="Y [mm]" Width="2*" Binding="{Binding Y}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <DataGridTextColumn Header="Gk [kN]" Width="2*" Binding="{Binding G}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <DataGridTextColumn Header="Qk [kN]" Width="2*" Binding="{Binding Q}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <!-- Add button -->
+                                        <DataGridTemplateColumn Width="Auto">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button Command="{Binding DataContext.AddRowCommandPointLoad, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                        CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                        <Image Source="Icons\add_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Add row" />
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <!-- Delete button -->
+                                        <DataGridTemplateColumn Width="Auto">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button Command="{Binding DataContext.DeleteRowCommandPointLoad, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                        CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                        <Image Source="Icons\delete_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Delete row" />
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <TextBlock Text="Indtast linjelaster:" Style="{StaticResource Text_Style_TabText}"/>
+                                <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding LineLoads}" 
+                                      SelectionUnit="FullRow" SelectionMode="Extended" RowHeaderWidth="0"
+                                      Width="620" CanUserAddRows="True" HorizontalAlignment="Left" Margin="10,0,0,0"
+                                      CanUserDeleteRows="True" IsReadOnly="False" CanUserSortColumns="False"
+                                      Style="{StaticResource DataGridStyle}" 
+                                      util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                                    <DataGrid.Columns>
+                                        <DataGridTemplateColumn Header="ID" Width="1*">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding ID}" HorizontalAlignment="Center"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTextColumn Header="X1 [mm]" Width="2*" Binding="{Binding X}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <DataGridTextColumn Header="Y1 [mm]" Width="2*" Binding="{Binding Y}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <DataGridTextColumn Header="X2 [mm]" Width="2*" Binding="{Binding X2}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <DataGridTextColumn Header="Y2 [mm]" Width="2*" Binding="{Binding Y2}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <DataGridTextColumn Header="gk [kN/m]" Width="2*" Binding="{Binding G}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <DataGridTextColumn Header="qk [kN/m]" Width="2*" Binding="{Binding Q}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                        <!-- Add button -->
+                                        <DataGridTemplateColumn Width="Auto">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button Command="{Binding DataContext.AddRowCommandLineLoad, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                        CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                        <Image Source="Icons\add_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Add row" />
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <!-- Delete button -->
+                                        <DataGridTemplateColumn Width="Auto">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button Command="{Binding DataContext.DeleteRowCommandLineLoad, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                        CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                        <Image Source="Icons\delete_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Delete row" />
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </TabItem>
+
+                <!-- Reinforcement tab -->
+                <TabItem x:Name="ReinforcementTab" Header="Armering" Style="{StaticResource TabItem_Style}">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Netarmering" Style="{StaticResource Text_Style_TabText}" FontWeight="Medium"/>
+                        <TextBlock Text="Netarmering indtastes i nedenstående skema, som lægges i over hele pladen. " Style="{StaticResource Text_Style_TabText}" />
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Miljøklasse : " Style="{StaticResource Text_Style_TabText}"/>
+                            <RadioButton x:Name="PassivMK" 
+                                     Content="Passiv" 
+                                     Style="{StaticResource RadioButtons}" 
+                                     IsChecked="{Binding SelectedEnvironmentClass, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Passiv}"
+                                     GroupName="MK"/>
+                            <RadioButton x:Name="ModeratMK" 
+                                     Content="Moderat" 
+                                     Style="{StaticResource RadioButtons}"
+                                     IsChecked="{Binding SelectedEnvironmentClass, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Moderat}"
+                                     GroupName="MK"/>
+                            <RadioButton x:Name="AgressivMK" 
+                                     Content="Agressiv" 
+                                     Style="{StaticResource RadioButtons}"
+                                     IsChecked="{Binding SelectedEnvironmentClass, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Agressiv}"
+                                     GroupName="MK"/>
+                            <RadioButton x:Name="EkstraAgressivMK" 
+                                     Content="Ekstra agressiv" 
+                                     Style="{StaticResource RadioButtons}"
+                                     IsChecked="{Binding SelectedEnvironmentClass, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=EkstraAgressiv}"
+                                     GroupName="MK"/>
+                            <RadioButton x:Name="ManuelMK" 
+                                     Content="Manuel" 
+                                     Style="{StaticResource RadioButtons}"
+                                     IsChecked="{Binding SelectedEnvironmentClass, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Manuel}"
+                                     GroupName="MK"/>
+                        </StackPanel>
+                        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding NetReinforcement}" Margin="5" Width="550" HorizontalAlignment="Left" 
+                               CanUserAddRows="False" CanUserReorderColumns="False" CanUserSortColumns="False" 
+                              CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserResizeRows="False" RowHeaderWidth="0"
+                              Style="{StaticResource DataGridStyle}"
+                              util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Placering" Width="1.3*" Binding="{Binding Navn}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Diameter [mm]" Width="1.5*" Binding="{Binding Diameter}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Afstand [mm]" Width="1.5*" Binding="{Binding Afstand}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Dæklag [mm]" Width="1.5*" Binding="{Binding Dæklag}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTemplateColumn Header="Kvalitet" Width="2*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Kvalitet}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                    <!-- Editing Template (ComboBox for editing mode) -->
+                                    <DataGridTemplateColumn.CellEditingTemplate>
+                                        <DataTemplate>
+                                            <ComboBox 
+                                                ItemsSource="{Binding Source={StaticResource KvalitetListe}}" 
+                                                SelectedValue="{Binding Kvalitet}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellEditingTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock Text="Tillægsarmering (løse stænger)" Style="{StaticResource Text_Style_TabText}" FontWeight="Medium"  Margin="5,15,5,0"/>
+                        <TextBlock Text="Disse bliver ligeledes fordelt i hele pladen." Style="{StaticResource Text_Style_TabText}"/>
+                        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding AdditionalReinforcement}" Margin="5" Width="550" HorizontalAlignment="Left" 
+                                  CanUserAddRows="False" CanUserReorderColumns="False" CanUserSortColumns="False" 
+                                  CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserResizeRows="False" RowHeaderWidth="0"
+                                  Style="{StaticResource DataGridStyle}"
+                                  util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Placering" Width="1.3*" Binding="{Binding Navn}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Diameter [mm]" Width="1.5*" Binding="{Binding Diameter}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Afstand [mm]" Width="1.5*" Binding="{Binding Afstand}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Dæklag [mm]" Width="1.5*" Binding="{Binding Dæklag}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTemplateColumn Header="Kvalitet" Width="2*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Kvalitet}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                    <!-- Editing Template (ComboBox for editing mode) -->
+                                    <DataGridTemplateColumn.CellEditingTemplate>
+                                        <DataTemplate>
+                                            <ComboBox 
+                                                 ItemsSource="{Binding Source={StaticResource KvalitetListe}}" 
+                                                 SelectedValue="{Binding Kvalitet}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellEditingTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem>
+
+                <!-- Settings tab -->
+                <TabItem Header="Indstillinger" Style="{StaticResource TabItem_Style}">
+                    <StackPanel Orientation="Vertical">
+                        <ItemsControl ItemsSource="{Binding Options}" Margin="0,0,0,20">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <uc:InputRadioButtonBoolean Label="{Binding Label}" IsYesChecked="{Binding IsYesChecked, Mode=TwoWay}" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        
+                        <!-- Project information for documentation template -->
+                        <TextBlock Text="Indtast projektinformationer til dokumentation" 
+                                   Style="{StaticResource Text_Style_TabText}" 
+                                   Visibility="{Binding IsDocumentationTemplateChecked, Converter={StaticResource BoolRadioButtonToVisibilityConverter}}"/>
+                        <StackPanel HorizontalAlignment="Left" Margin="5,5,0,2">
+                            <uc:InputBox Label="Sagsnummer" 
+                                         Text="{Binding ProjectNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                         Visibility="{Binding IsDocumentationTemplateChecked, Converter={StaticResource BoolRadioButtonToVisibilityConverter}}"
+                                         LabelWidth="200" InputWidth="150"/>
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Left" Margin="5,2,0,2">
+                            <uc:InputBox Label="Projekt" 
+                                         Text="{Binding ProjectTitle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                         Visibility="{Binding IsDocumentationTemplateChecked, Converter={StaticResource BoolRadioButtonToVisibilityConverter}}"
+                                         LabelWidth="200" InputWidth="150"/>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </ScrollViewer>
+
+        <!-- Right hand side -->
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="Visualisering" Height="85*" MinHeight="200"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="15*" MinHeight="100"/>
+            </Grid.RowDefinitions>
+
+            <Canvas x:Name="DrawingCanvas" VerticalAlignment="Center" HorizontalAlignment="Center" Height="600" Width="600">
+                <Path Data="{Binding SlabGeometry}" Stroke="Black" StrokeThickness="3" Fill="Gray"/>
+                <Path Data="{Binding PointLoadGeometry}" Stroke="Red" StrokeThickness="2"/>
+                <Path Data="{Binding LineLoadGeometry}" Stroke="Red" StrokeThickness="2"/>
+                <Path Data="{Binding PointSupportGeometry}" Fill="Green" Stroke="Black" StrokeThickness="1"/>
+                <Path Data="{Binding LineSupportGeometry}" Stroke="Green" StrokeThickness="7"/>
+                <Path Data="{Binding CanvasDimensionLines}" Stroke="Yellow" StrokeThickness="1"/>
+
+                <!-- Labels (Corners, supports and loads) -->
+                <ItemsControl ItemsSource="{Binding CanvasLabels}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="Canvas.Left" Value="{Binding X}" />
+                            <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ID}" Style="{StaticResource Text_Style_TabText}" FontWeight="Bold" Foreground="{Binding Colour}">
+                                <TextBlock.RenderTransform>
+                                    <ScaleTransform ScaleY="-1"/>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding DimensionlineLabels}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="Canvas.Left" Value="{Binding X}" />
+                            <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ID}" 
+                                       Style="{StaticResource Text_Style_TabText}" 
+                                       Foreground="{Binding Colour}">
+                                <!-- Apply transformations (Flip + Rotate) -->
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <!-- Flip vertically (Y-axis) -->
+                                        <ScaleTransform ScaleY="-1" />
+
+                                        <!-- Rotate using bound angle (assumes your ViewModel provides a property called 'Angle') -->
+                                        <RotateTransform Angle="{Binding Angle}" />
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <!-- Flip vertical -->
+                <Canvas.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                    </TransformGroup>
+                </Canvas.LayoutTransform>
+            </Canvas>
+
+            <Rectangle Grid.Row="1" Fill="#444554" Panel.ZIndex="-1"/>
+
+            <Button x:Name="btnGo" 
+                    Width="70" 
+                    Height="60" 
+                    Grid.Row="2" 
+                    Content="GO!" 
+                    Style="{StaticResource ButtonStyle}"
+                    Command="{Binding PushToFEM}"/>
+            <StackPanel Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25,15,0,5" >
+                <Button x:Name="import" 
+                        Width="110" 
+                        Height="42" 
+                        Grid.Row="2" 
+                        Content="Importér data" 
+                        FontSize="15" 
+                        Margin="0,0,0,15"
+                        Style="{StaticResource ButtonStyle}" 
+                        Command="{Binding ImportCommand}"/>
+                <Button x:Name="save" 
+                        Width="110" 
+                        Height="42" 
+                        Grid.Row="2" 
+                        Content="Gem data" 
+                        FontSize="15"
+                        Style="{StaticResource ButtonStyle}" 
+                        Command="{Binding SaveCommand}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

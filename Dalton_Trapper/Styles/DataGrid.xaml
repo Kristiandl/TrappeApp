@@ -1,0 +1,156 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Define Brushes -->
+    <SolidColorBrush x:Key="GridBackgroundBrush" Color="#444554" />
+    <SolidColorBrush x:Key="TextBrush" Color="#DBDBDB" />
+    <SolidColorBrush x:Key="AltRowBrush" Color="#3C3D4B" />
+    <SolidColorBrush x:Key="HeaderBrush" Color="#56576C" />
+    <SolidColorBrush x:Key="BorderBrush" Color="#56576C" />
+    <SolidColorBrush x:Key="HoverBrush" Color="#57596E" />
+    <SolidColorBrush x:Key="SelectedRowBrush" Color="#6C6E8A" />
+    <SolidColorBrush x:Key="SelectedTextBrush" Color="#FFFFFF" />
+
+    <!-- Define DataGrid Style -->
+    <Style x:Key="DataGridStyle" TargetType="DataGrid">
+        <!-- General Appearance -->
+        <Setter Property="Background" Value="{StaticResource GridBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="RowBackground" Value="{StaticResource GridBackgroundBrush}" />
+        <Setter Property="AlternatingRowBackground" Value="{StaticResource AltRowBrush}" />
+        <Setter Property="GridLinesVisibility" Value="Horizontal" />
+        <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource BorderBrush}" />
+        <Setter Property="VerticalGridLinesBrush" Value="{StaticResource BorderBrush}" />
+        <Setter Property="Margin" Value="5,0,0,20" />
+
+        <!-- Column Header Styling -->
+        <Setter Property="ColumnHeaderStyle">
+            <Setter.Value>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="{StaticResource HeaderBrush}" />
+                    <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+                    <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+                    <Setter Property="FontWeight" Value="Normal" />
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="Padding" Value="5" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+
+        <!-- Row Hover and Selection Styling -->
+        <Setter Property="CellStyle">
+            <Setter.Value>
+                <Style TargetType="DataGridCell">
+                    <!-- Hover Effect -->
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="ToolTip" Value="{Binding}" />
+                    <Style.Triggers>
+                        <!-- Highlight on MouseOver -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource HoverBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+                        </Trigger>
+
+                        <!-- Highlight on Selection -->
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="{StaticResource SelectedRowBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+                            <Setter Property="BorderThickness" Value="0,0,0,1" />
+                        </Trigger>
+
+                        <!-- Reset for non-selected rows -->
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter Property="Background" Value="{StaticResource GridBackgroundBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+                            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+                            <Setter Property="BorderThickness" Value="0,0,0,1" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Define DataGrid Style -->
+    <Style x:Key="DataGridStyleLeft" TargetType="DataGrid">
+        <!-- General Appearance -->
+        <Setter Property="Background" Value="{StaticResource GridBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="RowBackground" Value="{StaticResource GridBackgroundBrush}" />
+        <Setter Property="AlternatingRowBackground" Value="{StaticResource AltRowBrush}" />
+        <Setter Property="GridLinesVisibility" Value="Horizontal" />
+        <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource BorderBrush}" />
+        <Setter Property="VerticalGridLinesBrush" Value="{StaticResource BorderBrush}" />
+        <Setter Property="Margin" Value="5,0,0,0" />
+
+        <!-- Column Header Styling -->
+        <Setter Property="ColumnHeaderStyle">
+            <Setter.Value>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="{StaticResource HeaderBrush}" />
+                    <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+                    <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+                    <Setter Property="FontWeight" Value="Normal" />
+                    <Setter Property="HorizontalContentAlignment" Value="Left" />
+                    <Setter Property="Padding" Value="5" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+
+        <!-- Row Hover and Selection Styling -->
+        <Setter Property="CellStyle">
+            <Setter.Value>
+                <Style TargetType="DataGridCell">
+                    <!-- Hover Effect -->
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="ToolTip" Value="{Binding}" />
+                    <Style.Triggers>
+                        <!-- Highlight on MouseOver -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource HoverBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+                        </Trigger>
+
+                        <!-- Highlight on Selection -->
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="{StaticResource SelectedRowBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource SelectedTextBrush}" />
+                            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+                            <Setter Property="BorderThickness" Value="0,0,0,1" />
+                        </Trigger>
+
+                        <!-- Reset for non-selected rows -->
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter Property="Background" Value="{StaticResource GridBackgroundBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+                            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+                            <Setter Property="BorderThickness" Value="0,0,0,1" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- DataGridTextColumn Style -->
+    <Style x:Key="DataGridTextColumnElementStyle" TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="TextAlignment" Value="Center" />
+    </Style>
+
+    <!-- Editing Style -->
+    <Style x:Key="DataGridEditingElementStyle" TargetType="TextBox">
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="TextAlignment" Value="Center" />
+    </Style>
+
+
+</ResourceDictionary>

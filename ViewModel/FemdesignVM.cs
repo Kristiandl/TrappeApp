@@ -99,7 +99,7 @@ namespace Dalton_Trapper.ViewModel
             };
 
 
-            BetonstyrkeListe = new ObservableCollection<string> { "C20/25", "C25/30", "C30/37", "C35/45", "C40/50", "C45/50", "C50/60" };
+            BetonstyrkeListe = new ObservableCollection<string> { "C20/25", "C25/30", "C30/37", "C35/45", "C40/50", "C45/55", "C50/60" };
             Betonstyrke = "C30/37";
             
             KonsekvensklasseListe = new ObservableCollection<string> { "CC2", "CC3" };
@@ -745,7 +745,9 @@ namespace Dalton_Trapper.ViewModel
                     ApplyDocTemplateNo = Options[3].IsNoChecked,
                     NetReinforcement = NetReinforcement.ToList(),
                     AdditionalReinforcement = AdditionalReinforcement.ToList(),
-                    SelectedEnvironmentClass = SelectedEnvironmentClass.ToString()
+                    SelectedEnvironmentClass = SelectedEnvironmentClass.ToString(),
+                    ProjectNumber = ProjectNumber,
+                    ProjectTitle = ProjectTitle,
                 };
                 ImportExport.SaveToJson(slabData, saveFileDialog.FileName);
             }
@@ -848,6 +850,8 @@ namespace Dalton_Trapper.ViewModel
                 Sk = slabData.Snow;
                 Sk_ophobning = slabData.Snow2;
                 Konsekvensklasse = slabData.CC;
+                ProjectTitle = slabData.ProjectTitle;
+                ProjectNumber = slabData.ProjectNumber;
                 
                 
                 Options[0].IsYesChecked = (bool)slabData.RunInBgYes;

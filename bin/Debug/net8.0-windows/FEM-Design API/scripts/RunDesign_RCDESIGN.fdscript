@@ -4,7 +4,7 @@
     <title>FEM-Design script</title>
     <version>2300</version>
     <module>SFRAME</module>
-    <logfile>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Debug\net8.0-windows\FEM-Design API\logfile.log</logfile>
+    <logfile>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\FEM-Design API\logfile.log</logfile>
   </fdscriptheader>
   <cmduser command="; CXL $MODULE RCDESIGN" />
   <cmdcalculation command="; CXL $MODULE CALC">

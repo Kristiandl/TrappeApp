@@ -7,7 +7,7 @@
              xmlns:util="clr-namespace:Dalton_Trapper.Utilities"
              xmlns:uc="clr-namespace:Dalton_Trapper.UserControls"
              mc:Ignorable="d"
-             d:DesignHeight="800"
+             d:DesignHeight="900"
              d:DesignWidth="1300"
              Style="{StaticResource Page_Style}">
 
@@ -18,6 +18,7 @@
         <Style TargetType="ListViewItem" x:Key="listViewDoubleClick">
             <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick"/>
         </Style>
+        <util:FileFolderIconConverter x:Key="FileFolderIconConverter"/>
     </UserControl.Resources>
 
     <Grid Margin="15,65,15,15" >
@@ -44,38 +45,127 @@
 
             <!-- Midtersektion - overskrifter -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <TextBlock Text="Tegninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,230,0"/>
-                <TextBlock Text="Beregninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,550,0"/>
+                <TextBlock Text="Tegninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,257,0"/>
+                <TextBlock >
+                    <Hyperlink Command="{Binding CommandBeregningsmappe}" TextDecorations="None">
+                        <TextBlock Text="Beregninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,418,0"/>
+                    </Hyperlink>
+                </TextBlock>
                 <TextBlock Text="Opret ny beregning" Style="{StaticResource Text_Style_TabText_Header}"/>
             </StackPanel>
             
             <!-- Midtersektion - Indhold -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,25" >
-                <StackPanel Orientation="Vertical" Margin="0,0,87,0">
-                    <ListView ItemsSource="{Binding Drawings}" Width="230" Height="400" 
-                              ItemContainerStyle="{StaticResource listViewDoubleClick}">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding FileName}" FontSize="16"/>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                <StackPanel Orientation="Vertical" Margin="0,0,58,0">
+                    <StackPanel Orientation="Horizontal">
+                        <ListView ItemsSource="{Binding Drawings}" Width="240" Height="400" 
+                                  Background="#444554" Foreground="#DBDBDB" BorderBrush="Black"
+                                  ItemContainerStyle="{StaticResource listViewDoubleClick}"
+                                  SelectionMode="Extended" 
+                                  util:ListViewMultiSelectHelper.SelectedItems="{Binding SelectedDrawings, Mode=TwoWay}">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Width="20" Height="20" Margin="0,0,5,0">
+                                            <Image.Source>
+                                                <MultiBinding Converter="{StaticResource FileFolderIconConverter}">
+                                                    <Binding Path="IsFolder" />
+                                                    <Binding Path="FileName" />
+                                                    <Binding Path="FileExtension" />
+                                                </MultiBinding>
+                                            </Image.Source>
+                                        </Image>
+                                        <TextBlock Text="{Binding FileName}" FontSize="16" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <StackPanel>
+                            <Button Content="↑" Command="{Binding GoUpDrawingCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
+                                    Style="{StaticResource ButtonStyle}" ToolTip="Gå ét trin op i mappestruktur"/>
+                            <Button Content="->" Command="{Binding CopyDrawingsCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,0"
+                                    Style="{StaticResource ButtonStyle}" ToolTip="Kopier markerede pdf'er til valgte beregningsmappe"/>  
+                        </StackPanel>
+                        
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="0,0,55,0">
+                    <StackPanel Orientation="Horizontal">
+                        <ListView ItemsSource="{Binding Calculations}" Width="430" Height="400" 
+                                  Background="#444554" Foreground="#DBDBDB" BorderBrush="Black"
+                                  ItemContainerStyle="{StaticResource listViewDoubleClick}">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Width="20" Height="20" Margin="0,0,5,0">
+                                            <Image.Source>
+                                                <MultiBinding Converter="{StaticResource FileFolderIconConverter}">
+                                                    <Binding Path="IsFolder" />
+                                                    <Binding Path="FileName" />
+                                                    <Binding Path="FileExtension" />
+                                                </MultiBinding>
+                                            </Image.Source>
+                                        </Image>
+                                        <TextBlock Text="{Binding FileName}" FontSize="16" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <StackPanel Orientation="Vertical">
+                            <Button Content="↑" Command="{Binding GoUpCalculationCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
+                                    Style="{StaticResource ButtonStyle}" ToolTip="Gå ét trin op i mappestruktur"/>
+                            <Button Content="+" Command="{Binding AddFoldersCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,0"
+                                    Style="{StaticResource ButtonStyle}" ToolTip="Opret mappestruktur"/>
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Vertical">
-                    <ListView ItemsSource="{Binding Calculations}" Width="430" Height="400" 
-                              ItemContainerStyle="{StaticResource listViewDoubleClick}">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding FileName}" FontSize="16"/>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </StackPanel>
-                <StackPanel Orientation="Vertical">
-
-                </StackPanel>
-                <StackPanel Orientation="Vertical">
-                   
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Ligeløb" Text="{Binding Ligeløb, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretLigeløbCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret ligeløbsberegning"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Knækløb" Text="{Binding Knækløb, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretKnækløbCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret knækløbsberegning"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Repos" Text="{Binding Repos, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretReposCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret reposberegning"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Svingløb" Text="{Binding Svingløb, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretSvingløbCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret svingløbsberegning"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Detalje" Text="{Binding Detalje, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretDetaljeCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret detaljeberegning"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Plade" Text="{Binding Plade, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretPladeCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret pladeberegning uden naboelementer"/>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
 
@@ -83,18 +173,28 @@
             <StackPanel>
                 <TextBlock Text="Genveje" Style="{StaticResource Text_Style_TabText_Header}"/>
                 <TextBlock >
-                    <Hyperlink Command="{Binding CommandBeregningsark}" TextDecorations="None">
-                        <TextBlock Text=" - Beregningsark" Style="{StaticResource Text_Style_Shortcuts}"/>
+                    <Hyperlink Command="{Binding CommandTjekliste}" TextDecorations="None">
+                        <TextBlock Text=" - Tjeklisten" Style="{StaticResource Text_Style_Shortcuts}"/>
                     </Hyperlink>
                 </TextBlock>
-                <TextBlock>
-                    <Hyperlink Command="{Binding CommandDorneBrand}" TextDecorations="None">
-                        <TextBlock Text=" - Dorne - Brandrapporter" Style="{StaticResource Text_Style_Shortcuts}"/>
+                <TextBlock >
+                    <Hyperlink Command="{Binding CommandBeregningsark}" TextDecorations="None">
+                       <TextBlock Text=" - Beregningsark" Style="{StaticResource Text_Style_Shortcuts}"/>
+                    </Hyperlink>
+                </TextBlock>
+                <TextBlock >
+                    <Hyperlink Command="{Binding CommandCRHDokumentation}" TextDecorations="None">
+                       <TextBlock Text=" - CRH-Dokumentation" Style="{StaticResource Text_Style_Shortcuts}"/>
                     </Hyperlink>
                 </TextBlock>
                 <TextBlock>
                     <Hyperlink Command="{Binding CommandIngeniørEkstern}" TextDecorations="None">
                         <TextBlock Text=" - Ingeniør ekstern mappen" Style="{StaticResource Text_Style_Shortcuts}"/>
+                    </Hyperlink>
+                </TextBlock>
+                <TextBlock>
+                    <Hyperlink Command="{Binding CommandDorneBrand}" TextDecorations="None">
+                        <TextBlock Text=" - Dorne - Brandrapporter" Style="{StaticResource Text_Style_Shortcuts}"/>
                     </Hyperlink>
                 </TextBlock>
             </StackPanel>

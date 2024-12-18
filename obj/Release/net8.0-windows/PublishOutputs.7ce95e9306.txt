@@ -1,0 +1,17 @@
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\cfg_Agressiv.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\cfg_EkstraAgressiv.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\cfg_Standard.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\Repos_Doc_Template - Deploy.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\Repos_Doc_Template.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Tjekliste.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.exe
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.deps.json
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.runtimeconfig.json
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.pdb
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\FemDesign.Core.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\FuzzySharp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Newtonsoft.Json.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2RLEGRHPP/o=",
+  "dgSpecHash": "Mfbu+7F357w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\Dalton_Trapper\\Dalton_Trapper.csproj",
+  "projectFilePath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Dalton_Trapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kdl\\.nuget\\packages\\femdesign.core\\23.7.5\\femdesign.core.23.7.5.nupkg.sha512",
     "C:\\Users\\kdl\\.nuget\\packages\\fuzzysharp\\2.0.2\\fuzzysharp.2.0.2.nupkg.sha512",

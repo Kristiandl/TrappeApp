@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Model\\FEM-Design tab\\PlateToFEM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\FEM-Design tab\\PlateToFEM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\ViewModel\\FemdesignVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewModel\\FemdesignVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Model\\FEM-Design tab\\ImportExport\\ExcelReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\FEM-Design tab\\ImportExport\\ExcelReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\ViewModel\\ProjekteringVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewModel\\ProjekteringVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\View\\Projektering.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:View\\Projektering.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlateToFEM.cs",
+              "DocumentMoniker": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Model\\FEM-Design tab\\PlateToFEM.cs",
+              "RelativeDocumentMoniker": "Model\\FEM-Design tab\\PlateToFEM.cs",
+              "ToolTip": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Model\\FEM-Design tab\\PlateToFEM.cs",
+              "RelativeToolTip": "Model\\FEM-Design tab\\PlateToFEM.cs",
+              "ViewState": "AgIAAOYBAAAAAAAAAAAAAPoBAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T07:42:04.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExcelReader.cs",
+              "DocumentMoniker": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Model\\FEM-Design tab\\ImportExport\\ExcelReader.cs",
+              "RelativeDocumentMoniker": "Model\\FEM-Design tab\\ImportExport\\ExcelReader.cs",
+              "ToolTip": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Model\\FEM-Design tab\\ImportExport\\ExcelReader.cs",
+              "RelativeToolTip": "Model\\FEM-Design tab\\ImportExport\\ExcelReader.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAAAOQAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T07:35:54.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FemdesignVM.cs",
+              "DocumentMoniker": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\ViewModel\\FemdesignVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\FemdesignVM.cs",
+              "ToolTip": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\ViewModel\\FemdesignVM.cs",
+              "RelativeToolTip": "ViewModel\\FemdesignVM.cs",
+              "ViewState": "AgIAADEBAAAAAAAAAAAAAMUCAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T07:35:16.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Projektering.xaml",
+              "DocumentMoniker": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\View\\Projektering.xaml",
+              "RelativeDocumentMoniker": "View\\Projektering.xaml",
+              "ToolTip": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\View\\Projektering.xaml",
+              "RelativeToolTip": "View\\Projektering.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-09T10:47:15.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjekteringVM.cs",
+              "DocumentMoniker": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\ViewModel\\ProjekteringVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ProjekteringVM.cs",
+              "ToolTip": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\ViewModel\\ProjekteringVM.cs",
+              "RelativeToolTip": "ViewModel\\ProjekteringVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T10:47:10.247Z"
             }
           ]
         }

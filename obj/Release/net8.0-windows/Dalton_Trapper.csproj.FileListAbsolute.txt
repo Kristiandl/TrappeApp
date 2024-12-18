@@ -57,3 +57,67 @@ C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\D
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Release\net8.0-windows\TrappeApp.application
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\obj\Release\net8.0-windows\TrappeApp.dll.manifest
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\obj\Release\net8.0-windows\TrappeApp.application
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.exe
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\FEM-Design tab\cfg_Agressiv.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\FEM-Design tab\cfg_EkstraAgressiv.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\FEM-Design tab\cfg_Standard.xml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\FEM-Design tab\Repos_Doc_Template - Deploy.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\FEM-Design tab\Repos_Doc_Template.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\Projektering tab\Tjekliste.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.deps.json
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.runtimeconfig.json
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.pdb
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\FemDesign.Core.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\FuzzySharp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_Trapper.csproj.AssemblyReference.cache
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_Trapper.csproj.ResolveComReference.cache
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Styles\Button.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Styles\DataGrid.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Styles\Image.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Styles\Page.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Styles\TabItem.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Styles\Text.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Styles\TextBox.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\UserControls\InputBox.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\UserControls\InputComboBox.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\MainWindow.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\UserControls\InputBox.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\UserControls\InputComboBox.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\UserControls\InputRadioButtonBoolean.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\View\Femdesign.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\View\Home.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\View\Projektering.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\App.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp_Content.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp_MarkupCompile.cache
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp_MarkupCompile.lref
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\App.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\MainWindow.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\UserControls\InputRadioButtonBoolean.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Utilities\DataTemplate.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\View\Femdesign.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\View\Home.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\View\Projektering.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp.g.resources
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_Trapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_Trapper.AssemblyInfoInputs.cache
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_Trapper.AssemblyInfo.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_Trapper.csproj.CoreCompileInputs.cache
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_Trapper.sourcelink.json
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_T.EE603822.Up2Date
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\refint\TrappeApp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp.pdb
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\Dalton_Trapper.genruntimeconfig.cache
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\ref\TrappeApp.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.dll.manifest
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.application
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp.dll.manifest
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp.application

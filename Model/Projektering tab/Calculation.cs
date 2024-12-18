@@ -4,6 +4,8 @@
     {
         private string _fileName;
         private string _filePath;
+        private string _fileExtension;
+        private bool _isFolder;
 
         public string FileName
         {
@@ -27,6 +29,31 @@
             set
             {
                 _filePath = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string FileExtension
+        {
+            get
+            {
+                return _fileExtension;
+            }
+            set
+            {
+                _fileExtension = value;
+                OnPropertyChanged();
+            }
+        }
+        public bool IsFolder
+        {
+            get
+            {
+                return _isFolder;
+            }
+            set
+            {
+                _isFolder = value;
                 OnPropertyChanged();
             }
         }

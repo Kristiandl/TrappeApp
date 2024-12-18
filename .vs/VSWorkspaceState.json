@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\View",
+    "\\Model",
+    "\\Model\\FEM-Design tab",
+    "\\Model\\FEM-Design tab\\ImportExport",
     "\\ViewModel"
   ],
-  "SelectedNode": "\\View\\Projektering.xaml",
   "PreviewInSolutionExplorer": false
 }

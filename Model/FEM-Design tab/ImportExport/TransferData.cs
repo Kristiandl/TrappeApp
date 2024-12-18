@@ -30,5 +30,7 @@
         public string? SelectedEnvironmentClass { get; set; }
         public List<Reinforcement>? NetReinforcement { get; set; }
         public List<Reinforcement>? AdditionalReinforcement { get; set; }
+        public string? ProjectNumber { get; set; }
+        public string? ProjectTitle { get; set; }
     }
 }

@@ -120,11 +120,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\Dalton_Trapper\\Dalton_Trapper.csproj",
+      "projectUniqueName": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Dalton_Trapper.csproj",
       "projectName": "TrappeApp",
-      "projectPath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\Dalton_Trapper\\Dalton_Trapper.csproj",
+      "projectPath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Dalton_Trapper.csproj",
       "packagesPath": "C:\\Users\\kdl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\Dalton_Trapper\\obj\\",
+      "outputPath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kdl\\AppData\\Roaming\\NuGet\\NuGet.Config",

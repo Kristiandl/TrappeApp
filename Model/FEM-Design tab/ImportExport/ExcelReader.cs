@@ -20,7 +20,7 @@ namespace Dalton_Trapper.Model.ImportExport
                 excelApp = new Excel.Application();
                 workbook = excelApp.Workbooks.Open(filePath);
                 worksheet = (Excel.Worksheet)workbook.Sheets[1]; // Access the first worksheet
-                worksheetFF = (Excel.Worksheet)workbook.Sheets[3]; // Access the first worksheet
+                worksheetFF = (Excel.Worksheet)workbook.Sheets[3]; 
                 bool? bundLængst;
                 int ff = 0;
                 Entries P3;
@@ -153,14 +153,22 @@ namespace Dalton_Trapper.Model.ImportExport
                 if (cellData["I11"] == "A")
                 {
                     slabData.Fck = $"C{cellData["J22"]}/45";
+                    slabData.SelectedEnvironmentClass = "Agressiv" ;
                 }
                 else if (cellData["I11"] == "E")
                 {
                     slabData.Fck = $"C{cellData["J22"]}/50";
+                    slabData.SelectedEnvironmentClass = "EkstraAgressiv";
+                }
+                else if (cellData["I11"] == "M")
+                {
+                    slabData.Fck = $"C{cellData["J22"]}/37";
+                    slabData.SelectedEnvironmentClass = "Moderat";
                 }
                 else
                 {
                     slabData.Fck = $"C{cellData["J22"]}/37";
+                    slabData.SelectedEnvironmentClass = "Passiv";
                 }
 
                 // Coordinates to slabData class
@@ -220,6 +228,13 @@ namespace Dalton_Trapper.Model.ImportExport
                     new Reinforcement {Navn = "y_top", Diameter = Int32.Parse(cellData["N22"]), Afstand = Int32.Parse(cellData["P22"]), Dæklag = Int32.Parse(cellData["Q11"]), Kvalitet = "K"},
                     new Reinforcement {Navn = "x_bund", Diameter = Int32.Parse(cellData["N22"]), Afstand = Int32.Parse(cellData["P22"]), Dæklag = Int32.Parse(cellData["Q11"])+Int32.Parse(cellData["N22"]), Kvalitet = "K"},
                     new Reinforcement {Navn = "y_bund", Diameter = Int32.Parse(cellData["N22"]), Afstand = Int32.Parse(cellData["P22"]), Dæklag = Int32.Parse(cellData["Q11"]), Kvalitet = "K"}
+                };
+                slabData.AdditionalReinforcement = new List<Reinforcement>
+                {
+                    new Reinforcement {Navn = "x_top", Diameter = 0, Afstand = 400, Dæklag = Int32.Parse(cellData["Q11"])+Int32.Parse(cellData["N22"]), Kvalitet = "K"},
+                    new Reinforcement {Navn = "y_top", Diameter = 0, Afstand = 400, Dæklag = Int32.Parse(cellData["Q11"]), Kvalitet = "K"},
+                    new Reinforcement {Navn = "x_bund", Diameter = 0, Afstand = 400, Dæklag = Int32.Parse(cellData["Q11"])+Int32.Parse(cellData["N22"]), Kvalitet = "K"},
+                    new Reinforcement {Navn = "y_bund", Diameter = 0, Afstand = 400, Dæklag = Int32.Parse(cellData["Q11"]), Kvalitet = "K"}
                 };
             }
             catch (Exception ex)

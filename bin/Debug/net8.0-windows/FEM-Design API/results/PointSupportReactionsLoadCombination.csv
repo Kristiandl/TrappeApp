@@ -1,0 +1,20 @@
+Point support group, Reactions, Load comb.: ULS (6.10a) - Dominerende egenlast
+ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
+[-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
+PS.1	1.320	4.240	0.000	359	0.000	0.000	-4.678	0.000	0.000	0.000	4.678	0.000	1 ULS (6.10a) - Dominerende egenlast
+
+Point support group, Reactions, Load comb.: ULS (6.10b) - Dominerende nyttelast
+ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
+[-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
+PS.1	1.320	4.240	0.000	359	0.000	0.000	-8.300	0.000	0.000	0.000	8.300	0.000	2 ULS (6.10b) - Dominerende nyttelast
+
+Point support group, Reactions, Load comb.: ULS (6.10b) - Sneophobning
+ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
+[-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
+PS.1	1.320	4.240	0.000	359	0.000	0.000	-1.304	0.000	0.000	0.000	1.304	0.000	3 ULS (6.10b) - Sneophobning
+
+Point support group, Reactions, Load comb.: SLS - Kvasi-permanent
+ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
+[-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
+PS.1	1.320	4.240	0.000	359	0.000	0.000	-2.950	0.000	0.000	0.000	2.950	0.000	4 SLS - Kvasi-permanent
+

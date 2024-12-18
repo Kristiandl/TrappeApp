@@ -13,6 +13,10 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/fem-design%20tab/cfg_standard.xml")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/fem-design%20tab/repos_doc_template%20-%20deploy.dsc")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/fem-design%20tab/repos_doc_template.dsc")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/lobrepec_190701%20rev%2009012023.xlsm")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/reposec_v2010141%20rev%2009012023.xlsm")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/svingl%c3%b8b_v28-10-2022.xlsm")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/tjekliste.docx")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("stairs_icon.ico")]
 
 

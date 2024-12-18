@@ -20,11 +20,19 @@
     <None Remove="Model\cfg_Agressiv.xml" />
     <None Remove="Model\cfg_EkstraAgressiv.xml" />
     <None Remove="Model\cfg_Standard.xml" />
+    <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm" />
+    <None Remove="Model\Projektering tab\Tjekliste.docx" />
     <None Remove="Model\Repos_Doc_Template - Deploy.dsc" />
     <None Remove="Model\Repos_Doc_Template.dsc" />
     <None Remove="UserControls\ArrowDown.png" />
     <None Remove="View\Icons\add_icon.png" />
     <None Remove="View\Icons\delete_icon.png" />
+    <None Remove="View\Icons\excel_icon.png" />
+    <None Remove="View\Icons\folder_icon.png" />
+    <None Remove="View\Icons\pdf_icon.png" />
+    <None Remove="View\Icons\question_mark_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,6 +63,18 @@
     <Content Include="Model\FEM-Design tab\Repos_Doc_Template.dsc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Tjekliste.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="stairs_icon.ico" />
   </ItemGroup>
 
@@ -72,6 +92,10 @@
     <Resource Include="UserControls\ArrowDown.png" />
     <Resource Include="View\Icons\add_icon.png" />
     <Resource Include="View\Icons\delete_icon.png" />
+    <Resource Include="View\Icons\excel_icon.png" />
+    <Resource Include="View\Icons\folder_icon.png" />
+    <Resource Include="View\Icons\pdf_icon.png" />
+    <Resource Include="View\Icons\question_mark_icon.png" />
   </ItemGroup>
 
 </Project>

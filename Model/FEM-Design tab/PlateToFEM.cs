@@ -72,7 +72,7 @@ namespace Dalton_Trapper.Model
                 Kfi = 1.0f;
             }
 
-            if (_plateLiveLoad == "")
+            if (_plateLiveLoad == "" || _plateLiveLoad == null)
             {
                 liveload = 0;
             }
@@ -85,7 +85,7 @@ namespace Dalton_Trapper.Model
                 liveload = float.Parse(_plateLiveLoad);
             }
 
-            if (_psi2q == "")
+            if (_psi2q == "" || _psi2q == null)
             {
                 psi2_q = 1;
             }
@@ -98,7 +98,7 @@ namespace Dalton_Trapper.Model
                 psi2_q = float.Parse(_psi2q);
             }
 
-            if (_extraG == "")
+            if (_extraG == "" || _extraG == null)
             {
                 extraDL = 0;
             }
@@ -111,7 +111,7 @@ namespace Dalton_Trapper.Model
                 extraDL = float.Parse(_extraG);
             }
 
-            if (_sk == "")
+            if (_sk == "" || _sk == null)
             {
                 snowload = 0;
             }
@@ -124,7 +124,7 @@ namespace Dalton_Trapper.Model
                 snowload = float.Parse(_sk);
             }
 
-            if (_skOP == "")
+            if (_skOP == "" || _skOP == null)
             {
                 snowload2 = 0;
             }
@@ -503,8 +503,8 @@ namespace Dalton_Trapper.Model
                 model.AddLoadCombinations(loadCombinations);
 
                 // Documentation
-                string relativePathDocTemplate = System.IO.Path.Combine("Model", "Repos_Doc_Template.dsc");
-                string relativePathDocTemplateDeploy = System.IO.Path.Combine("Model", "Repos_Doc_Template - Deploy.dsc");
+                string relativePathDocTemplate = System.IO.Path.Combine("Model\\FEM-Design tab", "Repos_Doc_Template.dsc");
+                string relativePathDocTemplateDeploy = System.IO.Path.Combine("Model\\FEM-Design tab", "Repos_Doc_Template - Deploy.dsc");
                 string filepathDocTemplate = System.IO.Path.GetFullPath(relativePathDocTemplate);
 
                 

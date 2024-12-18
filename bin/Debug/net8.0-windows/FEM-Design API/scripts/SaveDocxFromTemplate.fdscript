@@ -4,7 +4,7 @@
     <title>FEM-Design script</title>
     <version>2300</version>
     <module>SFRAME</module>
-    <logfile>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Debug\net8.0-windows\FEM-Design API\logfile.log</logfile>
+    <logfile>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\FEM-Design API\logfile.log</logfile>
   </fdscriptheader>
-  <cmdchild>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\Dalton_Trapper\bin\Debug\net8.0-windows\Model\Repos_Doc_Template - Deploy.dsc</cmdchild>
+  <cmdchild>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\Repos_Doc_Template - Deploy.dsc</cmdchild>
 </fdscript>

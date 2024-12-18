@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="TrappeApp.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="TrappeApp.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="stairs_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -126,13 +126,13 @@
       <dsig:DigestValue>gsgHDsgZLfVySN5T2AEKcO+8ENLR2kxUDiCC4gPhOxA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm" size="666680">
+  <file name="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm" size="669154">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ryqH/0fK75GzD348lSyb80P5M0ba2aSYywN5PTl3uY0=</dsig:DigestValue>
+      <dsig:DigestValue>nCheWi0+2K8t3Zc1DhQGV+BulVjRmosqRcMDPDXoP8g=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm" size="348765">
@@ -180,22 +180,22 @@
       <dsig:DigestValue>V/oZOmZ+qZr2iGyCRelPjZZaoZt1ZQ1wqNKd9VFWjtc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TrappeApp.dll" size="452096">
+  <file name="TrappeApp.dll" size="451584">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>h467cm1SkCBoPzB4UBgMX42Q4jIc56j5B6kyInp5Dbo=</dsig:DigestValue>
+      <dsig:DigestValue>tRPfxlb2zL2ztDWuU0CE4ql9Pd/66L9l96tWu/Qxrhs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TrappeApp.exe" size="249856">
+  <file name="TrappeApp.exe" size="249344">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Dw07Z46RUGkv5xDWeOsLiVh3T6TSXxMmjkWcsWuCIXM=</dsig:DigestValue>
+      <dsig:DigestValue>WKo3WhIVHWzFAoZ4BSrMTZ6ifDVK3/ZRYkl40gORplM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TrappeApp.runtimeconfig.json" size="458">

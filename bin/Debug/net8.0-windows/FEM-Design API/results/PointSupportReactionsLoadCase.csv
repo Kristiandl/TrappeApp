@@ -1,45 +1,45 @@
 Point support group, Reactions, Ultimate - Load case: Egenlast - Repos
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	-9.294	0.000	0.000	0.000	9.294	0.000	Egenlast - Repos
+PS.1	0.000	0.150	0.000	2	0.000	0.000	-9.294	0.000	0.000	0.000	9.294	0.000	Egenlast - Repos
 
 Point support group, Reactions, Ultimate - Load case: Fri permanent last
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Fri permanent last
+PS.1	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Fri permanent last
 
 Point support group, Reactions, Ultimate - Load case: Nyttelast - Repos
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	-3.983	0.000	0.000	0.000	3.983	0.000	Nyttelast - Repos
+PS.1	0.000	0.150	0.000	2	0.000	0.000	-3.983	0.000	0.000	0.000	3.983	0.000	Nyttelast - Repos
 
 Point support group, Reactions, Ultimate - Load case: Snelast
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Snelast
+PS.1	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Snelast
 
 Point support group, Reactions, Ultimate - Load case: Snelast - Ophobning
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Snelast - Ophobning
+PS.1	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Snelast - Ophobning
 
 Point support group, Reactions, Ultimate - Load case: Egenlast - Linjelaster
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	-0.041	0.000	0.000	0.000	0.041	0.000	Egenlast - Linjelaster
+PS.1	0.000	0.150	0.000	2	0.000	0.000	-0.041	0.000	0.000	0.000	0.041	0.000	Egenlast - Linjelaster
 
 Point support group, Reactions, Ultimate - Load case: Nyttelast - Linjelaster
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	-0.018	0.000	0.000	0.000	0.018	0.000	Nyttelast - Linjelaster
+PS.1	0.000	0.150	0.000	2	0.000	0.000	-0.018	0.000	0.000	0.000	0.018	0.000	Nyttelast - Linjelaster
 
 Point support group, Reactions, Ultimate - Load case: Egenlast - Punktlaster
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Egenlast - Punktlaster
+PS.1	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Egenlast - Punktlaster
 
 Point support group, Reactions, Ultimate - Load case: Nyttelast - Punktlaster
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Case
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.5	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Nyttelast - Punktlaster
+PS.1	0.000	0.150	0.000	2	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	Nyttelast - Punktlaster
 

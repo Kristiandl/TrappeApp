@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" country="DK" standard="EC" soil_as_solid="false" convertid="00000000-0000-0000-0000-000000000000" guid="7754cf62-1d87-4e59-86b8-7f11fde04d98" end_time="2025-01-16T13:40:55.066" start_time="1970-01-01T00:00:00.000" source_software="FEM-Design API SDK 23.7.5.0" struxml_version="01.00.000" xmlns="urn:strusoft">
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" country="DK" standard="EC" soil_as_solid="false" convertid="00000000-0000-0000-0000-000000000000" guid="07e6fb31-eb49-437a-939e-3d9402d9edbb" end_time="2025-01-16T14:21:55.267" start_time="1970-01-01T00:00:00.000" source_software="FEM-Design API SDK 23.7.5.0" struxml_version="01.00.000" xmlns="urn:strusoft">
   <entities>
     <foundations />
-    <slab last_change="2025-01-16T13:40:55.065" guid="a41b4485-f51b-4186-9a95-11df97ebdedb" action="added" name="@Plate1.2" type="plate" stage="1">
-      <slab_part last_change="2025-01-16T13:40:55.064" guid="1347f79c-b36e-4489-b35e-1c369f9cb773" action="added" name="@Plate1.2.1" align_offset="0" ortho_alfa="0" ortho_ratio="1" mesh_size="0.2800000011920929" complex_material="66c05309-a399-4ba1-ba2a-9e2485c6fe33" alignment="center" ecc_calc="false" ecc_crack="false">
+    <slab last_change="2025-01-16T14:21:55.240" guid="b1624123-e8bc-424f-b038-2ef1af89492c" action="added" name="@Plate1.1" type="plate" stage="1">
+      <slab_part last_change="2025-01-16T14:21:55.239" guid="fd0d5754-c3ce-494b-b65e-1b6b3363b565" action="added" name="@Plate1.1.1" align_offset="0" ortho_alfa="0" ortho_ratio="1" mesh_size="0.2800000011920929" complex_material="66c05309-a399-4ba1-ba2a-9e2485c6fe33" alignment="center" ecc_calc="false" ecc_crack="false">
         <contour>
           <edge type="line" start_angle="0" end_angle="0">
             <point x="0" y="0" z="0" />
@@ -74,16 +74,16 @@
       </slab_part>
       <end />
     </slab>
-    <surface_reinforcement_parameters last_change="2025-01-16T13:40:55.066" guid="71554b70-d8f2-4071-89f5-2a565019c162" action="added" single_layer_reinforcement="false">
-      <base_shell guid="1347f79c-b36e-4489-b35e-1c369f9cb773" />
+    <surface_reinforcement_parameters last_change="2025-01-16T14:21:55.266" guid="a821c92a-9d4e-46b1-8e84-6a3d4f0f7f49" action="added" single_layer_reinforcement="false">
+      <base_shell guid="fd0d5754-c3ce-494b-b65e-1b6b3363b565" />
       <center x="0" y="0" z="0" polar_system="false" />
       <x_direction x="1" y="0" z="0" />
       <y_direction x="0" y="1" z="0" />
     </surface_reinforcement_parameters>
-    <surface_reinforcement last_change="2025-01-16T13:40:55.066" guid="244fc0ee-c098-4f49-a37e-cd899bd5dcba" action="added">
-      <base_shell guid="1347f79c-b36e-4489-b35e-1c369f9cb773" />
-      <surface_reinforcement_parameters guid="71554b70-d8f2-4071-89f5-2a565019c162" />
-      <straight space="0.15000000596046448" face="top" cover="0.043" direction="x" />
+    <surface_reinforcement last_change="2025-01-16T14:21:55.261" guid="310ac8b3-e285-45ba-a47c-c21ff39132f8" action="added">
+      <base_shell guid="fd0d5754-c3ce-494b-b65e-1b6b3363b565" />
+      <surface_reinforcement_parameters guid="a821c92a-9d4e-46b1-8e84-6a3d4f0f7f49" />
+      <straight space="0.15000000596046448" face="top" cover="0.053" direction="x" />
       <wire diameter="0.008" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
       <region>
         <contour>
@@ -150,10 +150,10 @@
         </contour>
       </region>
     </surface_reinforcement>
-    <surface_reinforcement last_change="2025-01-16T13:40:55.066" guid="26d073f5-a7db-4ec6-a8d7-73fbd4ba67f5" action="added">
-      <base_shell guid="1347f79c-b36e-4489-b35e-1c369f9cb773" />
-      <surface_reinforcement_parameters guid="71554b70-d8f2-4071-89f5-2a565019c162" />
-      <straight space="0.15000000596046448" face="top" cover="0.035" direction="y" />
+    <surface_reinforcement last_change="2025-01-16T14:21:55.261" guid="0de646e5-d390-430c-af57-35ce01132ebf" action="added">
+      <base_shell guid="fd0d5754-c3ce-494b-b65e-1b6b3363b565" />
+      <surface_reinforcement_parameters guid="a821c92a-9d4e-46b1-8e84-6a3d4f0f7f49" />
+      <straight space="0.15000000596046448" face="top" cover="0.045" direction="y" />
       <wire diameter="0.008" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
       <region>
         <contour>
@@ -220,10 +220,10 @@
         </contour>
       </region>
     </surface_reinforcement>
-    <surface_reinforcement last_change="2025-01-16T13:40:55.066" guid="1710b16d-0a04-4068-9624-63f61ad5ed79" action="added">
-      <base_shell guid="1347f79c-b36e-4489-b35e-1c369f9cb773" />
-      <surface_reinforcement_parameters guid="71554b70-d8f2-4071-89f5-2a565019c162" />
-      <straight space="0.15000000596046448" face="bottom" cover="0.043" direction="x" />
+    <surface_reinforcement last_change="2025-01-16T14:21:55.261" guid="a10aac86-b4ce-4a7b-8470-91bcb323111c" action="added">
+      <base_shell guid="fd0d5754-c3ce-494b-b65e-1b6b3363b565" />
+      <surface_reinforcement_parameters guid="a821c92a-9d4e-46b1-8e84-6a3d4f0f7f49" />
+      <straight space="0.15000000596046448" face="bottom" cover="0.053" direction="x" />
       <wire diameter="0.008" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
       <region>
         <contour>
@@ -290,10 +290,10 @@
         </contour>
       </region>
     </surface_reinforcement>
-    <surface_reinforcement last_change="2025-01-16T13:40:55.066" guid="36e0e1c1-5626-4796-8343-fe6ab8b77b84" action="added">
-      <base_shell guid="1347f79c-b36e-4489-b35e-1c369f9cb773" />
-      <surface_reinforcement_parameters guid="71554b70-d8f2-4071-89f5-2a565019c162" />
-      <straight space="0.15000000596046448" face="bottom" cover="0.035" direction="y" />
+    <surface_reinforcement last_change="2025-01-16T14:21:55.261" guid="8bf48000-5ad1-4abd-8570-1b2f06855465" action="added">
+      <base_shell guid="fd0d5754-c3ce-494b-b65e-1b6b3363b565" />
+      <surface_reinforcement_parameters guid="a821c92a-9d4e-46b1-8e84-6a3d4f0f7f49" />
+      <straight space="0.15000000596046448" face="bottom" cover="0.045" direction="y" />
       <wire diameter="0.008" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
       <region>
         <contour>
@@ -361,7 +361,7 @@
       </region>
     </surface_reinforcement>
     <loads>
-      <line_load last_change="2025-01-16T13:40:55.066" guid="6f5966ef-c333-4717-a852-7c62a59ebc6b" action="added" load_case="8c7bdd47-3567-478a-9100-483e027c2cc0" comment="" load_type="force" load_dir="constant" load_projection="false">
+      <line_load last_change="2025-01-16T14:21:55.248" guid="6c65d579-53e8-410e-af60-8f4841c51d78" action="added" load_case="73143f75-7091-44f8-ae97-d4312a364cbd" comment="" load_type="force" load_dir="constant" load_projection="false">
         <edge type="line" start_angle="0" end_angle="0">
           <point x="2.94" y="0.02" z="0" />
           <point x="2.94" y="1.08" z="0" />
@@ -373,7 +373,7 @@
         <load x="2.94" y="0.02" z="0" val="9.6899995803833" />
         <load x="2.94" y="1.08" z="0" val="9.6899995803833" />
       </line_load>
-      <line_load last_change="2025-01-16T13:40:55.066" guid="2c746e12-b5c4-4973-bdf9-e19e427170f1" action="added" load_case="d3fc1b33-52c0-4600-a7d4-4c1b8872a33c" comment="" load_type="force" load_dir="constant" load_projection="false">
+      <line_load last_change="2025-01-16T14:21:55.249" guid="e1b497b1-9340-41b7-b9c2-3a51bf8fca66" action="added" load_case="ed0579f8-0b5c-4171-ae42-1a8a8ac49454" comment="" load_type="force" load_dir="constant" load_projection="false">
         <edge type="line" start_angle="0" end_angle="0">
           <point x="2.94" y="0.02" z="0" />
           <point x="2.94" y="1.08" z="0" />
@@ -385,7 +385,7 @@
         <load x="2.94" y="0.02" z="0" val="4.139999866485596" />
         <load x="2.94" y="1.08" z="0" val="4.139999866485596" />
       </line_load>
-      <line_load last_change="2025-01-16T13:40:55.066" guid="01070e87-364d-44da-bf32-90958cbcd9a1" action="added" load_case="8c7bdd47-3567-478a-9100-483e027c2cc0" comment="" load_type="force" load_dir="constant" load_projection="false">
+      <line_load last_change="2025-01-16T14:21:55.249" guid="794e76d2-e129-4c40-b4e2-8edd72f3ee0b" action="added" load_case="73143f75-7091-44f8-ae97-d4312a364cbd" comment="" load_type="force" load_dir="constant" load_projection="false">
         <edge type="line" start_angle="0" end_angle="0">
           <point x="2.66" y="1.389" z="0" />
           <point x="2.66" y="2.449" z="0" />
@@ -397,7 +397,7 @@
         <load x="2.66" y="1.389" z="0" val="10.670000076293945" />
         <load x="2.66" y="2.449" z="0" val="10.670000076293945" />
       </line_load>
-      <line_load last_change="2025-01-16T13:40:55.066" guid="9b4ce2b7-2514-46d3-98e9-b53cffcae967" action="added" load_case="d3fc1b33-52c0-4600-a7d4-4c1b8872a33c" comment="" load_type="force" load_dir="constant" load_projection="false">
+      <line_load last_change="2025-01-16T14:21:55.249" guid="57d771f6-1bbe-441b-af64-0a1a3b1409fa" action="added" load_case="ed0579f8-0b5c-4171-ae42-1a8a8ac49454" comment="" load_type="force" load_dir="constant" load_projection="false">
         <edge type="line" start_angle="0" end_angle="0">
           <point x="2.66" y="1.389" z="0" />
           <point x="2.66" y="2.449" z="0" />
@@ -409,7 +409,7 @@
         <load x="2.66" y="1.389" z="0" val="4.559999942779541" />
         <load x="2.66" y="2.449" z="0" val="4.559999942779541" />
       </line_load>
-      <surface_load last_change="2025-01-16T13:40:55.066" guid="bf877e77-b024-4d8a-9f5a-5ba630044846" action="added" load_case="4fc01884-e01b-480d-9237-6f4214fbf554" comment="" load_type="force" load_projection="false">
+      <surface_load last_change="2025-01-16T14:21:55.248" guid="014fb9ea-c8f6-43c2-8ad0-09d07b31f247" action="added" load_case="d669e490-c527-4089-990a-cd71b15ceb4c" comment="" load_type="force" load_projection="false">
         <region>
           <contour>
             <edge type="line" start_angle="0" end_angle="0">
@@ -477,7 +477,7 @@
         <direction x="0" y="0" z="-1" />
         <load x="0" y="0" z="0" val="3" />
       </surface_load>
-      <surface_load last_change="2025-01-16T13:40:55.066" guid="f74727e6-6789-4118-b734-eaf096c8dab1" action="added" load_case="42202b71-2078-4971-8747-574b4f0e4be3" comment="" load_type="force" load_projection="false">
+      <surface_load last_change="2025-01-16T14:21:55.248" guid="39ab1fcb-59aa-4c07-8080-c6457c698788" action="added" load_case="64df305b-0e31-4f84-934c-1bb08d945d34" comment="" load_type="force" load_projection="false">
         <region>
           <contour>
             <edge type="line" start_angle="0" end_angle="0">
@@ -545,7 +545,7 @@
         <direction x="NaN" y="NaN" z="NaN" />
         <load x="0" y="0" z="0" val="0" />
       </surface_load>
-      <surface_load last_change="2025-01-16T13:40:55.066" guid="e3a6890b-bf4a-417b-b016-e29a921fabee" action="added" load_case="084312b3-b96e-4388-a017-7fcb828e552c" comment="" load_type="force" load_projection="false">
+      <surface_load last_change="2025-01-16T14:21:55.248" guid="7baffb4e-52ea-4383-b2d9-b683cc477774" action="added" load_case="e9a42f7d-6386-49f8-9d17-18b60d540396" comment="" load_type="force" load_projection="false">
         <region>
           <contour>
             <edge type="line" start_angle="0" end_angle="0">
@@ -613,7 +613,7 @@
         <direction x="NaN" y="NaN" z="NaN" />
         <load x="0" y="0" z="0" val="0" />
       </surface_load>
-      <surface_load last_change="2025-01-16T13:40:55.066" guid="2a0de8d4-0024-470c-9e5c-51d9d5e51c67" action="added" load_case="46719c8e-5c1e-48a0-af95-bf523eefb052" comment="" load_type="force" load_projection="false">
+      <surface_load last_change="2025-01-16T14:21:55.248" guid="8234df09-97e9-409c-bf36-2b9b75593d18" action="added" load_case="f0f84625-573f-4af8-a905-e8a94a794193" comment="" load_type="force" load_projection="false">
         <region>
           <contour>
             <edge type="line" start_angle="0" end_angle="0">
@@ -681,47 +681,47 @@
         <direction x="NaN" y="NaN" z="NaN" />
         <load x="0" y="0" z="0" val="0" />
       </surface_load>
-      <load_case last_change="2025-01-16T13:40:55.066" guid="ab11db3a-918a-4851-bede-278db9580820" action="added" name="Egenlast - Repos" type="dead_load" duration_class="permanent" />
-      <load_case last_change="2025-01-16T13:40:55.066" guid="42202b71-2078-4971-8747-574b4f0e4be3" action="added" name="Fri permanent last" type="static" duration_class="permanent" />
-      <load_case last_change="2025-01-16T13:40:55.066" guid="4fc01884-e01b-480d-9237-6f4214fbf554" action="added" name="Nyttelast - Repos" type="static" duration_class="permanent" />
-      <load_case last_change="2025-01-16T13:40:55.066" guid="084312b3-b96e-4388-a017-7fcb828e552c" action="added" name="Snelast" type="static" duration_class="permanent" />
-      <load_case last_change="2025-01-16T13:40:55.066" guid="46719c8e-5c1e-48a0-af95-bf523eefb052" action="added" name="Snelast - Ophobning" type="static" duration_class="permanent" />
-      <load_case last_change="2025-01-16T13:40:55.066" guid="8c7bdd47-3567-478a-9100-483e027c2cc0" action="added" name="Egenlast - Linjelaster" type="static" duration_class="permanent" />
-      <load_case last_change="2025-01-16T13:40:55.066" guid="d3fc1b33-52c0-4600-a7d4-4c1b8872a33c" action="added" name="Nyttelast - Linjelaster" type="static" duration_class="permanent" />
-      <load_case last_change="2025-01-16T13:40:55.066" guid="e9fc1348-b0ef-4609-8733-21d6295d270c" action="added" name="Egenlast - Punktlaster" type="static" duration_class="permanent" />
-      <load_case last_change="2025-01-16T13:40:55.066" guid="e4ca800b-ddec-4335-874a-803d8b0c500b" action="added" name="Nyttelast - Punktlaster" type="static" duration_class="permanent" />
-      <load_combination last_change="2025-01-16T13:40:55.066" guid="7c1ca90e-b75e-4df1-818e-88a5de00fe45" action="added" name="ULS (6.10a) - Dominerende egenlast" type="ultimate_ordinary">
-        <load_case gamma="1.2" guid="ab11db3a-918a-4851-bede-278db9580820" />
-        <load_case gamma="1.2" guid="8c7bdd47-3567-478a-9100-483e027c2cc0" />
-        <load_case gamma="1.2" guid="e9fc1348-b0ef-4609-8733-21d6295d270c" />
-        <load_case gamma="1.2" guid="42202b71-2078-4971-8747-574b4f0e4be3" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="16c875eb-487a-4e67-b079-2be7fe69f978" action="added" name="Egenlast - Repos" type="dead_load" duration_class="permanent" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="64df305b-0e31-4f84-934c-1bb08d945d34" action="added" name="Fri permanent last" type="static" duration_class="permanent" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="d669e490-c527-4089-990a-cd71b15ceb4c" action="added" name="Nyttelast - Repos" type="static" duration_class="permanent" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="e9a42f7d-6386-49f8-9d17-18b60d540396" action="added" name="Snelast" type="static" duration_class="permanent" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="f0f84625-573f-4af8-a905-e8a94a794193" action="added" name="Snelast - Ophobning" type="static" duration_class="permanent" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="73143f75-7091-44f8-ae97-d4312a364cbd" action="added" name="Egenlast - Linjelaster" type="static" duration_class="permanent" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="ed0579f8-0b5c-4171-ae42-1a8a8ac49454" action="added" name="Nyttelast - Linjelaster" type="static" duration_class="permanent" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="a92404e0-d78f-48b4-897d-33a6aea57328" action="added" name="Egenlast - Punktlaster" type="static" duration_class="permanent" />
+      <load_case last_change="2025-01-16T14:21:55.241" guid="b04b71fd-aaae-43a1-bc9f-8ecc3f626df7" action="added" name="Nyttelast - Punktlaster" type="static" duration_class="permanent" />
+      <load_combination last_change="2025-01-16T14:21:55.242" guid="a64de31e-16c4-4769-a0eb-ddeee00ad194" action="added" name="ULS (6.10a) - Dominerende egenlast" type="ultimate_ordinary">
+        <load_case gamma="1.2" guid="16c875eb-487a-4e67-b079-2be7fe69f978" />
+        <load_case gamma="1.2" guid="73143f75-7091-44f8-ae97-d4312a364cbd" />
+        <load_case gamma="1.2" guid="a92404e0-d78f-48b4-897d-33a6aea57328" />
+        <load_case gamma="1.2" guid="64df305b-0e31-4f84-934c-1bb08d945d34" />
       </load_combination>
-      <load_combination last_change="2025-01-16T13:40:55.066" guid="de22d08f-a4aa-4ac3-8bd9-1f879a20049b" action="added" name="ULS (6.10b) - Dominerende nyttelast" type="ultimate_ordinary">
-        <load_case gamma="1" guid="ab11db3a-918a-4851-bede-278db9580820" />
-        <load_case gamma="1" guid="42202b71-2078-4971-8747-574b4f0e4be3" />
-        <load_case gamma="1" guid="8c7bdd47-3567-478a-9100-483e027c2cc0" />
-        <load_case gamma="1" guid="e9fc1348-b0ef-4609-8733-21d6295d270c" />
-        <load_case gamma="1.5" guid="4fc01884-e01b-480d-9237-6f4214fbf554" />
-        <load_case gamma="1.5" guid="d3fc1b33-52c0-4600-a7d4-4c1b8872a33c" />
-        <load_case gamma="1.5" guid="e4ca800b-ddec-4335-874a-803d8b0c500b" />
-        <load_case gamma="0.45" guid="084312b3-b96e-4388-a017-7fcb828e552c" />
+      <load_combination last_change="2025-01-16T14:21:55.248" guid="2a3b5e41-e38e-4d73-a263-85f7866785db" action="added" name="ULS (6.10b) - Dominerende nyttelast" type="ultimate_ordinary">
+        <load_case gamma="1" guid="16c875eb-487a-4e67-b079-2be7fe69f978" />
+        <load_case gamma="1" guid="64df305b-0e31-4f84-934c-1bb08d945d34" />
+        <load_case gamma="1" guid="73143f75-7091-44f8-ae97-d4312a364cbd" />
+        <load_case gamma="1" guid="a92404e0-d78f-48b4-897d-33a6aea57328" />
+        <load_case gamma="1.5" guid="d669e490-c527-4089-990a-cd71b15ceb4c" />
+        <load_case gamma="1.5" guid="ed0579f8-0b5c-4171-ae42-1a8a8ac49454" />
+        <load_case gamma="1.5" guid="b04b71fd-aaae-43a1-bc9f-8ecc3f626df7" />
+        <load_case gamma="0.45" guid="e9a42f7d-6386-49f8-9d17-18b60d540396" />
       </load_combination>
-      <load_combination last_change="2025-01-16T13:40:55.066" guid="6c683ba8-de97-4390-9281-262782bc63b0" action="added" name="ULS (6.10b) - Sneophobning" type="ultimate_ordinary">
-        <load_case gamma="1" guid="ab11db3a-918a-4851-bede-278db9580820" />
-        <load_case gamma="1.5" guid="46719c8e-5c1e-48a0-af95-bf523eefb052" />
+      <load_combination last_change="2025-01-16T14:21:55.248" guid="f54909c8-8cf6-47dd-b621-cf731950d740" action="added" name="ULS (6.10b) - Sneophobning" type="ultimate_ordinary">
+        <load_case gamma="1" guid="16c875eb-487a-4e67-b079-2be7fe69f978" />
+        <load_case gamma="1.5" guid="f0f84625-573f-4af8-a905-e8a94a794193" />
       </load_combination>
-      <load_combination last_change="2025-01-16T13:40:55.066" guid="d51a0dc8-9f0d-4eaa-b864-514f53f1fb22" action="added" name="SLS - Kvasi-permanent" type="serviceability_quasi_permanent">
-        <load_case gamma="1" guid="ab11db3a-918a-4851-bede-278db9580820" />
-        <load_case gamma="1" guid="42202b71-2078-4971-8747-574b4f0e4be3" />
-        <load_case gamma="1" guid="8c7bdd47-3567-478a-9100-483e027c2cc0" />
-        <load_case gamma="1" guid="e9fc1348-b0ef-4609-8733-21d6295d270c" />
-        <load_case gamma="0.20000000298023224" guid="4fc01884-e01b-480d-9237-6f4214fbf554" />
-        <load_case gamma="0.20000000298023224" guid="d3fc1b33-52c0-4600-a7d4-4c1b8872a33c" />
-        <load_case gamma="0.20000000298023224" guid="e4ca800b-ddec-4335-874a-803d8b0c500b" />
+      <load_combination last_change="2025-01-16T14:21:55.248" guid="2d85788a-363d-45ae-b53d-65d12663b751" action="added" name="SLS - Kvasi-permanent" type="serviceability_quasi_permanent">
+        <load_case gamma="1" guid="16c875eb-487a-4e67-b079-2be7fe69f978" />
+        <load_case gamma="1" guid="64df305b-0e31-4f84-934c-1bb08d945d34" />
+        <load_case gamma="1" guid="73143f75-7091-44f8-ae97-d4312a364cbd" />
+        <load_case gamma="1" guid="a92404e0-d78f-48b4-897d-33a6aea57328" />
+        <load_case gamma="0.20000000298023224" guid="d669e490-c527-4089-990a-cd71b15ceb4c" />
+        <load_case gamma="0.20000000298023224" guid="ed0579f8-0b5c-4171-ae42-1a8a8ac49454" />
+        <load_case gamma="0.20000000298023224" guid="b04b71fd-aaae-43a1-bc9f-8ecc3f626df7" />
       </load_combination>
     </loads>
     <supports>
-      <point_support last_change="2025-01-16T13:40:55.065" guid="162094eb-a488-428c-a413-88ceaec6c655" action="added" name="@PS.5" stage="1">
+      <point_support last_change="2025-01-16T14:21:55.240" guid="04f16f70-0b6f-4625-ab7e-7aa0dac81ce6" action="added" name="@PS.1" stage="1">
         <group>
           <local_x x="1" y="0" z="0" />
           <local_y x="0" y="1" z="0" />
@@ -732,7 +732,7 @@
         </group>
         <position x="0" y="0.15" z="0" />
       </point_support>
-      <line_support last_change="2025-01-16T13:40:55.065" guid="4c53472a-96eb-48a9-be73-5605a054ba30" action="added" name="@S.6" moving_local="false" stage="1">
+      <line_support last_change="2025-01-16T14:21:55.241" guid="2f631ed6-f5c5-45cb-8604-e61f53992c2c" action="added" name="@S.2" moving_local="false" stage="1">
         <group>
           <local_x x="1" y="0" z="0" />
           <local_y x="-0" y="1" z="-0" />
@@ -749,7 +749,7 @@
         </edge>
         <normal x="1" y="0" z="0" />
       </line_support>
-      <line_support last_change="2025-01-16T13:40:55.066" guid="aa962a63-50ac-40c2-a7a2-d887e63fb0f3" action="added" name="@S.7" moving_local="false" stage="1">
+      <line_support last_change="2025-01-16T14:21:55.241" guid="6cde72fe-253a-4c57-ad6a-bdbb7f24b7a8" action="added" name="@S.3" moving_local="false" stage="1">
         <group>
           <local_x x="1" y="0" z="0" />
           <local_y x="-0" y="1" z="-0" />
@@ -771,7 +771,7 @@
   </entities>
   <sections />
   <materials>
-    <material last_change="2025-01-16T13:40:55.064" guid="66c05309-a399-4ba1-ba2a-9e2485c6fe33" action="modified" standard="EC" country="S" name="C35/45">
+    <material last_change="2025-01-16T14:21:55.235" guid="66c05309-a399-4ba1-ba2a-9e2485c6fe33" action="modified" standard="EC" country="S" name="C35/45">
       <concrete mass="2.54842" E_0="0" E_1="0" E_2="0" nu_0="0" nu_1="0" nu_2="0" alfa_0="0" alfa_1="0" alfa_2="0" G_0="0" G_1="0" G_2="0" Fck="35" Fck_cube="45" Fctk="2.2" Fctm="3.2" Ecm="34000" gammaC_0="1.4" gammaC_1="1.2" gammaCE="1.2" gammaS_0="1.2" gammaS_1="1.15" alfaCc="1" alfaCt="1" Fcd_0="0" Fcd_1="29.1666666666667" Fctd_0="0" Fctd_1="1.83333333333333" Ecd_0="0" Ecd_1="28333.3333333333" Epsc2="0.002" Epscu2="0.0035" Epsc3="0.00175" Epscu3="0.0035" environment="0" creep="0" creep_sls="3" creep_slf="3" creep_slc="3" shrinkage="0" nu="0.2" alfa="0.00001">
         <plastic_analysis_data>
           <U elasto_plastic_behaviour="false" plastic_hardening="true" concrete_crushing="true" concrete_crushing_option="Prager" tension_strength="true" tension_stiffening="true" tension_stiffening_option="Hinton" tension_stiffening_param="0.5" reduced_compression_strength="true" reduced_compression_strength_option="Vecchio 1" reduced_compression_strength_param="0.55" reduced_transverse_shear_stiffnes="false" ultimate_strain="true" />
@@ -783,7 +783,7 @@
     </material>
   </materials>
   <reinforcing_materials>
-    <material last_change="2025-01-16T13:40:55.066" guid="0d94ddc2-3f19-486d-988e-d32f6a47fc82" action="modified" standard="EC" country="DK" name="K">
+    <material last_change="2025-01-16T14:21:55.261" guid="0d94ddc2-3f19-486d-988e-d32f6a47fc82" action="modified" standard="EC" country="DK" name="K">
       <reinforcing_steel fyk="500" Es="200000" Epsilon_uk="0.05" Epsilon_ud="0.045" k="1.08" />
     </material>
   </reinforcing_materials>
@@ -791,7 +791,7 @@
   <line_connection_types />
   <ptc_strand_types />
   <geometry>
-    <linear_dimension guid="8b4938c1-8fde-4d92-9aaf-1c709b04a4d0" last_change="2025-01-16T13:40:55.066" action="added">
+    <linear_dimension guid="7bc9514c-5080-4627-a063-053f486bb4a3" last_change="2025-01-16T14:21:55.305" action="added">
       <point x="0" y="0" z="0" />
       <point x="0" y="0.3" z="0" />
       <position x="0" y="0" z="0" />
@@ -807,7 +807,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="b610b302-25ea-48e5-8602-e32ca6e91296" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="21577d61-b7f6-479c-b776-d482c749e33e" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="0" y="0.3" z="0" />
       <point x="0.291" y="0.3" z="0" />
       <position x="0" y="0.3" z="0" />
@@ -823,7 +823,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="4bcf2a17-ed2e-44d0-ad8b-ee07d67263b7" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="213eecf7-8bc7-4830-9ecd-375cfbc3a6af" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="0.291" y="0.3" z="0" />
       <point x="0.291" y="2.699" z="0" />
       <position x="0.291" y="0.3" z="0" />
@@ -839,7 +839,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="fa6f91e5-8dec-4964-a280-bd041c645969" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="3f9c8efe-a0fa-4a64-a60d-7cee7190e29c" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="0.291" y="2.699" z="0" />
       <point x="2.66" y="2.699" z="0" />
       <position x="0.291" y="2.699" z="0" />
@@ -855,7 +855,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="20026635-6b20-46ff-9003-5ad9cd661521" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="8bbdcd59-b366-430b-9bba-bd902b062c4f" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="2.66" y="2.699" z="0" />
       <point x="2.66" y="1.06" z="0" />
       <position x="2.66" y="2.699" z="0" />
@@ -871,7 +871,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="ab2309e2-dcf6-4e18-bb62-697c149dd0e2" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="af470bb2-373d-4c00-a1a9-9b12d349e6e6" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="2.66" y="1.06" z="0" />
       <point x="2.94" y="1.06" z="0" />
       <position x="2.66" y="1.06" z="0" />
@@ -887,7 +887,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="ae4c69e6-5b09-4f02-b741-dc83d1286b9c" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="71ca0686-0ce6-4a52-8b76-294c1d9410de" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="2.94" y="1.06" z="0" />
       <point x="2.94" y="-0.431" z="0" />
       <position x="2.94" y="1.06" z="0" />
@@ -903,7 +903,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="d660d750-070c-4c3a-b6f2-a7f3084a7c50" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="c81f245e-6a25-43a5-9bb9-e79051ee86fe" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="2.94" y="-0.431" z="0" />
       <point x="1.952" y="-0.431" z="0" />
       <position x="2.94" y="-0.431" z="0" />
@@ -919,7 +919,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="e93ae501-f4b2-4af3-939f-1c769a0f971c" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="71758779-b3cd-4e32-99cd-07e5d84aef0b" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="1.952" y="-0.431" z="0" />
       <point x="1.952" y="0" z="0" />
       <position x="1.952" y="-0.431" z="0" />
@@ -935,7 +935,7 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="6ba6fc2e-fddd-437a-b96c-78ac280fd11f" last_change="2025-01-16T13:40:55.067" action="added">
+    <linear_dimension guid="e7057201-dba0-4189-975d-0b1a72dc9dcf" last_change="2025-01-16T14:21:55.31" action="added">
       <point x="1.952" y="0" z="0" />
       <point x="0" y="0" z="0" />
       <position x="1.952" y="0" z="0" />

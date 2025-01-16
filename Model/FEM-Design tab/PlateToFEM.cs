@@ -7,6 +7,7 @@ using FemDesign.Loads;
 using FemDesign.Materials;
 using FemDesign.Reinforcement;
 using FemDesign.Supports;
+using Microsoft.Office.Interop.Excel;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
@@ -140,17 +141,17 @@ namespace Dalton_Trapper.Model
             if (_environmentClass == "Agressiv")
             {
                 w_max = Math.Round(0.30f, 2);
-                config_wk_filepath = System.IO.Path.Combine("Model", "cfg_Agressiv.xml");
+                config_wk_filepath = "Model\\FEM-Design tab\\cfg_Agressiv.xml";
             }
             else if (_environmentClass == "EkstraAgressiv")
             {
                 w_max = Math.Round(0.20f, 2);
-                config_wk_filepath = System.IO.Path.Combine("Model", "cfg_EkstraAgressiv.xml");
+                config_wk_filepath = "Model\\FEM-Design tab\\cfg_EkstraAgressiv.xml";
             }
             else
             {
                 w_max = Math.Round(0.40f, 2);
-                config_wk_filepath = System.IO.Path.Combine("Model", "cfg_Standard.xml");
+                config_wk_filepath = "Model\\FEM-Design tab\\cfg_Standard.xml";
             }
 
 

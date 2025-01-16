@@ -30,9 +30,11 @@
     <None Remove="View\Icons\add_icon.png" />
     <None Remove="View\Icons\delete_icon.png" />
     <None Remove="View\Icons\excel_icon.png" />
+    <None Remove="View\Icons\FEM-Design_icon.png" />
     <None Remove="View\Icons\folder_icon.png" />
     <None Remove="View\Icons\pdf_icon.png" />
     <None Remove="View\Icons\question_mark_icon.png" />
+    <None Remove="View\Icons\word_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -93,9 +95,11 @@
     <Resource Include="View\Icons\add_icon.png" />
     <Resource Include="View\Icons\delete_icon.png" />
     <Resource Include="View\Icons\excel_icon.png" />
+    <Resource Include="View\Icons\FEM-Design_icon.png" />
     <Resource Include="View\Icons\folder_icon.png" />
     <Resource Include="View\Icons\pdf_icon.png" />
     <Resource Include="View\Icons\question_mark_icon.png" />
+    <Resource Include="View\Icons\word_icon.png" />
   </ItemGroup>
 
 </Project>

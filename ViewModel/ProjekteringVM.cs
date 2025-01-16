@@ -7,6 +7,7 @@ using System.Windows.Input;
 using ImportExport = Dalton_Trapper.Model.Projektering_tab.ImportExport;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Runtime.InteropServices;
+using System.Windows.Controls;
 
 namespace Dalton_Trapper.ViewModel
 {
@@ -22,8 +23,9 @@ namespace Dalton_Trapper.ViewModel
             MiljøklasseListe = new ObservableCollection<string> { "", "Passiv", "Moderat", "Agressiv", "Ekstra Agressiv" };
             SelectedDrawings = new ObservableCollection<Drawing>();
 
-            // Commands
+            // Commands           
             OpenDrawingCommand = new RelayCommand(OpenDrawing);
+            OpenSelectedDrawingsCommand = new RelayCommand(_ => ExecuteOpenSelectedDrawings(), _ => CanExecuteOpenSelectedDrawings());
             CommandBeregningsark = new RelayCommand(OpenBeregningsark);
             CommandDorneBrand = new RelayCommand(OpenDorneBrand);
             CommandCRHDokumentation = new RelayCommand(OpenCRHDokumentation);
@@ -45,6 +47,7 @@ namespace Dalton_Trapper.ViewModel
 
         #region Commands
         public ICommand OpenDrawingCommand { get; set; }
+        public ICommand OpenSelectedDrawingsCommand { get; set; }
         public ICommand CommandBeregningsark { get; set; }
         public ICommand CommandDorneBrand { get; set; }
         public ICommand CommandCRHDokumentation { get; set; }
@@ -61,6 +64,16 @@ namespace Dalton_Trapper.ViewModel
         public ICommand OpretDetaljeCommand { get; set; }
         public ICommand OpretPladeCommand { get; set; }
         public ICommand CopyDrawingsCommand { get; set; }
+
+        private void ExecuteOpenSelectedDrawings()
+        {
+            foreach (var item in SelectedDrawings)
+            {
+                    OpenDrawing(item);
+            }
+        }
+
+        private bool CanExecuteOpenSelectedDrawings() => SelectedDrawings?.Count > 0;
 
         private void OpenDrawing(object parameter)
         {

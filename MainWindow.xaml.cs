@@ -12,7 +12,8 @@ namespace Dalton_Trapper
         public MainWindow()
         {
             InitializeComponent();
-            AppVersion.Text = PublishVersion.GetVersion();
+            string version = PublishVersion.GetVersion();
+            AppVersion.Text = version.Remove(version.Length - 2, 2);
         }
 
         private void CloseApp_Click(object sender, RoutedEventArgs e)

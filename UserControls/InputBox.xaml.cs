@@ -1,5 +1,7 @@
-﻿using System.Windows;
+﻿using Dalton_Trapper.Utilities;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace Dalton_Trapper.UserControls
 {

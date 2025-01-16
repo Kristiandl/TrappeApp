@@ -1,4 +1,6 @@
 ﻿using System.Collections.ObjectModel;
+using System.Windows.Input;
+using System.Windows;
 
 namespace Dalton_Trapper.Model.Projektering_tab
 {

@@ -5,6 +5,7 @@ namespace Dalton_Trapper.Utilities
 {
     public static class ListViewBehaviors
     {
+        // Double-click command property
         public static readonly DependencyProperty DoubleClickCommandProperty =
             DependencyProperty.RegisterAttached(
                 "DoubleClickCommand",
@@ -38,6 +39,44 @@ namespace Dalton_Trapper.Utilities
                 };
             }
         }
+
+
+        // Enter key command property
+        public static readonly DependencyProperty EnterKeyCommandProperty =
+            DependencyProperty.RegisterAttached(
+                "EnterKeyCommand",
+                typeof(ICommand),
+                typeof(ListViewBehaviors),
+                new PropertyMetadata(null, OnEnterKeyCommandChanged));
+
+        public static ICommand GetEnterKeyCommand(DependencyObject obj) =>
+            (ICommand)obj.GetValue(EnterKeyCommandProperty);
+
+        public static void SetEnterKeyCommand(DependencyObject obj, ICommand value) =>
+            obj.SetValue(EnterKeyCommandProperty, value);
+
+        private static void OnEnterKeyCommandChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is UIElement element)
+            {
+                element.KeyDown += (sender, args) =>
+                {
+                    if (args.Key == Key.Enter)
+                    {
+                        var command = GetEnterKeyCommand(d);
+                        if (command?.CanExecute(null) == true)
+                        {
+                            var listView = sender as System.Windows.Controls.ListView;
+                            var selectedItems = listView?.SelectedItems;
+
+                            if (selectedItems != null && selectedItems.Count > 0)
+                            {
+                                command.Execute(selectedItems);
+                            }
+                        }
+                    }
+                };
+            }
+        }
     }
 }
-

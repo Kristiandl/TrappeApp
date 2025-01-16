@@ -25,6 +25,14 @@ namespace Dalton_Trapper.Utilities
             {
                 return new BitmapImage(new Uri("pack://application:,,,/View/Icons/excel_icon.png"));
             }
+            else if (extension == ".docx")
+            {
+                return new BitmapImage(new Uri("pack://application:,,,/View/Icons/word_icon.png"));
+            }
+            else if (extension == ".str")
+            {
+                return new BitmapImage(new Uri("pack://application:,,,/View/Icons/FEM-Design_icon.png"));
+            }
             else 
             {
                 return new BitmapImage(new Uri("pack://application:,,,/View/Icons/question_mark_icon.png"));

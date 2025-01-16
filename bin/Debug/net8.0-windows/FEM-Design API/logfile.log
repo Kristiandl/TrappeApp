@@ -2640,3 +2640,178 @@ t: 12/16 08.37.42.113
 Script file finished
 step: cmdchild
 Script file finished
+step: cmdopen
+t: 01/16 14.33.05.591
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 01/16 14.33.08.270
+Script file finished
+step: cmdconfig
+t: 01/16 14.33.09.113
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 01/16 14.33.09.121
+Script file finished
+step: cmdconfig
+t: 01/16 14.33.09.510
+cmdconfig:'$ MODULECOM APPLYCFG'
+error reading cfg file
+t: 01/16 14.33.09.512
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 01/16 14.33.09.918
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 01/16 14.33.09.921
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 01/16 14.33.10.404
+cmdcalculation:'; CXL $MODULE CALC'
+t: 01/16 14.33.19.520
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 01/16 14.33.20.096
+cmdcalculation:'; CXL $MODULE CALC'
+t: 01/16 14.33.20.954
+Script file finished
+step: cmdlistgen
+t: 01/16 14.33.21.049
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.33.21.163
+step: cmdlistgen
+t: 01/16 14.33.21.163
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.33.21.195
+Script file finished
+step: cmdlistgen
+t: 01/16 14.33.21.527
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.33.21.533
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 01/16 14.35.42.242
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 01/16 14.35.44.802
+Script file finished
+step: cmdconfig
+t: 01/16 14.35.45.575
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 01/16 14.35.45.585
+Script file finished
+step: cmdconfig
+t: 01/16 14.35.45.977
+cmdconfig:'$ MODULECOM APPLYCFG'
+error reading cfg file
+t: 01/16 14.35.45.986
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 01/16 14.35.46.384
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 01/16 14.35.46.384
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 01/16 14.35.46.886
+cmdcalculation:'; CXL $MODULE CALC'
+t: 01/16 14.35.56.212
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 01/16 14.35.56.753
+cmdcalculation:'; CXL $MODULE CALC'
+t: 01/16 14.35.57.681
+Script file finished
+step: cmdlistgen
+t: 01/16 14.35.57.736
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.35.57.846
+step: cmdlistgen
+t: 01/16 14.35.57.846
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.35.57.875
+Script file finished
+step: cmdlistgen
+t: 01/16 14.35.58.203
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.35.58.210
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 01/16 14.41.10.776
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 01/16 14.41.13.374
+Script file finished
+step: cmdconfig
+t: 01/16 14.41.14.172
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 01/16 14.41.14.188
+Script file finished
+step: cmdconfig
+t: 01/16 14.41.14.584
+cmdconfig:'$ MODULECOM APPLYCFG'
+error reading cfg file
+t: 01/16 14.41.14.584
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 01/16 14.41.14.990
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 01/16 14.41.14.990
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 01/16 14.41.15.467
+cmdcalculation:'; CXL $MODULE CALC'
+Warning: Load mismatch. This part (0.02000/1.060 m) of line load is outside of structure therefore this part will be ignored.
+Load case: Egenlast - Linjelaster
+Global coordinates: X=2.940 m, Y=1.070 m, Z=0.000 m.
+Warning: Load mismatch. This part (0.02000/1.060 m) of line load is outside of structure therefore this part will be ignored.
+Load case: Nyttelast - Linjelaster
+Global coordinates: X=2.940 m, Y=1.070 m, Z=0.000 m.
+Warning: Load mismatch. 0.0400/4.24 m length of line loads is outside of structure therefore it will be ignored. Maximal length of a line load outside of structure is 0.0200 m.
+t: 01/16 14.41.25.292
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 01/16 14.41.25.825
+cmdcalculation:'; CXL $MODULE CALC'
+t: 01/16 14.41.26.743
+Script file finished
+step: cmdlistgen
+t: 01/16 14.41.26.820
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.41.26.912
+step: cmdlistgen
+t: 01/16 14.41.26.912
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.41.26.940
+Script file finished
+step: cmdlistgen
+t: 01/16 14.41.27.271
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 01/16 14.41.27.280
+Script file finished
+step: cmdchild
+Script file finished

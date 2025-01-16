@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Name="Root"
              Height="Auto" Width="auto">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="{Binding LabelWidth, ElementName=Root}" />

@@ -53,13 +53,14 @@
                 </TextBlock>
                 <TextBlock Text="Opret ny beregning" Style="{StaticResource Text_Style_TabText_Header}"/>
             </StackPanel>
-            
+
             <!-- Midtersektion - Indhold -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,25" >
                 <StackPanel Orientation="Vertical" Margin="0,0,58,0">
                     <StackPanel Orientation="Horizontal">
                         <ListView ItemsSource="{Binding Drawings}" Width="240" Height="400" 
                                   Background="#444554" Foreground="#DBDBDB" BorderBrush="Black"
+                                  util:ListViewBehaviors.EnterKeyCommand="{Binding OpenSelectedDrawingsCommand}" 
                                   ItemContainerStyle="{StaticResource listViewDoubleClick}"
                                   SelectionMode="Extended" 
                                   util:ListViewMultiSelectHelper.SelectedItems="{Binding SelectedDrawings, Mode=TwoWay}">
@@ -86,15 +87,15 @@
                                     Style="{StaticResource ButtonStyle}" ToolTip="Gå ét trin op i mappestruktur"/>
                             <Button Content="->" Command="{Binding CopyDrawingsCommand}" 
                                     Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,0"
-                                    Style="{StaticResource ButtonStyle}" ToolTip="Kopier markerede pdf'er til valgte beregningsmappe"/>  
+                                    Style="{StaticResource ButtonStyle}" ToolTip="Kopier markerede pdf'er til valgte beregningsmappe"/>
                         </StackPanel>
-                        
+
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Margin="0,0,55,0">
                     <StackPanel Orientation="Horizontal">
                         <ListView ItemsSource="{Binding Calculations}" Width="430" Height="400" 
-                                  Background="#444554" Foreground="#DBDBDB" BorderBrush="Black"
+                                  Background="#444554" Foreground="#DBDBDB" BorderBrush="Black" 
                                   ItemContainerStyle="{StaticResource listViewDoubleClick}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>

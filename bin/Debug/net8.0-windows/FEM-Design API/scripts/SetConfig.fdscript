@@ -6,8 +6,8 @@
     <module>SFRAME</module>
     <logfile>C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\FEM-Design API\logfile.log</logfile>
   </fdscriptheader>
-  <cmdprojdescr command="$ MODULECOM PROJDESCR" read="0" reset="0" szProject="Brabrandhus" szDescription="" szDesigner="KDL" szSignature="" szComment="">
-    <item id="Project No.:" txt="740344" />
-    <item id="Published date" txt="16-12-2024" />
+  <cmdprojdescr command="$ MODULECOM PROJDESCR" read="0" reset="0" szProject="ggg" szDescription="" szDesigner="KDL" szSignature="" szComment="">
+    <item id="Project No.:" txt="346" />
+    <item id="Published date" txt="16-01-2025" />
   </cmdprojdescr>
 </fdscript>

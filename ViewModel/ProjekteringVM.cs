@@ -22,10 +22,12 @@ namespace Dalton_Trapper.ViewModel
             KonsekvensklasseListe = new ObservableCollection<string> { "", "CC2", "CC3" };
             MiljøklasseListe = new ObservableCollection<string> { "", "Passiv", "Moderat", "Agressiv", "Ekstra Agressiv" };
             SelectedDrawings = new ObservableCollection<Drawing>();
+            SelectedCalculations = new ObservableCollection<Calculation>();
 
             // Commands           
             OpenDrawingCommand = new RelayCommand(OpenDrawing);
             OpenSelectedDrawingsCommand = new RelayCommand(_ => ExecuteOpenSelectedDrawings(), _ => CanExecuteOpenSelectedDrawings());
+            OpenSelectedCalculationsCommand = new RelayCommand(_ => ExecuteOpenSelectedCalculations(), _ => CanExecuteOpenSelectedCalculations());
             CommandBeregningsark = new RelayCommand(OpenBeregningsark);
             CommandDorneBrand = new RelayCommand(OpenDorneBrand);
             CommandCRHDokumentation = new RelayCommand(OpenCRHDokumentation);
@@ -48,6 +50,7 @@ namespace Dalton_Trapper.ViewModel
         #region Commands
         public ICommand OpenDrawingCommand { get; set; }
         public ICommand OpenSelectedDrawingsCommand { get; set; }
+        public ICommand OpenSelectedCalculationsCommand { get; set; }
         public ICommand CommandBeregningsark { get; set; }
         public ICommand CommandDorneBrand { get; set; }
         public ICommand CommandCRHDokumentation { get; set; }
@@ -74,6 +77,16 @@ namespace Dalton_Trapper.ViewModel
         }
 
         private bool CanExecuteOpenSelectedDrawings() => SelectedDrawings?.Count > 0;
+
+        private void ExecuteOpenSelectedCalculations()
+        {
+            foreach (var item in SelectedCalculations)
+            {
+                OpenDrawing(item);
+            }
+        }
+
+        private bool CanExecuteOpenSelectedCalculations() => SelectedCalculations?.Count > 0;
 
         private void OpenDrawing(object parameter)
         {
@@ -110,6 +123,7 @@ namespace Dalton_Trapper.ViewModel
 
             }
         }
+
         private void OpenBeregningsark(object parameter)
         {
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
@@ -351,7 +365,7 @@ namespace Dalton_Trapper.ViewModel
             }
             else if (type == "Repos")
             {
-                string sheet = "Model\\Projektering tab\\Beregningsark\\reposEC_v2010141 rev 09012023.xlsm";
+                string sheet = "Model\\Projektering tab\\Beregningsark\\reposEC_v2010141 rev 17012025.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Repos}.xlsm");
 
@@ -378,7 +392,7 @@ namespace Dalton_Trapper.ViewModel
             }
             else if (type == "Knækløb")
             {
-                string sheet = "Model\\Projektering tab\\Beregningsark\\LobrepEC_190701 rev 09012023.xlsm";
+                string sheet = "Model\\Projektering tab\\Beregningsark\\LobrepEC_190701 rev 17012025.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Knækløb}.xlsm");
 
@@ -532,6 +546,14 @@ namespace Dalton_Trapper.ViewModel
             get { return selectedDrawings ?? (selectedDrawings = new ObservableCollection<Drawing>()); }
 
             set { selectedDrawings = value; }
+        }
+
+        private ObservableCollection<Calculation> selectedCalculations;
+        public ObservableCollection<Calculation> SelectedCalculations
+        {
+            get { return selectedCalculations ?? (selectedCalculations = new ObservableCollection<Calculation>()); }
+
+            set { selectedCalculations = value; }
         }
 
         private ObservableCollection<Calculation> calculations;

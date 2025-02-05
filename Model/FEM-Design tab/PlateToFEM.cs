@@ -411,9 +411,9 @@ namespace Dalton_Trapper.Model
                     NLSminloadstep = 10,
                     NLSactiveelemratio = 5,
                     NLSplasticelemratio = 5,
-                    CRloadstep = 20,
+                    CRloadstep = 5,
                     CRmaxiter = 30,
-                    CRstifferror = 2,
+                    CRstifferror = 1,
                     CombItem = combItems,
                 };
                 var analysis = Analysis.StaticAnalysis(comb, calcCase: true, calccomb: true);
@@ -532,7 +532,7 @@ namespace Dalton_Trapper.Model
                     using (var femDesign = new FemDesign.FemDesignConnection($@"C:\Program Files\StruSoft\FEM-Design 23\", _FEMInBg))
                     {
                         // Update meshsize and initialize model
-                        model.Entities.Slabs[0].SlabPart.MeshSize = thickness;
+                        model.Entities.Slabs[0].SlabPart.MeshSize = 0.15;
                         femDesign.Open(model);
 
                         // Sets the design module to calculate crack widths

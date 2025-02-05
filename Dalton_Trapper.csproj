@@ -21,7 +21,9 @@
     <None Remove="Model\cfg_EkstraAgressiv.xml" />
     <None Remove="Model\cfg_Standard.xml" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 17012025.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm" />
     <None Remove="Model\Projektering tab\Tjekliste.docx" />
     <None Remove="Model\Repos_Doc_Template - Deploy.dsc" />
@@ -65,10 +67,10 @@
     <Content Include="Model\FEM-Design tab\Repos_Doc_Template.dsc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm">
+    <Content Include="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm">
+    <Content Include="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 17012025.xlsm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm">

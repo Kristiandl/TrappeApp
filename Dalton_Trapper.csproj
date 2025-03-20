@@ -12,9 +12,12 @@
 
   <ItemGroup>
     <None Remove="Images\FCM_logo.png" />
+    <None Remove="Images\FCM_logo_og_agf.png" />
     <None Remove="Images\img_femdesign.png" />
     <None Remove="Images\img_home.png" />
     <None Remove="Images\img_projektering.png" />
+    <None Remove="Images\minimize_def.png" />
+    <None Remove="Images\minimize_mo.png" />
     <None Remove="Images\shutdown_def.png" />
     <None Remove="Images\shutdown_mo.png" />
     <None Remove="Model\cfg_Agressiv.xml" />
@@ -88,9 +91,12 @@
 
   <ItemGroup>
     <Resource Include="Images\FCM_logo.png" />
+    <Resource Include="Images\FCM_logo_og_agf.png" />
     <Resource Include="Images\img_femdesign.png" />
     <Resource Include="Images\img_home.png" />
     <Resource Include="Images\img_projektering.png" />
+    <Resource Include="Images\minimize_def.png" />
+    <Resource Include="Images\minimize_mo.png" />
     <Resource Include="Images\shutdown_def.png" />
     <Resource Include="Images\shutdown_mo.png" />
     <Resource Include="UserControls\ArrowDown.png" />

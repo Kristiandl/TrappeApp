@@ -8,6 +8,8 @@ using ImportExport = Dalton_Trapper.Model.Projektering_tab.ImportExport;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Runtime.InteropServices;
 using System.Windows.Controls;
+using Microsoft.Office.Interop.Excel;
+using Drawing = Dalton_Trapper.Model.Projektering_tab.Drawing;
 
 namespace Dalton_Trapper.ViewModel
 {
@@ -150,16 +152,43 @@ namespace Dalton_Trapper.ViewModel
 
             try
             {
-                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                string FileName = $"C:\\Users\\{user}\\Desktop\\CRHDokumentation.appref-ms";
+
+                // CRH Dokumentation ligger på skrivebordet, men stien dertil er forskellig alt efter om OneDrive gemmer skrivebordets indhold eller ej.
+                if (File.Exists(FileName)) // Ikke i OneDrive-mappen.
                 {
-                    FileName = $"C:\\Users\\{user}\\OneDrive - CRH\\Skrivebord\\CRHDokumentation.appref-ms",
-                    UseShellExecute = true,
-                    Verb = "open"
-                });
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                    {
+                        FileName = FileName,
+                        UseShellExecute = true,
+                        Verb = "open"
+                    });
+                }
+
+                //I OneDrive-mappen hvor skrivebordet er kaldet Desktop
+                else if (File.Exists($"C:\\Users\\{user}\\OneDrive - CRH\\Desktop\\CRHDokumentation.appref-ms"))
+                    {
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                    {
+                        FileName = $"C:\\Users\\{user}\\OneDrive - CRH\\Desktop\\CRHDokumentation.appref-ms",
+                        UseShellExecute = true,
+                        Verb = "open"
+                    });
+                }
+
+                else //I OneDrive-mappen hvor skrivebordet er kaldet Skrivebord
+                {
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                    {
+                        FileName = $"C:\\Users\\{user}\\OneDrive - CRH\\Skrivebord\\CRHDokumentation.appref-ms",
+                        UseShellExecute = true,
+                        Verb = "open"
+                    });
+                }
             }
             catch (Exception e)
             {
-                MessageBox.Show("Kan ikke finde åbne CRHDokumentation\n" +
+                MessageBox.Show("Kan ikke finde åbne CRHDokumentation.\n" +
                                 e.Message, "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }

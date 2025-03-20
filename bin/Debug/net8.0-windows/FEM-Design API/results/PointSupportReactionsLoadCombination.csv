@@ -1,32 +1,32 @@
 Point support group, Reactions, Load comb.: ULS (6.10a) - Dominerende egenlast
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.1	0.425	0.000	0.000	244	0.000	0.000	5.057	0.000	0.000	0.000	5.057	0.000	1 ULS (6.10a) - Dominerende egenlast
-PS.2	0.640	0.000	0.000	362	0.000	0.000	-18.207	0.000	0.000	0.000	18.207	0.000	1 ULS (6.10a) - Dominerende egenlast
-PS.3	-0.000	1.725	0.000	1	0.000	0.000	0.716	0.000	0.000	0.000	0.716	0.000	1 ULS (6.10a) - Dominerende egenlast
-PS.4	0.730	2.200	0.000	408	0.000	0.000	-17.585	0.000	0.000	0.000	17.585	0.000	1 ULS (6.10a) - Dominerende egenlast
+PS.1	0.425	0.000	0.000	208	0.000	0.000	-4.887	0.000	0.000	0.000	4.887	0.000	1 ULS (6.10a) - Dominerende egenlast
+PS.2	1.230	0.000	0.000	606	0.000	0.000	-12.678	0.000	0.000	0.000	12.678	0.000	1 ULS (6.10a) - Dominerende egenlast
+PS.3	0.515	2.200	0.000	280	0.000	0.000	-2.879	0.000	0.000	0.000	2.879	0.000	1 ULS (6.10a) - Dominerende egenlast
+PS.4	0.730	2.200	0.000	399	0.000	0.000	-13.807	0.000	0.000	0.000	13.807	0.000	1 ULS (6.10a) - Dominerende egenlast
 
 Point support group, Reactions, Load comb.: ULS (6.10b) - Dominerende nyttelast
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.1	0.425	0.000	0.000	244	0.000	0.000	8.586	0.000	0.000	0.000	8.586	0.000	2 ULS (6.10b) - Dominerende nyttelast
-PS.2	0.640	0.000	0.000	362	0.000	0.000	-32.008	0.000	0.000	0.000	32.008	0.000	2 ULS (6.10b) - Dominerende nyttelast
-PS.3	-0.000	1.725	0.000	1	0.000	0.000	0.814	0.000	0.000	0.000	0.814	0.000	2 ULS (6.10b) - Dominerende nyttelast
-PS.4	0.730	2.200	0.000	408	0.000	0.000	-30.944	0.000	0.000	0.000	30.944	0.000	2 ULS (6.10b) - Dominerende nyttelast
+PS.1	0.425	0.000	0.000	208	0.000	0.000	-8.848	0.000	0.000	0.000	8.848	0.000	2 ULS (6.10b) - Dominerende nyttelast
+PS.2	1.230	0.000	0.000	606	0.000	0.000	-23.644	0.000	0.000	0.000	23.644	0.000	2 ULS (6.10b) - Dominerende nyttelast
+PS.3	0.515	2.200	0.000	280	0.000	0.000	-5.092	0.000	0.000	0.000	5.092	0.000	2 ULS (6.10b) - Dominerende nyttelast
+PS.4	0.730	2.200	0.000	399	0.000	0.000	-25.843	0.000	0.000	0.000	25.843	0.000	2 ULS (6.10b) - Dominerende nyttelast
 
 Point support group, Reactions, Load comb.: ULS (6.10b) - Sneophobning
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.1	0.425	0.000	0.000	244	0.000	0.000	-1.108	0.000	0.000	0.000	1.108	0.000	3 ULS (6.10b) - Sneophobning
-PS.2	0.640	0.000	0.000	362	0.000	0.000	-4.501	0.000	0.000	0.000	4.501	0.000	3 ULS (6.10b) - Sneophobning
-PS.3	-0.000	1.725	0.000	1	0.000	0.000	-3.283	0.000	0.000	0.000	3.283	0.000	3 ULS (6.10b) - Sneophobning
-PS.4	0.730	2.200	0.000	408	0.000	0.000	-4.587	0.000	0.000	0.000	4.587	0.000	3 ULS (6.10b) - Sneophobning
+PS.1	0.425	0.000	0.000	208	0.000	0.000	-6.280	0.000	0.000	0.000	6.280	0.000	3 ULS (6.10b) - Sneophobning
+PS.2	1.230	0.000	0.000	606	0.000	0.000	-2.579	0.000	0.000	0.000	2.579	0.000	3 ULS (6.10b) - Sneophobning
+PS.3	0.515	2.200	0.000	280	0.000	0.000	-6.093	0.000	0.000	0.000	6.093	0.000	3 ULS (6.10b) - Sneophobning
+PS.4	0.730	2.200	0.000	399	0.000	0.000	-1.079	0.000	0.000	0.000	1.079	0.000	3 ULS (6.10b) - Sneophobning
 
 Point support group, Reactions, Load comb.: SLS - Kvasi-permanent
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.1	0.425	0.000	0.000	244	0.000	0.000	6.742	0.000	0.000	0.000	6.742	0.000	4 SLS - Kvasi-permanent
-PS.2	0.640	0.000	0.000	362	0.000	0.000	-21.785	0.000	0.000	0.000	21.785	0.000	4 SLS - Kvasi-permanent
-PS.3	-0.000	1.725	0.000	1	0.000	0.000	0.345	0.000	0.000	0.000	0.345	0.000	4 SLS - Kvasi-permanent
-PS.4	0.730	2.200	0.000	408	0.000	0.000	-19.830	0.000	0.000	0.000	19.830	0.000	4 SLS - Kvasi-permanent
+PS.1	0.425	0.000	0.000	208	0.000	0.000	-5.762	0.000	0.000	0.000	5.762	0.000	4 SLS - Kvasi-permanent
+PS.2	1.230	0.000	0.000	606	0.000	0.000	-14.826	0.000	0.000	0.000	14.826	0.000	4 SLS - Kvasi-permanent
+PS.3	0.515	2.200	0.000	280	0.000	0.000	-2.930	0.000	0.000	0.000	2.930	0.000	4 SLS - Kvasi-permanent
+PS.4	0.730	2.200	0.000	399	0.000	0.000	-16.652	0.000	0.000	0.000	16.652	0.000	4 SLS - Kvasi-permanent
 

@@ -411,9 +411,9 @@ namespace Dalton_Trapper.Model
                     NLSminloadstep = 10,
                     NLSactiveelemratio = 5,
                     NLSplasticelemratio = 5,
-                    CRloadstep = 5,
+                    CRloadstep = 10,
                     CRmaxiter = 30,
-                    CRstifferror = 1,
+                    CRstifferror = 2,
                     CombItem = combItems,
                 };
                 var analysis = Analysis.StaticAnalysis(comb, calcCase: true, calccomb: true);

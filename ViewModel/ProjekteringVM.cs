@@ -22,7 +22,7 @@ namespace Dalton_Trapper.ViewModel
 
             // Data lists
             KonsekvensklasseListe = new ObservableCollection<string> { "", "CC2", "CC3" };
-            MiljøklasseListe = new ObservableCollection<string> { "", "Passiv", "Moderat", "Agressiv", "Ekstra Agressiv" };
+            MiljøklasseListe = new ObservableCollection<string> { "", "Passiv", "Moderat", "Aggressiv", "Ekstra Aggressiv" };
             SelectedDrawings = new ObservableCollection<Drawing>();
             SelectedCalculations = new ObservableCollection<Calculation>();
 
@@ -36,6 +36,7 @@ namespace Dalton_Trapper.ViewModel
             CommandIngeniørEkstern = new RelayCommand(_ => OpenIngeniørEkstern(), _ => ProjectNumberEntered());
             CommandTjekliste = new RelayCommand(_ => OpenCreateTjekliste(), _ => ProjectNumberEntered());
             CommandBeregningsmappe = new RelayCommand(_ => OpenCalculationFolder(), _ => ProjectNumberEntered());
+            CommandTegningsmappe = new RelayCommand(_ => OpenDrawingFolder(), _ => ProjectNumberEntered());
             AddFoldersCommand = new RelayCommand(_ => AddFolders(), _ => CanAddFolders());
             GoUpDrawingCommand = new RelayCommand(_ => GoUpDrawings(), _ => !string.IsNullOrEmpty(CurrentDrawingFolder));
             GoUpCalculationCommand = new RelayCommand(_ => GoUpCalculations(), _ => !string.IsNullOrEmpty(CurrentCalculationFolder));
@@ -59,6 +60,7 @@ namespace Dalton_Trapper.ViewModel
         public ICommand CommandIngeniørEkstern { get; set; }
         public ICommand CommandTjekliste { get; set; }
         public ICommand CommandBeregningsmappe { get; set; }
+        public ICommand CommandTegningsmappe { get; set; }
         public ICommand GoUpDrawingCommand { get; set; }
         public ICommand GoUpCalculationCommand { get; set; }
         public ICommand AddFoldersCommand { get; set; }
@@ -238,6 +240,16 @@ namespace Dalton_Trapper.ViewModel
             });
         }
 
+        private void OpenDrawingFolder()
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+            {
+                FileName = CurrentDrawingFolder,
+                UseShellExecute = true,
+                Verb = "open"
+            });
+        }
+
         private bool ProjectNumberEntered()
         {
             return !string.IsNullOrWhiteSpace(ProjectInfo.ProjectNumber);
@@ -352,11 +364,11 @@ namespace Dalton_Trapper.ViewModel
             {
                 environmentClass = "M";
             }
-            else if (ProjectInfo.Miljøklasse == "Agressiv")
+            else if (ProjectInfo.Miljøklasse == "Aggressiv")
             {
                 environmentClass = "A";
             }
-            else if (ProjectInfo.Miljøklasse == "Ekstra Agressiv")
+            else if (ProjectInfo.Miljøklasse == "Ekstra Aggressiv")
             {
                 environmentClass = "E";
             }

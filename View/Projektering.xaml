@@ -45,7 +45,11 @@
 
             <!-- Midtersektion - overskrifter -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <TextBlock Text="Tegninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,257,0"/>
+                <TextBlock >
+                    <Hyperlink Command="{Binding CommandTegningsmappe}" TextDecorations="None">
+                        <TextBlock Text="Tegninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,257,0"/>
+                    </Hyperlink>
+                </TextBlock>
                 <TextBlock >
                     <Hyperlink Command="{Binding CommandBeregningsmappe}" TextDecorations="None">
                         <TextBlock Text="Beregninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,418,0"/>

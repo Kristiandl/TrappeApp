@@ -387,12 +387,12 @@
                                      IsChecked="{Binding SelectedEnvironmentClass, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Moderat}"
                                      GroupName="MK"/>
                             <RadioButton x:Name="AgressivMK" 
-                                     Content="Agressiv" 
+                                     Content="Aggressiv" 
                                      Style="{StaticResource RadioButtons}"
                                      IsChecked="{Binding SelectedEnvironmentClass, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Agressiv}"
                                      GroupName="MK"/>
                             <RadioButton x:Name="EkstraAgressivMK" 
-                                     Content="Ekstra agressiv" 
+                                     Content="Ekstra aggressiv" 
                                      Style="{StaticResource RadioButtons}"
                                      IsChecked="{Binding SelectedEnvironmentClass, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=EkstraAgressiv}"
                                      GroupName="MK"/>

@@ -768,6 +768,7 @@ namespace Dalton_Trapper.ViewModel
             string fileName = $"{ProjectInfo.ProjectNumber} TrappeApp Data.json";
             string fullPath = Path.Combine(folderPath, fileName);
             string drawingFolderPath = $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\07.Tegninger\\CRH-Projekt\\15 Trapper-Reposer og Skakte\\4 Færdige PDF tegninger";
+            string drawingFolderPath2 = $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\07.Tegninger\\1 - CRH-Projekt\\15 Trapper-Reposer og Skakte\\4 Færdige PDF tegninger";
             string calculationFolderPath = $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\09.Beregninger\\Elementstatik\\15 Trapper-Reposer og Skakte\\01 Styrkeberegninger";
             string calculationFolderPath2 = $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\09.Beregninger\\Elementstatik\\15 Trapper-Reposer og Skakte";
 
@@ -819,10 +820,31 @@ namespace Dalton_Trapper.ViewModel
                     Drawings.Add(drawing);
                 }
             }
-            catch (Exception e)
+
+            catch (Exception)
             {
-                MessageBox.Show("Kan ikke finde mappen: \"4 Færdige PDF tegninger\". Det kan skyldes en gammel mappestruktur på sagen.\n\n" +
-                                e.Message, "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                CurrentDrawingFolder = drawingFolderPath2;
+                try
+                {
+                    string[] directories = Directory.GetDirectories(drawingFolderPath2, "*", SearchOption.TopDirectoryOnly);
+                    foreach (string directory in directories)
+                    {
+                        var folder = new Drawing { FileName = Path.GetFileName(directory), FilePath = directory, IsFolder = true };
+                        Drawings.Add(folder);
+                    }
+
+                    string[] pdfFiles = Directory.GetFiles(drawingFolderPath2, "*pdf", SearchOption.TopDirectoryOnly);
+                    foreach (string file in pdfFiles)
+                    {
+                        var drawing = new Drawing { FileName = Path.GetFileName(file), FilePath = file, FileExtension = Path.GetExtension(file), IsFolder = false };
+                        Drawings.Add(drawing);
+                    }
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Kan ikke finde mappen: \"4 Færdige PDF tegninger\". Det kan skyldes en gammel mappestruktur på sagen.\n\n" + e.Message, 
+                        "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
 
 

@@ -34,11 +34,17 @@
     <None Remove="UserControls\ArrowDown.png" />
     <None Remove="View\Icons\add_icon.png" />
     <None Remove="View\Icons\delete_icon.png" />
+    <None Remove="View\Icons\delete_icon2.png" />
+    <None Remove="View\Icons\delete_icon2_disabled.png" />
+    <None Remove="View\Icons\delete_icon2_hover.png" />
     <None Remove="View\Icons\excel_icon.png" />
     <None Remove="View\Icons\FEM-Design_icon.png" />
     <None Remove="View\Icons\folder_icon.png" />
     <None Remove="View\Icons\pdf_icon.png" />
     <None Remove="View\Icons\question_mark_icon.png" />
+    <None Remove="View\Icons\switch_icon.png" />
+    <None Remove="View\Icons\switch_icon_disabled.png" />
+    <None Remove="View\Icons\switch_icon_hover.png" />
     <None Remove="View\Icons\word_icon.png" />
   </ItemGroup>
 
@@ -102,11 +108,17 @@
     <Resource Include="UserControls\ArrowDown.png" />
     <Resource Include="View\Icons\add_icon.png" />
     <Resource Include="View\Icons\delete_icon.png" />
+    <Resource Include="View\Icons\delete_icon2.png" />
+    <Resource Include="View\Icons\delete_icon2_disabled.png" />
+    <Resource Include="View\Icons\delete_icon2_hover.png" />
     <Resource Include="View\Icons\excel_icon.png" />
     <Resource Include="View\Icons\FEM-Design_icon.png" />
     <Resource Include="View\Icons\folder_icon.png" />
     <Resource Include="View\Icons\pdf_icon.png" />
     <Resource Include="View\Icons\question_mark_icon.png" />
+    <Resource Include="View\Icons\switch_icon.png" />
+    <Resource Include="View\Icons\switch_icon_disabled.png" />
+    <Resource Include="View\Icons\switch_icon_hover.png" />
     <Resource Include="View\Icons\word_icon.png" />
   </ItemGroup>
 

@@ -45,9 +45,9 @@
 
             <!-- Midtersektion - overskrifter -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <TextBlock >
+                <TextBlock Width="390">
                     <Hyperlink Command="{Binding CommandTegningsmappe}" TextDecorations="None">
-                        <TextBlock Text="Tegninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,257,0"/>
+                        <TextBlock Text="{Binding TegningerHeader}" Style="{StaticResource Text_Style_TabText_Header}" Margin="0"/>
                     </Hyperlink>
                 </TextBlock>
                 <TextBlock >
@@ -62,7 +62,7 @@
             <StackPanel Orientation="Horizontal" Margin="0,0,0,25" >
                 <StackPanel Orientation="Vertical" Margin="0,0,58,0">
                     <StackPanel Orientation="Horizontal">
-                        <ListView ItemsSource="{Binding Drawings}" Width="240" Height="400" 
+                        <ListView ItemsSource="{Binding Drawings}" Width="290" Height="400" 
                                   Background="#444554" Foreground="#DBDBDB" BorderBrush="Black"
                                   util:ListViewBehaviors.EnterKeyCommand="{Binding OpenSelectedDrawingsCommand}" 
                                   ItemContainerStyle="{StaticResource listViewDoubleClick}"
@@ -90,17 +90,22 @@
                                     Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
                                     Style="{StaticResource ButtonStyle}" ToolTip="Gå ét trin op i mappestruktur"/>
                             <Button Content="->" Command="{Binding CopyDrawingsCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
+                                    Style="{StaticResource ButtonStyle}" ToolTip="Kopier markerede filer til valgte beregningsmappe"/>
+                            <Button Command="{Binding SwitchDrawingFolderCommand}" 
                                     Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,0"
-                                    Style="{StaticResource ButtonStyle}" ToolTip="Kopier markerede pdf'er til valgte beregningsmappe"/>
+                                    ToolTip="Skifter imellem mapperne indeholdende rettede tegninger og færdige tegninger"
+                                    Style="{StaticResource ButtonStyleSwitch}">
+                            </Button>
                         </StackPanel>
-
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Margin="0,0,55,0">
                     <StackPanel Orientation="Horizontal">
                         <ListView ItemsSource="{Binding Calculations}" Width="430" Height="400" 
                                   Background="#444554" Foreground="#DBDBDB" BorderBrush="Black" 
-                                  ItemContainerStyle="{StaticResource listViewDoubleClick}">
+                                  ItemContainerStyle="{StaticResource listViewDoubleClick}"
+                                  util:ListViewMultiSelectHelper.SelectedItems="{Binding SelectedCalculations, Mode=TwoWay}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
@@ -123,8 +128,15 @@
                                     Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
                                     Style="{StaticResource ButtonStyle}" ToolTip="Gå ét trin op i mappestruktur"/>
                             <Button Content="+" Command="{Binding AddFoldersCommand}" 
-                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,0"
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
                                     Style="{StaticResource ButtonStyle}" ToolTip="Opret mappestruktur"/>
+                            <Button Content="&lt;-" Command="{Binding CopyCorrectedDrawingsCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
+                                    Style="{StaticResource ButtonStyle}" ToolTip="Kopier markerede filer til valgte tegningsmappe"/>
+                            <Button Command="{Binding DeleteCalculationItemCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,0"
+                                    ToolTip="Sletter markerede filer i den valgte beregningsmappe"
+                                    Style="{StaticResource ButtonStyleDelete}"/>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>

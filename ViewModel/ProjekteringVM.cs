@@ -2,14 +2,12 @@
 using Dalton_Trapper.Utilities;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
-using ImportExport = Dalton_Trapper.Model.Projektering_tab.ImportExport;
-using Excel = Microsoft.Office.Interop.Excel;
-using System.Runtime.InteropServices;
-using System.Windows.Controls;
-using Microsoft.Office.Interop.Excel;
 using Drawing = Dalton_Trapper.Model.Projektering_tab.Drawing;
+using Excel = Microsoft.Office.Interop.Excel;
+using ImportExport = Dalton_Trapper.Model.Projektering_tab.ImportExport;
 
 namespace Dalton_Trapper.ViewModel
 {
@@ -25,6 +23,7 @@ namespace Dalton_Trapper.ViewModel
             MiljøklasseListe = new ObservableCollection<string> { "", "Passiv", "Moderat", "Aggressiv", "Ekstra Aggressiv" };
             SelectedDrawings = new ObservableCollection<Drawing>();
             SelectedCalculations = new ObservableCollection<Calculation>();
+            TegningerHeader = "Tegninger";
 
             // Commands           
             OpenDrawingCommand = new RelayCommand(OpenDrawing);
@@ -41,6 +40,9 @@ namespace Dalton_Trapper.ViewModel
             GoUpDrawingCommand = new RelayCommand(_ => GoUpDrawings(), _ => !string.IsNullOrEmpty(CurrentDrawingFolder));
             GoUpCalculationCommand = new RelayCommand(_ => GoUpCalculations(), _ => !string.IsNullOrEmpty(CurrentCalculationFolder));
             CopyDrawingsCommand = new RelayCommand(_ => CopySelectedFiles(), _ => CanCopyFiles());
+            CopyCorrectedDrawingsCommand = new RelayCommand(_ => CopySelectedCalculationFiles(), _ => IsCalculationItemSelected());
+            SwitchDrawingFolderCommand = new RelayCommand(_ => SwitchDrawingFolder(), _ => CanSwitchDrawingFolder());
+            DeleteCalculationItemCommand = new RelayCommand(_ => DeleteCalculationItem(), _ => IsCalculationItemSelected());
 
             OpretLigeløbCommand = new RelayCommand(_ => OpretBeregning("Ligeløb"), _ => CanAddFiles(Ligeløb));
             OpretKnækløbCommand = new RelayCommand(_ => OpretBeregning("Knækløb"), _ => CanAddFiles(Knækløb));
@@ -71,6 +73,9 @@ namespace Dalton_Trapper.ViewModel
         public ICommand OpretDetaljeCommand { get; set; }
         public ICommand OpretPladeCommand { get; set; }
         public ICommand CopyDrawingsCommand { get; set; }
+        public ICommand CopyCorrectedDrawingsCommand { get; set; }
+        public ICommand SwitchDrawingFolderCommand { get; set; }
+        public ICommand DeleteCalculationItemCommand { get; set; }
 
         private void ExecuteOpenSelectedDrawings()
         {
@@ -263,6 +268,7 @@ namespace Dalton_Trapper.ViewModel
                 if (!string.IsNullOrEmpty(parentFolder) && Directory.Exists(parentFolder))
                 {
                     LoadFolderContents(parentFolder, "Drawing");
+                    SetDrawingHeader(CurrentDrawingFolder);
                 }
                 else
                 {
@@ -549,6 +555,104 @@ namespace Dalton_Trapper.ViewModel
 
             LoadFolderContents(CurrentCalculationFolder, "Calculation");
         }
+
+        private bool CanCopyFiles()
+        {
+            return SelectedDrawings.Any();
+        }
+
+        private void CopySelectedFiles()
+        {
+            if (!Directory.Exists(CurrentCalculationFolder))
+            {
+                Directory.CreateDirectory(CurrentCalculationFolder);
+            }
+
+            foreach (var drawing in SelectedDrawings)
+            {
+                try
+                {
+                    var fileName = drawing.FileName;
+                    var destFilePath = Path.Combine(CurrentCalculationFolder, fileName);
+
+                    // Copy the file
+                    File.Copy(drawing.FilePath, destFilePath, overwrite: false);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Kunne ikke kopiere {drawing}: {ex.Message}");
+                }
+            }
+
+            LoadFolderContents(CurrentCalculationFolder, "Calculation");
+        }
+
+        private bool IsCalculationItemSelected()
+        {
+            return SelectedCalculations.Any();
+        }
+
+        private void CopySelectedCalculationFiles()
+        {
+            foreach (var file in SelectedCalculations)
+            {
+                try
+                {
+                    var fileName = file.FileName;
+                    var destFilePath = Path.Combine(CurrentDrawingFolder, fileName);
+
+                    // Copy the file
+                    File.Copy(file.FilePath, destFilePath, overwrite: true);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Kunne ikke kopiere {file}: {ex.Message}");
+                }
+            }
+
+            LoadFolderContents(CurrentDrawingFolder, "Drawing");
+        }
+
+        private void SwitchDrawingFolder()
+        {
+            if (CurrentDrawingFolder == $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\09.Beregninger\\Elementstatik\\15 Trapper-Reposer og Skakte\\02 Rettede tegninger")
+            {
+                LoadFolderContents(BaseDrawingFolder, "Drawing");
+            }
+            else 
+            {
+                LoadFolderContents($"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\09.Beregninger\\Elementstatik\\15 Trapper-Reposer og Skakte\\02 Rettede tegninger", "Drawing");
+            }
+        }
+
+        private bool CanSwitchDrawingFolder()
+        {
+            if (ProjectNumberEntered() && Directory.Exists($"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\09.Beregninger\\Elementstatik\\15 Trapper-Reposer og Skakte\\02 Rettede tegninger"))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private void DeleteCalculationItem()
+        {
+            foreach (var file in SelectedCalculations)
+            {
+                try
+                {
+                    // Copy the file
+                    File.Delete(file.FilePath);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Kunne ikke slette {file}: {ex.Message}");
+                }
+            }
+
+            LoadFolderContents(CurrentCalculationFolder, "Calculation");
+        }
+
         #endregion
 
         #region Collections for user input
@@ -615,6 +719,20 @@ namespace Dalton_Trapper.ViewModel
                 {
                     _currentDrawingFolder = value;
                     OnPropertyChanged(nameof(CurrentDrawingFolder));
+                }
+            }
+        }
+
+        private String _baseDrawingFolder;
+        public String BaseDrawingFolder
+        {
+            get => _baseDrawingFolder;
+            set
+            {
+                if (_baseDrawingFolder != value)
+                {
+                    _baseDrawingFolder = value;
+                    OnPropertyChanged(nameof(BaseDrawingFolder));
                 }
             }
         }
@@ -713,6 +831,20 @@ namespace Dalton_Trapper.ViewModel
                 {
                     _plade = value;
                     OnPropertyChanged(nameof(Plade));
+                }
+            }
+        }
+
+        private String _tegningerHeader;
+        public String TegningerHeader
+        {
+            get => _tegningerHeader;
+            set
+            {
+                if (_tegningerHeader != value)
+                {
+                    _tegningerHeader = value;
+                    OnPropertyChanged(nameof(TegningerHeader));
                 }
             }
         }
@@ -819,6 +951,8 @@ namespace Dalton_Trapper.ViewModel
                     var drawing = new Drawing { FileName = Path.GetFileName(file), FilePath = file, FileExtension = Path.GetExtension(file), IsFolder = false };
                     Drawings.Add(drawing);
                 }
+                BaseDrawingFolder = drawingFolderPath;
+                SetDrawingHeader(drawingFolderPath);
             }
 
             catch (Exception)
@@ -839,6 +973,8 @@ namespace Dalton_Trapper.ViewModel
                         var drawing = new Drawing { FileName = Path.GetFileName(file), FilePath = file, FileExtension = Path.GetExtension(file), IsFolder = false };
                         Drawings.Add(drawing);
                     }
+                    BaseDrawingFolder = drawingFolderPath2;
+                    SetDrawingHeader(drawingFolderPath2);
                 }
                 catch (Exception e)
                 {
@@ -949,6 +1085,8 @@ namespace Dalton_Trapper.ViewModel
                         };
                         Drawings.Add(drawing);
                     }
+
+                    SetDrawingHeader(CurrentDrawingFolder);
                 }
                 catch (Exception e)
                 {
@@ -994,37 +1132,26 @@ namespace Dalton_Trapper.ViewModel
                 }
             }
         }
+
+        private void SetDrawingHeader(string folderPath)
+        {
+            // Hvis færdige tegninger
+            if (folderPath == $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\07.Tegninger\\CRH-Projekt\\15 Trapper-Reposer og Skakte\\4 Færdige PDF tegninger" 
+                || folderPath == $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\07.Tegninger\\1 - CRH-Projekt\\15 Trapper-Reposer og Skakte\\4 Færdige PDF tegninger")
+            {
+                TegningerHeader = "Færdige tegninger";
+            }
+            // Hvis rettede tegninger
+            else if (folderPath == $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\09.Beregninger\\Elementstatik\\15 Trapper-Reposer og Skakte\\02 Rettede tegninger") 
+            {
+                TegningerHeader = "Rettede tegninger";
+            }
+            // Alle andre tilfælde
+            else
+            {
+                TegningerHeader = "Tegninger";
+            }   
+        }
         #endregion
-
-        private bool CanCopyFiles()
-        {
-            return SelectedDrawings.Any();
-        }
-
-        private void CopySelectedFiles()
-        {
-            if (!Directory.Exists(CurrentCalculationFolder))
-            {
-                Directory.CreateDirectory(CurrentCalculationFolder);
-            }
-
-            foreach (var drawing in SelectedDrawings)
-            {
-                try
-                {
-                    var fileName = drawing.FileName;
-                    var destFilePath = Path.Combine(CurrentCalculationFolder, fileName);
-
-                    // Copy the file
-                    File.Copy(drawing.FilePath, destFilePath, overwrite: false);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Kunne ikke kopiere {drawing}: {ex.Message}");
-                }
-            }
-
-            LoadFolderContents(CurrentCalculationFolder, "Calculation");
-        }
     }
 }

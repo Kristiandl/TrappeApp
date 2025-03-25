@@ -143,45 +143,59 @@
                 <StackPanel Orientation="Vertical">
                     <StackPanel Orientation="Horizontal">
                         <uc:InputBox Label="Ligeløb" Text="{Binding Ligeløb, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                                     LabelWidth="150" InputWidth="140" Margin="0,0,20,0"/>
                         <Button Content="+" Command="{Binding OpretLigeløbCommand}" 
                                 Width="33" Height="33" VerticalAlignment="Center"
                                 Style="{StaticResource ButtonStyle}" ToolTip="Opret ligeløbsberegning"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <uc:InputBox Label="Knækløb" Text="{Binding Knækløb, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                                     LabelWidth="150" InputWidth="140" Margin="0,0,20,0"/>
                         <Button Content="+" Command="{Binding OpretKnækløbCommand}" 
                                 Width="33" Height="33" VerticalAlignment="Center"
                                 Style="{StaticResource ButtonStyle}" ToolTip="Opret knækløbsberegning"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <uc:InputBox Label="Repos" Text="{Binding Repos, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                                     LabelWidth="150" InputWidth="140" Margin="0,0,20,0"/>
                         <Button Content="+" Command="{Binding OpretReposCommand}" 
                                 Width="33" Height="33" VerticalAlignment="Center"
                                 Style="{StaticResource ButtonStyle}" ToolTip="Opret reposberegning"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <uc:InputBox Label="Svingløb" Text="{Binding Svingløb, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                                     LabelWidth="150" InputWidth="140" Margin="0,0,20,0"/>
                         <Button Content="+" Command="{Binding OpretSvingløbCommand}" 
                                 Width="33" Height="33" VerticalAlignment="Center"
                                 Style="{StaticResource ButtonStyle}" ToolTip="Opret svingløbsberegning"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <uc:InputBox Label="Detalje" Text="{Binding Detalje, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                                     LabelWidth="150" InputWidth="140" Margin="0,0,20,0"/>
                         <Button Content="+" Command="{Binding OpretDetaljeCommand}" 
                                 Width="33" Height="33" VerticalAlignment="Center"
                                 Style="{StaticResource ButtonStyle}" ToolTip="Opret detaljeberegning"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <uc:InputBox Label="Plade" Text="{Binding Plade, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                     LabelWidth="80" InputWidth="140" Margin="0,0,20,0"/>
+                                     LabelWidth="150" InputWidth="140" Margin="0,0,20,0"/>
                         <Button Content="+" Command="{Binding OpretPladeCommand}" 
                                 Width="33" Height="33" VerticalAlignment="Center"
                                 Style="{StaticResource ButtonStyle}" ToolTip="Opret pladeberegning uden naboelementer"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Vibrationskomfort" Text="{Binding Vibrationskomfort, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="150" InputWidth="140" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretVibrationskomfortCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret beregning til vibrationskomfort"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Rytmisk personlast" Text="{Binding RytmiskPersonlast, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="150" InputWidth="140" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretRytmiskPersonlastCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret beregning til rytmisk personlast"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>

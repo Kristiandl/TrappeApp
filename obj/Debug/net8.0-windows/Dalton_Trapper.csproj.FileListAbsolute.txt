@@ -113,3 +113,5 @@ C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\T
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 17012025.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\Projektering tab\Beregningsark\Rytmisk_personlast_bef.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm

@@ -50,6 +50,8 @@ namespace Dalton_Trapper.ViewModel
             OpretSvingløbCommand = new RelayCommand(_ => OpretBeregning("Svingløb"), _ => CanAddFiles(Svingløb));
             OpretDetaljeCommand = new RelayCommand(_ => OpretBeregning("Detalje"), _ => CanAddFiles(Detalje));
             OpretPladeCommand = new RelayCommand(_ => OpretBeregning("Plade"), _ => CanAddFiles(Plade));
+            OpretVibrationskomfortCommand = new RelayCommand(_ => OpretBeregning("Vibrationskomfort"), _ => CanAddFiles(Vibrationskomfort));
+            OpretRytmiskPersonlastCommand = new RelayCommand(_ => OpretBeregning("RytmiskPersonlast"), _ => CanAddFiles(RytmiskPersonlast));
         }
 
         #region Commands
@@ -72,6 +74,8 @@ namespace Dalton_Trapper.ViewModel
         public ICommand OpretSvingløbCommand { get; set; }
         public ICommand OpretDetaljeCommand { get; set; }
         public ICommand OpretPladeCommand { get; set; }
+        public ICommand OpretVibrationskomfortCommand { get; set; }
+        public ICommand OpretRytmiskPersonlastCommand { get; set; }
         public ICommand CopyDrawingsCommand { get; set; }
         public ICommand CopyCorrectedDrawingsCommand { get; set; }
         public ICommand SwitchDrawingFolderCommand { get; set; }
@@ -538,11 +542,67 @@ namespace Dalton_Trapper.ViewModel
                 worksheet.Cells[2, 3] = ProjectInfo.ProjectName;
                 worksheet.Cells[6, 3] = Plade;
                 worksheet.Cells[29, 9] = ProjectInfo.Konsekvensklasse == "" ? 2 : ProjectInfo.Konsekvensklasse.Substring(ProjectInfo.Konsekvensklasse.Length - 1, 1); // Consequence class
-                worksheet.Cells[52, 7] = ProjectInfo.Liveload == "5" ? "C" : "A"; // Liveload
+                worksheet.Cells[52, 7] = ProjectInfo.Liveload == "5" ? "C" : "A"; // Liveload category
+                worksheet.Cells[52, 8] = ProjectInfo.Liveload == "5" ? "5" : "3"; // Liveload intensity
                 worksheet.Cells[31, 9] = environmentClass;
                 worksheet.Cells[2, 10] = ProjectInfo.ProjectNumber;
 
                 Plade = "";
+            }
+            else if (type == "Vibrationskomfort")
+            {
+                string sheet = "Model\\Projektering tab\\Beregningsark\\Vibrationskomfort_ganglast_bef.xlsm";
+
+                string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Vibrationskomfort}.xlsm");
+
+                if (File.Exists(newFile))
+                {
+                    MessageBox.Show($"Filen '{Vibrationskomfort}.xlsm' eksisterer i forvejen. Vælg et andet navn.", "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                File.Copy(sheet, newFile);
+
+                // Updates the sheet with projectinformation
+                excelApp = new Excel.Application();
+                workbook = excelApp.Workbooks.Open(newFile);
+                for (int i = 3; i < 5; i++)
+                {
+                    worksheet = (Excel.Worksheet)workbook.Sheets[i];
+                    worksheet.Cells[4, 3] = ProjectInfo.ProjectName;
+                    worksheet.Cells[5, 3] = Vibrationskomfort;
+                    worksheet.Cells[4, 9] = ProjectInfo.ProjectNumber;
+                    worksheet.Cells[6, 3] = Environment.UserName.ToUpper();
+                }
+
+                Vibrationskomfort = "";
+            }
+            else if (type == "RytmiskPersonlast")
+            {
+                string sheet = "Model\\Projektering tab\\Beregningsark\\Rytmisk_personlast_bef.xlsm";
+
+                string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{RytmiskPersonlast}.xlsm");
+
+                if (File.Exists(newFile))
+                {
+                    MessageBox.Show($"Filen '{RytmiskPersonlast}.xlsm' eksisterer i forvejen. Vælg et andet navn.", "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                File.Copy(sheet, newFile);
+
+                // Updates the sheet with projectinformation
+                excelApp = new Excel.Application();
+                workbook = excelApp.Workbooks.Open(newFile);
+
+                worksheet = (Excel.Worksheet)workbook.Sheets[2];
+                worksheet.Cells[4, 3] = ProjectInfo.ProjectName;
+                worksheet.Cells[5, 3] = RytmiskPersonlast;
+                worksheet.Cells[4, 9] = ProjectInfo.ProjectNumber;
+                worksheet.Cells[6, 3] = Environment.UserName.ToUpper();
+
+
+                RytmiskPersonlast = "";
             }
 
             // Save, close and release objects
@@ -831,6 +891,34 @@ namespace Dalton_Trapper.ViewModel
                 {
                     _plade = value;
                     OnPropertyChanged(nameof(Plade));
+                }
+            }
+        }
+
+        private String _vibrationskomfort;
+        public String Vibrationskomfort
+        {
+            get => _vibrationskomfort;
+            set
+            {
+                if (_vibrationskomfort != value)
+                {
+                    _vibrationskomfort = value;
+                    OnPropertyChanged(nameof(Vibrationskomfort));
+                }
+            }
+        }
+
+        private String _rytmiskPersonlast;
+        public String RytmiskPersonlast
+        {
+            get => _rytmiskPersonlast;
+            set
+            {
+                if (_rytmiskPersonlast != value)
+                {
+                    _rytmiskPersonlast = value;
+                    OnPropertyChanged(nameof(RytmiskPersonlast));
                 }
             }
         }

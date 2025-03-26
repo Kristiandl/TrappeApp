@@ -8,6 +8,6 @@
   </fdscriptheader>
   <cmdprojdescr command="$ MODULECOM PROJDESCR" read="0" reset="0" szDescription="" szDesigner="KDL" szSignature="" szComment="">
     <item id="Project No.:" />
-    <item id="Published date" txt="12-03-2025" />
+    <item id="Published date" txt="26-03-2025" />
   </cmdprojdescr>
 </fdscript>

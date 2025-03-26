@@ -15878,3 +15878,364 @@ t: 02/05 09.42.31.499
 cmddocitem:'; CXL $MODULE DOCTABLE'
 t: 02/05 09.42.31.647
 step: cmdendsession
+step: cmddocitem
+t: 03/26 10.59.52.709
+cmddocitem:'; CXL DOC DOCUMENT'
+t: 03/26 10.59.54.687
+step: cmddocitem
+t: 03/26 10.59.54.775
+cmddocitem:'; CXL DOC SECTION'
+t: 03/26 10.59.55.560
+step: cmddocitem
+t: 03/26 10.59.55.563
+cmddocitem:'; CXL DOC REPORT'
+t: 03/26 10.59.55.573
+step: cmddocitem
+t: 03/26 10.59.55.574
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.55.590
+step: cmddocitem
+t: 03/26 10.59.55.592
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.55.660
+step: cmddocitem
+t: 03/26 10.59.55.664
+cmddocitem:'; CXL DOC SECTION'
+t: 03/26 10.59.56.434
+step: cmddocitem
+t: 03/26 10.59.56.436
+cmddocitem:'; CXL DOC TITLEBLOCK'
+t: 03/26 10.59.56.472
+step: cmddocitem
+t: 03/26 10.59.56.474
+cmddocitem:'; CXL DOC CONTENTS'
+t: 03/26 10.59.56.516
+step: cmddocitem
+t: 03/26 10.59.56.518
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 10.59.56.565
+step: cmddocitem
+t: 03/26 10.59.56.567
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.56.619
+step: cmddocitem
+t: 03/26 10.59.56.621
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.56.670
+step: cmddocitem
+t: 03/26 10.59.56.672
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.56.727
+step: cmddocitem
+t: 03/26 10.59.56.728
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.56.782
+step: cmddocitem
+t: 03/26 10.59.56.785
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.56.838
+step: cmddocitem
+t: 03/26 10.59.56.840
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.56.893
+step: cmddocitem
+t: 03/26 10.59.56.895
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.56.948
+step: cmddocitem
+t: 03/26 10.59.56.950
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.57.006
+step: cmddocitem
+t: 03/26 10.59.57.008
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.57.056
+step: cmddocitem
+t: 03/26 10.59.57.058
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 10.59.57.170
+step: cmddocitem
+t: 03/26 10.59.57.172
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 10.59.57.280
+step: cmddocitem
+t: 03/26 10.59.57.282
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 10.59.57.335
+step: cmddocitem
+t: 03/26 10.59.57.337
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.57.396
+step: cmddocitem
+t: 03/26 10.59.57.399
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.57.455
+step: cmddocitem
+t: 03/26 10.59.57.457
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.57.586
+step: cmddocitem
+t: 03/26 10.59.57.588
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 10.59.57.712
+step: cmddocitem
+t: 03/26 10.59.57.714
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 10.59.57.831
+step: cmddocitem
+t: 03/26 10.59.57.833
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 10.59.57.890
+step: cmddocitem
+t: 03/26 10.59.57.892
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.57.953
+step: cmddocitem
+t: 03/26 10.59.57.955
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.58.013
+step: cmddocitem
+t: 03/26 10.59.58.015
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.58.126
+step: cmddocitem
+t: 03/26 10.59.58.128
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.58.245
+step: cmddocitem
+t: 03/26 10.59.58.247
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 10.59.58.357
+step: cmddocitem
+t: 03/26 10.59.58.359
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 10.59.58.432
+step: cmddocitem
+t: 03/26 10.59.58.434
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.58.496
+step: cmddocitem
+t: 03/26 10.59.58.498
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.58.555
+step: cmddocitem
+t: 03/26 10.59.58.557
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.58.682
+step: cmddocitem
+t: 03/26 10.59.58.686
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.58.821
+step: cmddocitem
+t: 03/26 10.59.58.823
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.58.951
+step: cmddocitem
+t: 03/26 10.59.58.952
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.59.078
+step: cmddocitem
+t: 03/26 10.59.59.080
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 10.59.59.140
+step: cmddocitem
+t: 03/26 10.59.59.143
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 10.59.59.197
+step: cmddocitem
+t: 03/26 10.59.59.198
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 10.59.59.252
+step: cmddocitem
+t: 03/26 10.59.59.255
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 10.59.59.371
+step: cmddocitem
+t: 03/26 10.59.59.374
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.59.492
+step: cmddocitem
+t: 03/26 10.59.59.493
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.59.620
+step: cmddocitem
+t: 03/26 10.59.59.621
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.59.741
+step: cmddocitem
+t: 03/26 10.59.59.744
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.59.858
+step: cmddocitem
+t: 03/26 10.59.59.860
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 10.59.59.986
+step: cmddocitem
+t: 03/26 10.59.59.987
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 11.00.00.109
+step: cmddocitem
+t: 03/26 11.00.00.111
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.00.237
+step: cmddocitem
+t: 03/26 11.00.00.239
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.00.359
+step: cmddocitem
+t: 03/26 11.00.00.361
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 11.00.00.474
+step: cmddocitem
+t: 03/26 11.00.00.477
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.00.602
+step: cmddocitem
+t: 03/26 11.00.00.604
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.00.728
+step: cmddocitem
+t: 03/26 11.00.00.730
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 11.00.00.801
+step: cmddocitem
+t: 03/26 11.00.00.802
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 11.00.00.866
+step: cmddocitem
+t: 03/26 11.00.00.868
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 11.00.01.000
+step: cmddocitem
+t: 03/26 11.00.01.003
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 11.00.01.074
+step: cmddocitem
+t: 03/26 11.00.01.075
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 11.00.01.141
+step: cmddocitem
+t: 03/26 11.00.01.142
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.01.285
+step: cmddocitem
+t: 03/26 11.00.01.287
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.01.446
+step: cmddocitem
+t: 03/26 11.00.01.447
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.01.600
+step: cmddocitem
+t: 03/26 11.00.01.602
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 11.00.01.679
+step: cmddocitem
+t: 03/26 11.00.01.681
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 11.00.01.748
+step: cmddocitem
+t: 03/26 11.00.01.750
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.01.910
+step: cmddocitem
+t: 03/26 11.00.01.912
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.02.079
+step: cmddocitem
+t: 03/26 11.00.02.081
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 11.00.02.159
+step: cmddocitem
+t: 03/26 11.00.02.161
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 11.00.02.234
+step: cmddocitem
+t: 03/26 11.00.02.236
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.02.397
+step: cmddocitem
+t: 03/26 11.00.02.399
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.02.566
+step: cmddocitem
+t: 03/26 11.00.02.568
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.02.752
+step: cmddocitem
+t: 03/26 11.00.02.754
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.02.930
+step: cmddocitem
+t: 03/26 11.00.02.932
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 11.00.03.008
+step: cmddocitem
+t: 03/26 11.00.03.010
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 11.00.03.081
+step: cmddocitem
+t: 03/26 11.00.03.082
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.03.244
+step: cmddocitem
+t: 03/26 11.00.03.246
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 11.00.03.323
+step: cmddocitem
+t: 03/26 11.00.03.325
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 11.00.03.399
+step: cmddocitem
+t: 03/26 11.00.03.401
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 11.00.03.471
+step: cmddocitem
+t: 03/26 11.00.03.472
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.03.624
+step: cmddocitem
+t: 03/26 11.00.03.626
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.03.774
+step: cmddocitem
+t: 03/26 11.00.03.776
+cmddocitem:'; CXL DOC CHAPTER'
+t: 03/26 11.00.03.843
+step: cmddocitem
+t: 03/26 11.00.03.844
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 11.00.03.921
+step: cmddocitem
+t: 03/26 11.00.03.922
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.04.108
+step: cmddocitem
+t: 03/26 11.00.04.109
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 11.00.04.264
+step: cmddocitem
+t: 03/26 11.00.04.266
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 03/26 11.00.04.350
+step: cmddocitem
+t: 03/26 11.00.04.352
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 03/26 11.00.04.429
+step: cmddocitem
+t: 03/26 11.00.04.432
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 03/26 11.00.04.600
+step: cmddocitem
+t: 03/26 11.00.04.602
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 11.00.04.792
+step: cmddocitem
+t: 03/26 11.00.04.794
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 11.00.04.960
+step: cmddocitem
+t: 03/26 11.00.04.963
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 03/26 11.00.05.131
+step: cmdendsession

@@ -158,378 +158,383 @@ namespace Dalton_Trapper.Model
 #pragma warning disable CS8603 // Possible null reference return.
             Task.Run(() =>
             {
-                // Initiate lists of elements and loads for FEM-Design model
-                var elements = new List<IStructureElement> { };
-                var loads = new List<ILoadElement> { };
+            // Initiate lists of elements and loads for FEM-Design model
+            var elements = new List<IStructureElement> { };
+            var loads = new List<ILoadElement> { };
 
-                // Define points that make up the plate
-                var points = new List<Point3d> { };
-                var pointsCurved = new List<Point3d> { };
+            // Define points that make up the plate
+            var points = new List<Point3d> { };
+            var pointsCurved = new List<Point3d> { };
 
-                // Looping through the collection plate geometry point
-                for (int i = 0; i < _coord.Count; i++)
+            // Looping through the collection plate geometry point
+            for (int i = 0; i < _coord.Count; i++)
+            {
+                int coord_x = _coord[i].X;
+                int coord_y = _coord[i].Y; ;
+
+                points.Add(new FemDesign.Geometry.Point3d(coord_x / 1000.0, coord_y / 1000.0, 0));
+            }
+
+            // Define edges that make up the plate
+            var edges = new List<Edge> { };
+
+            for (int i = 0; i < points.Count; i++)  // Looping through point to make up the edges
+            {
+                bool added = false;
+                if (i == points.Count - 1) // Last edge has to be connected to first point
                 {
-                    int coord_x = _coord[i].X;
-                    int coord_y = _coord[i].Y; ;
-
-                    points.Add(new FemDesign.Geometry.Point3d(coord_x / 1000.0, coord_y / 1000.0, 0));
-                }
-
-                // Define edges that make up the plate
-                var edges = new List<Edge> { };
-
-                for (int i = 0; i < points.Count; i++)  // Looping through point to make up the edges
-                {
-                    bool added = false;
-                    if (i == points.Count - 1) // Last edge has to be connected to first point
+                    for (int h = 0; h < _curvedLines.Count; h++)
                     {
-                        for (int h = 0; h < _curvedLines.Count; h++)
+                        double p1x = _curvedLines[h].P1.X / 1000.0;
+                        double p1y = _curvedLines[h].P1.Y / 1000.0;
+                        double p2x = _curvedLines[h].P2.X / 1000.0;
+                        double p2y = _curvedLines[h].P2.Y / 1000.0;
+                        double radius = _curvedLines[h].Radius / 1000.0;
+
+                        if ((p1x == points[i].X) && (p1y == points[i].Y))
                         {
-                            double p1x = _curvedLines[h].P1.X / 1000.0;
-                            double p1y = _curvedLines[h].P1.Y / 1000.0;
-                            double p2x = _curvedLines[h].P2.X / 1000.0;
-                            double p2y = _curvedLines[h].P2.Y / 1000.0;
-                            double radius = _curvedLines[h].Radius / 1000.0;
+                            var midpoint_X = (p1x + p2x) / 2.0;
+                            var midpoint_Y = (p1y + p2y) / 2.0;
+                            var distToCenter = Math.Sqrt(Math.Pow(midpoint_X - p1x, 2) + Math.Pow(midpoint_Y - p1y, 2));
 
-                            if ((p1x == points[i].X) && (p1y == points[i].Y))
-                            {
-                                var midpoint_X = (p1x + p2x) / 2.0;
-                                var midpoint_Y = (p1y + p2y) / 2.0;
-                                var distToCenter = Math.Sqrt(Math.Pow(midpoint_X - p1x, 2) + Math.Pow(midpoint_Y - p1y, 2));
+                            var angle = _curvedLines[h].Form == "Konveks" ? -Math.Asin(distToCenter / radius) : Math.Asin(distToCenter / radius);  //Radians
+                            var center_X = _curvedLines[h].Form == "Konveks" ? midpoint_X - Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p1y - p2y) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) :
+                                                                               midpoint_X + Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p1y - p2y) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2));
+                            var center_Y = _curvedLines[h].Form == "Konveks" ? midpoint_Y - Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p2x - p1x) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) :
+                                                                               midpoint_Y + Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p2x - p1x) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2));
+                            var toppoint_X = (p1x - center_X) * Math.Cos(angle) - (p1y - center_Y) * Math.Sin(angle) + center_X;
+                            var toppoint_Y = (p1x - center_X) * Math.Sin(angle) + (p1y - center_Y) * Math.Cos(angle) + center_Y;
 
-                                var angle = _curvedLines[h].Form == "Konveks" ? -Math.Asin(distToCenter / radius) : Math.Asin(distToCenter / radius);  //Radians
-                                var center_X = _curvedLines[h].Form == "Konveks" ? midpoint_X - Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p1y - p2y) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) :
-                                                                                   midpoint_X + Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p1y - p2y) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2));
-                                var center_Y = _curvedLines[h].Form == "Konveks" ? midpoint_Y - Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p2x - p1x) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) :
-                                                                                   midpoint_Y + Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p2x - p1x) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2));
-                                var toppoint_X = (p1x - center_X) * Math.Cos(angle) - (p1y - center_Y) * Math.Sin(angle) + center_X;
-                                var toppoint_Y = (p1x - center_X) * Math.Sin(angle) + (p1y - center_Y) * Math.Cos(angle) + center_Y;
-
-                                var toppoint = new FemDesign.Geometry.Point3d(toppoint_X, toppoint_Y, 0);
-                                edges.Add(new FemDesign.Geometry.Edge(points[i], toppoint, points[0], Plane.XY));
-                                added = !added;
-                            }
+                            var toppoint = new FemDesign.Geometry.Point3d(toppoint_X, toppoint_Y, 0);
+                            edges.Add(new FemDesign.Geometry.Edge(points[i], toppoint, points[0], Plane.XY));
+                            added = !added;
                         }
-
-                        if (added != true)
-                        { edges.Add(new FemDesign.Geometry.Edge(points[i], points[0], Plane.XY)); }
                     }
-                    else
+
+                    if (added != true)
+                    { edges.Add(new FemDesign.Geometry.Edge(points[i], points[0], Plane.XY)); }
+                }
+                else
+                {
+                    for (int h = 0; h < _curvedLines.Count; h++)
                     {
-                        for (int h = 0; h < _curvedLines.Count; h++)
+                        double p1x = _curvedLines[h].P1.X / 1000.0;
+                        double p1y = _curvedLines[h].P1.Y / 1000.0;
+                        double p2x = _curvedLines[h].P2.X / 1000.0;
+                        double p2y = _curvedLines[h].P2.Y / 1000.0;
+                        double radius = _curvedLines[h].Radius / 1000.0;
+
+                        if ((p1x == points[i].X) && (p1y == points[i].Y))
                         {
-                            double p1x = _curvedLines[h].P1.X / 1000.0;
-                            double p1y = _curvedLines[h].P1.Y / 1000.0;
-                            double p2x = _curvedLines[h].P2.X / 1000.0;
-                            double p2y = _curvedLines[h].P2.Y / 1000.0;
-                            double radius = _curvedLines[h].Radius / 1000.0;
+                            var midpoint_X = (p1x + p2x) / 2.0;
+                            var midpoint_Y = (p1y + p2y) / 2.0;
+                            var distToCenter = Math.Sqrt(Math.Pow(midpoint_X - p1x, 2) + Math.Pow(midpoint_Y - p1y, 2));
 
-                            if ((p1x == points[i].X) && (p1y == points[i].Y))
-                            {
-                                var midpoint_X = (p1x + p2x) / 2.0;
-                                var midpoint_Y = (p1y + p2y) / 2.0;
-                                var distToCenter = Math.Sqrt(Math.Pow(midpoint_X - p1x, 2) + Math.Pow(midpoint_Y - p1y, 2));
+                            var angle = _curvedLines[h].Form == "Konveks" ? -Math.Asin(distToCenter / radius) : Math.Asin(distToCenter / radius);  //Radians
+                            var center_X = _curvedLines[h].Form == "Konveks" ? midpoint_X - Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p1y - p2y) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) :
+                                                                               midpoint_X + Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p1y - p2y) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2));
+                            var center_Y = _curvedLines[h].Form == "Konveks" ? midpoint_Y - Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p2x - p1x) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) :
+                                                                               midpoint_Y + Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p2x - p1x) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2));
+                            var toppoint_X = (p1x - center_X) * Math.Cos(angle) - (p1y - center_Y) * Math.Sin(angle) + center_X;
+                            var toppoint_Y = (p1x - center_X) * Math.Sin(angle) + (p1y - center_Y) * Math.Cos(angle) + center_Y;
 
-                                var angle = _curvedLines[h].Form == "Konveks" ? -Math.Asin(distToCenter / radius) : Math.Asin(distToCenter / radius);  //Radians
-                                var center_X = _curvedLines[h].Form == "Konveks" ? midpoint_X - Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p1y - p2y) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) :
-                                                                                   midpoint_X + Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p1y - p2y) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2));
-                                var center_Y = _curvedLines[h].Form == "Konveks" ? midpoint_Y - Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p2x - p1x) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) :
-                                                                                   midpoint_Y + Math.Sqrt(Math.Pow(radius, 2) - (Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2)) / 4.0) * (p2x - p1x) / Math.Sqrt(Math.Pow(p2x - p1x, 2) + Math.Pow(p2y - p1y, 2));
-                                var toppoint_X = (p1x - center_X) * Math.Cos(angle) - (p1y - center_Y) * Math.Sin(angle) + center_X;
-                                var toppoint_Y = (p1x - center_X) * Math.Sin(angle) + (p1y - center_Y) * Math.Cos(angle) + center_Y;
-
-                                var toppoint = new FemDesign.Geometry.Point3d(toppoint_X, toppoint_Y, 0);
-                                edges.Add(new FemDesign.Geometry.Edge(points[i], toppoint, points[i + 1], Plane.XY));
-                                added = !added;
-                            }
+                            var toppoint = new FemDesign.Geometry.Point3d(toppoint_X, toppoint_Y, 0);
+                            edges.Add(new FemDesign.Geometry.Edge(points[i], toppoint, points[i + 1], Plane.XY));
+                            added = !added;
                         }
-
-                        if (added != true)
-                        { edges.Add(new FemDesign.Geometry.Edge(points[i], points[i + 1], Plane.XY)); }
-
                     }
+
+                    if (added != true)
+                    { edges.Add(new FemDesign.Geometry.Edge(points[i], points[i + 1], Plane.XY)); }
+
+                }
+            }
+
+            // Define region of plate
+            var contour = new FemDesign.Geometry.Contour(edges);
+            var region = new FemDesign.Geometry.Region(new List<Contour> { contour }, Plane.XY);
+
+            // Define thickness of plate (maximum of 3 different thicknesses)
+            var thicknessList = new List<Thickness>
+            {
+                new Thickness(points[0], thickness),
+            };
+
+            //Define properties of plate
+            var materialDatabase = FemDesign.Materials.MaterialDatabase.GetDefault();
+            var FEM_material = materialDatabase.MaterialByName(_materiale);
+            FEM_material.Concrete.gammaC_0 = "1.4"; // Prefabricated safety factors
+            FEM_material.Concrete.gammaS_0 = "1.2";
+            FEM_material.Concrete.CreepSlc = 3.0;
+            FEM_material.Concrete.CreepSlf = 3.0;
+            FEM_material.Concrete.CreepSlq = 3.0;
+
+
+            // Define plate
+            var slab = FemDesign.Shells.Slab.Plate("Plate1", FEM_material, region, null, null, null, thicknessList);
+
+            // Define supports
+
+            // Looping through collection of point supports
+            for (int i = 0; i < _pointSup.Count; i++)
+            {
+                int coord_x = _pointSup[i].X;
+                int coord_y = _pointSup[i].Y;
+
+                Point3d point = new FemDesign.Geometry.Point3d(coord_x / 1000.0, coord_y / 1000.0, 0);
+                PointSupport support = new FemDesign.Supports.PointSupport(point, FemDesign.Releases.Motions.RigidPoint(), FemDesign.Releases.Rotations.Free(), "PS");
+                elements.Add(support);
+            }
+
+            // Looping through collection of line supports
+            for (int i = 0; i < _lineSup.Count; i++)
+            {
+                int coord_x1 = _lineSup[i].X;
+                int coord_y1 = _lineSup[i].Y;
+                int coord_x2 = _lineSup[i].X2;
+                int coord_y2 = _lineSup[i].Y2;
+
+                Point3d p1 = new FemDesign.Geometry.Point3d(coord_x1 / 1000.0, coord_y1 / 1000.0, 0);
+                Point3d p2 = new FemDesign.Geometry.Point3d(coord_x2 / 1000.0, coord_y2 / 1000.0, 0);
+                Edge line = new FemDesign.Geometry.Edge(p1, p2);
+                LineSupport support = new FemDesign.Supports.LineSupport(line, new FemDesign.Releases.Motions(1e7, 1e7, 1e7, 1e7, 1e7, 0), FemDesign.Releases.Rotations.Free(), false);
+                elements.Add(support);
+            }
+
+            //  Define load cases
+            var loadCaseDL = new LoadCase("Egenlast - Repos", LoadCaseType.DeadLoad, LoadCaseDuration.Permanent);
+            var loadCaseDL_extra = new LoadCase("Fri permanent last", LoadCaseType.Static, LoadCaseDuration.Permanent);
+            var loadCaseLL = new LoadCase("Nyttelast - Repos", LoadCaseType.Static, LoadCaseDuration.Permanent);
+            var loadCaseSL = new LoadCase("Snelast", LoadCaseType.Static, LoadCaseDuration.Permanent);
+            var loadCaseSL_OP = new LoadCase("Snelast - Ophobning", LoadCaseType.Static, LoadCaseDuration.Permanent);
+            var loadCaseDL_LL = new LoadCase("Egenlast - Linjelaster", LoadCaseType.Static, LoadCaseDuration.Permanent);
+            var loadCaseLL_LL = new LoadCase("Nyttelast - Linjelaster", LoadCaseType.Static, LoadCaseDuration.Permanent);
+            var loadCaseDL_PL = new LoadCase("Egenlast - Punktlaster", LoadCaseType.Static, LoadCaseDuration.Permanent);
+            var loadCaseLL_PL = new LoadCase("Nyttelast - Punktlaster", LoadCaseType.Static, LoadCaseDuration.Permanent);
+
+            // Define load combination
+            var loadCombDL = new LoadCombination("ULS (6.10a) - Dominerende egenlast", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.2), (loadCaseDL_LL, Kfi * 1.2), (loadCaseDL_PL, Kfi * 1.2), (loadCaseDL_extra, Kfi * 1.2));
+            var loadCombLL = new LoadCombination("ULS (6.10b) - Dominerende nyttelast", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.0), (loadCaseDL_extra, Kfi * 1.0), (loadCaseDL_LL, Kfi * 1.0), (loadCaseDL_PL, Kfi * 1.0), (loadCaseLL, Kfi * 1.5), (loadCaseLL_LL, Kfi * 1.5), (loadCaseLL_PL, Kfi * 1.5), (loadCaseSL, Kfi * 0.45));
+            var loadCombSL = new LoadCombination("ULS (6.10b) - Sneophobning", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.0), (loadCaseSL_OP, Kfi * 1.5));
+            var loadCombSLS = new LoadCombination("SLS - Kvasi-permanent", LoadCombType.ServiceabilityQuasiPermanent, (loadCaseDL, 1.0), (loadCaseDL_extra, 1.0), (loadCaseDL_LL, 1.0), (loadCaseDL_PL, 1.0), (loadCaseLL, psi2_q), (loadCaseLL_LL, psi2_q), (loadCaseLL_PL, psi2_q));
+
+            // Define loads //
+
+            // Define surfaceloads on plate
+            var force_LL = new Vector3d(0, 0, -liveload);
+            var force_DL_extra = new Vector3d(0, 0, -extraDL);
+            var force_SL = new Vector3d(0, 0, -snowload);
+            var force_SL_OP = new Vector3d(0, 0, -snowload2);
+
+            var surfaceLoad = new FemDesign.Loads.SurfaceLoad(region, force_LL, loadCaseLL);
+            var surfaceLoad_DL_extra = new FemDesign.Loads.SurfaceLoad(region, force_DL_extra, loadCaseDL_extra);
+            var surfaceLoad_SL = new FemDesign.Loads.SurfaceLoad(region, force_SL, loadCaseSL);
+            var surfaceLoad_SL_OP = new FemDesign.Loads.SurfaceLoad(region, force_SL_OP, loadCaseSL_OP);
+
+            loads.Add(surfaceLoad);
+            loads.Add(surfaceLoad_DL_extra);
+            loads.Add(surfaceLoad_SL);
+            loads.Add(surfaceLoad_SL_OP);
+
+            // Looping through collection of point loads
+            for (int i = 0; i < _pointLoads.Count; i++)
+            {
+                int coord_x = _pointLoads[i].X;
+                int coord_y = _pointLoads[i].Y;
+                float gk = _pointLoads[i].G;
+                float qk = _pointLoads[i].Q;
+
+                Point3d point = new FemDesign.Geometry.Point3d(coord_x / 1000.0, coord_y / 1000.0, 0);
+                if (gk != 0)
+                {
+                    Vector3d forceDL = new Vector3d(0, 0, -gk);
+                    PointLoad pointLoadDL = new FemDesign.Loads.PointLoad(point, forceDL, loadCaseDL_PL, "", ForceLoadType.Force);
+                    loads.Add(pointLoadDL);
                 }
 
-                // Define region of plate
-                var contour = new FemDesign.Geometry.Contour(edges);
-                var region = new FemDesign.Geometry.Region(new List<Contour> { contour }, Plane.XY);
-
-                // Define thickness of plate (maximum of 3 different thicknesses)
-                var thicknessList = new List<Thickness>
-                            {
-                                        new Thickness(points[0], thickness ),
-                            };
-
-                //Define properties of plate
-                var materialDatabase = FemDesign.Materials.MaterialDatabase.GetDefault();
-                var FEM_material = materialDatabase.MaterialByName(_materiale);
-                FEM_material.Concrete.gammaC_0 = "1.4"; // Prefabricated safety factors
-                FEM_material.Concrete.gammaS_0 = "1.2";
-                FEM_material.Concrete.CreepSlc = 3.0;
-                FEM_material.Concrete.CreepSlf = 3.0;
-                FEM_material.Concrete.CreepSlq = 3.0;
-                
-
-                // Define plate
-                var slab = FemDesign.Shells.Slab.Plate("Plate1", FEM_material, region, null, null, null, thicknessList);
-
-                // Define supports
-
-                // Looping through collection of point supports
-                for (int i = 0; i < _pointSup.Count; i++)
+                if (qk != 0)
                 {
-                    int coord_x = _pointSup[i].X;
-                    int coord_y = _pointSup[i].Y;
+                    Vector3d forceLL = new Vector3d(0, 0, -qk);
+                    PointLoad pointLoadLL = new FemDesign.Loads.PointLoad(point, forceLL, loadCaseLL_PL, "", ForceLoadType.Force);
+                    loads.Add(pointLoadLL);
+                }
+            }
 
-                    Point3d point = new FemDesign.Geometry.Point3d(coord_x / 1000.0, coord_y / 1000.0, 0);
-                    PointSupport support = new FemDesign.Supports.PointSupport(point, FemDesign.Releases.Motions.RigidPoint(), FemDesign.Releases.Rotations.Free(), "PS");
-                    elements.Add(support);
+            // Looping through collection of line loads
+            for (int i = 0; i < _lineLoads.Count; i++)
+            {
+                int x1 = _lineLoads[i].X;
+                int y1 = _lineLoads[i].Y;
+                int x2 = _lineLoads[i].X2;
+                int y2 = _lineLoads[i].Y2;
+                var gk = _lineLoads[i].G;
+                var qk = _lineLoads[i].Q;
+
+                Point3d p1 = new FemDesign.Geometry.Point3d(x1 / 1000.0, y1 / 1000.0, 0);
+                Point3d p2 = new FemDesign.Geometry.Point3d(x2 / 1000.0, y2 / 1000.0, 0);
+                Edge line = new FemDesign.Geometry.Edge(p1, p2);
+
+                if (gk != 0)
+                {
+                    Vector3d forceDL = new Vector3d(0, 0, -gk);
+                    LineLoad LineLoadDL = new FemDesign.Loads.LineLoad(line, forceDL, loadCaseDL_LL, ForceLoadType.Force);
+                    loads.Add(LineLoadDL);
                 }
 
-                // Looping through collection of line supports
-                for (int i = 0; i < _lineSup.Count; i++)
+                if (qk != 0)
                 {
-                    int coord_x1 = _lineSup[i].X;
-                    int coord_y1 = _lineSup[i].Y;
-                    int coord_x2 = _lineSup[i].X2;
-                    int coord_y2 = _lineSup[i].Y2;
+                    Vector3d forceLL = new Vector3d(0, 0, -qk);
+                    LineLoad LineLoadLL = new FemDesign.Loads.LineLoad(line, forceLL, loadCaseLL_LL, ForceLoadType.Force);
+                    loads.Add(LineLoadLL);
+                }
+            }
 
-                    Point3d p1 = new FemDesign.Geometry.Point3d(coord_x1 / 1000.0, coord_y1 / 1000.0, 0);
-                    Point3d p2 = new FemDesign.Geometry.Point3d(coord_x2 / 1000.0, coord_y2 / 1000.0, 0);
-                    Edge line = new FemDesign.Geometry.Edge(p1, p2);
-                    LineSupport support = new FemDesign.Supports.LineSupport(line, new FemDesign.Releases.Motions(1e7, 1e7, 1e7, 1e7, 1e7, 0), FemDesign.Releases.Rotations.Free(), false);
-                    elements.Add(support);
+            // Combine all loadcases and -combinations
+            var loadCases = new List<LoadCase> { loadCaseDL, loadCaseDL_extra, loadCaseLL, loadCaseSL, loadCaseSL_OP, loadCaseDL_LL, loadCaseLL_LL, loadCaseDL_PL, loadCaseLL_PL };
+            var loadCombinations = new List<LoadCombination> { loadCombDL, loadCombLL, loadCombSL, loadCombSLS };
+
+            // Define the analysis settings
+            var settingsULS = new CombItem();
+            var settingsSLS = new CombItem(PL: false, Cr: true);
+            var combItems = new List<CombItem> { settingsULS, settingsULS, settingsULS, settingsSLS };
+            var comb = new Comb
+            {
+                NLEmaxiter = 30,
+                PLdefloadstep = 20,
+                PLminloadstep = 2,
+                PlKeepLoadStep = true,
+                PlTolerance = 1,
+                PLmaxeqiter = 50,
+                PlShellLayers = 10,
+                NLSMohr = true,
+                NLSinitloadstep = 10,
+                NLSminloadstep = 10,
+                NLSactiveelemratio = 5,
+                NLSplasticelemratio = 5,
+                CRloadstep = 10,
+                CRmaxiter = 30,
+                CRstifferror = 2,
+                CombItem = combItems,
+            };
+            var analysis = Analysis.StaticAnalysis(comb, calcCase: true, calccomb: true);
+
+            // Define reinforcement properties - net
+            var srfReinf = new List<SurfaceReinforcement>();
+            MaterialDatabase materialeData = MaterialDatabase.GetDefault("DK");
+
+            // Netarmering
+            for (int i = 0; i < _netReinforcement.Count; i++)
+            {
+                var reinforcement = materialeData.MaterialByName(_netReinforcement[i].Kvalitet);
+                var wire = new Wire(_netReinforcement[i].Diameter / 1000f, reinforcement, WireProfileType.Ribbed);
+
+                if (i == 0)
+                {
+                    var bar = new Straight(ReinforcementDirection.X, _netReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Top, _netReinforcement[i].Dæklag / 1000f);
+                    var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
+                    srfReinf.Add(straightReinf);
+                }
+                else if (i == 1)
+                {
+                    var bar = new Straight(ReinforcementDirection.Y, _netReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Top, _netReinforcement[i].Dæklag / 1000f);
+                    var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
+                    srfReinf.Add(straightReinf);
+                }
+                else if (i == 2)
+                {
+                    var bar = new Straight(ReinforcementDirection.X, _netReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Bottom, _netReinforcement[i].Dæklag / 1000f);
+                    var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
+                    srfReinf.Add(straightReinf);
+                }
+                else
+                {
+                    var bar = new Straight(ReinforcementDirection.Y, _netReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Bottom, _netReinforcement[i].Dæklag / 1000f);
+                    var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
+                    srfReinf.Add(straightReinf);
+                }
+            }
+
+            // Løse stænger
+            for (int i = 0; i < _additionalReinforcement.Count; i++)
+            {
+                if (_additionalReinforcement[i].Diameter == 0)
+                {
+                    continue;
                 }
 
-                //  Define load cases
-                var loadCaseDL = new LoadCase("Egenlast - Repos", LoadCaseType.DeadLoad, LoadCaseDuration.Permanent);
-                var loadCaseDL_extra = new LoadCase("Fri permanent last", LoadCaseType.Static, LoadCaseDuration.Permanent);
-                var loadCaseLL = new LoadCase("Nyttelast - Repos", LoadCaseType.Static, LoadCaseDuration.Permanent);
-                var loadCaseSL = new LoadCase("Snelast", LoadCaseType.Static, LoadCaseDuration.Permanent);
-                var loadCaseSL_OP = new LoadCase("Snelast - Ophobning", LoadCaseType.Static, LoadCaseDuration.Permanent);
-                var loadCaseDL_LL = new LoadCase("Egenlast - Linjelaster", LoadCaseType.Static, LoadCaseDuration.Permanent);
-                var loadCaseLL_LL = new LoadCase("Nyttelast - Linjelaster", LoadCaseType.Static, LoadCaseDuration.Permanent);
-                var loadCaseDL_PL = new LoadCase("Egenlast - Punktlaster", LoadCaseType.Static, LoadCaseDuration.Permanent);
-                var loadCaseLL_PL = new LoadCase("Nyttelast - Punktlaster", LoadCaseType.Static, LoadCaseDuration.Permanent);
+                var reinforcement = materialeData.MaterialByName(_additionalReinforcement[i].Kvalitet);
+                var wire = new Wire(_additionalReinforcement[i].Diameter / 1000f, reinforcement, WireProfileType.Ribbed);
 
-                // Define load combination
-                var loadCombDL = new LoadCombination("ULS (6.10a) - Dominerende egenlast", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.2), (loadCaseDL_LL, Kfi * 1.2), (loadCaseDL_PL, Kfi * 1.2), (loadCaseDL_extra, Kfi * 1.2));
-                var loadCombLL = new LoadCombination("ULS (6.10b) - Dominerende nyttelast", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.0), (loadCaseDL_extra, Kfi * 1.0), (loadCaseDL_LL, Kfi * 1.0), (loadCaseDL_PL, Kfi * 1.0), (loadCaseLL, Kfi * 1.5), (loadCaseLL_LL, Kfi * 1.5), (loadCaseLL_PL, Kfi * 1.5), (loadCaseSL, Kfi * 0.45));
-                var loadCombSL = new LoadCombination("ULS (6.10b) - Sneophobning", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.0), (loadCaseSL_OP, Kfi * 1.5));
-                var loadCombSLS = new LoadCombination("SLS - Kvasi-permanent", LoadCombType.ServiceabilityQuasiPermanent, (loadCaseDL, 1.0), (loadCaseDL_extra, 1.0), (loadCaseDL_LL, 1.0), (loadCaseDL_PL, 1.0), (loadCaseLL, psi2_q), (loadCaseLL_LL, psi2_q), (loadCaseLL_PL, psi2_q));
-
-                // Define loads //
-
-                // Define surfaceloads on plate
-                var force_LL = new Vector3d(0, 0, -liveload);
-                var force_DL_extra = new Vector3d(0, 0, -extraDL);
-                var force_SL = new Vector3d(0, 0, -snowload);
-                var force_SL_OP = new Vector3d(0, 0, -snowload2);
-
-                var surfaceLoad = new FemDesign.Loads.SurfaceLoad(region, force_LL, loadCaseLL);
-                var surfaceLoad_DL_extra = new FemDesign.Loads.SurfaceLoad(region, force_DL_extra, loadCaseDL_extra);
-                var surfaceLoad_SL = new FemDesign.Loads.SurfaceLoad(region, force_SL, loadCaseSL);
-                var surfaceLoad_SL_OP = new FemDesign.Loads.SurfaceLoad(region, force_SL_OP, loadCaseSL_OP);
-
-                loads.Add(surfaceLoad);
-                loads.Add(surfaceLoad_DL_extra);
-                loads.Add(surfaceLoad_SL);
-                loads.Add(surfaceLoad_SL_OP);
-
-                // Looping through collection of point loads
-                for (int i = 0; i < _pointLoads.Count; i++)
+                if (i == 0)
                 {
-                    int coord_x = _pointLoads[i].X;
-                    int coord_y = _pointLoads[i].Y;
-                    float gk = _pointLoads[i].G;
-                    float qk = _pointLoads[i].Q;
-
-                    Point3d point = new FemDesign.Geometry.Point3d(coord_x / 1000.0, coord_y / 1000.0, 0);
-                    if (gk != 0)
-                    {
-                        Vector3d forceDL = new Vector3d(0, 0, -gk);
-                        PointLoad pointLoadDL = new FemDesign.Loads.PointLoad(point, forceDL, loadCaseDL_PL, "", ForceLoadType.Force);
-                        loads.Add(pointLoadDL);
-                    }
-
-                    if (qk != 0)
-                    {
-                        Vector3d forceLL = new Vector3d(0, 0, -qk);
-                        PointLoad pointLoadLL = new FemDesign.Loads.PointLoad(point, forceLL, loadCaseLL_PL, "", ForceLoadType.Force);
-                        loads.Add(pointLoadLL);
-                    }
+                    var bar = new Straight(ReinforcementDirection.X, _additionalReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Top, _additionalReinforcement[i].Dæklag / 1000f);
+                    var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
+                    srfReinf.Add(straightReinf);
                 }
-
-                // Looping through collection of line loads
-                for (int i = 0; i < _lineLoads.Count; i++)
+                else if (i == 1)
                 {
-                    int x1 = _lineLoads[i].X;
-                    int y1 = _lineLoads[i].Y;
-                    int x2 = _lineLoads[i].X2;
-                    int y2 = _lineLoads[i].Y2;
-                    var gk = _lineLoads[i].G;
-                    var qk = _lineLoads[i].Q;
-
-                    Point3d p1 = new FemDesign.Geometry.Point3d(x1 / 1000.0, y1 / 1000.0, 0);
-                    Point3d p2 = new FemDesign.Geometry.Point3d(x2 / 1000.0, y2 / 1000.0, 0);
-                    Edge line = new FemDesign.Geometry.Edge(p1, p2);
-
-                    if (gk != 0)
-                    {
-                        Vector3d forceDL = new Vector3d(0, 0, -gk);
-                        LineLoad LineLoadDL = new FemDesign.Loads.LineLoad(line, forceDL, loadCaseDL_LL, ForceLoadType.Force);
-                        loads.Add(LineLoadDL);
-                    }
-
-                    if (qk != 0)
-                    {
-                        Vector3d forceLL = new Vector3d(0, 0, -qk);
-                        LineLoad LineLoadLL = new FemDesign.Loads.LineLoad(line, forceLL, loadCaseLL_LL, ForceLoadType.Force);
-                        loads.Add(LineLoadLL);
-                    }
+                    var bar = new Straight(ReinforcementDirection.Y, _additionalReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Top, _additionalReinforcement[i].Dæklag / 1000f);
+                    var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
+                    srfReinf.Add(straightReinf);
                 }
-
-                // Combine all loadcases and -combinations
-                var loadCases = new List<LoadCase> { loadCaseDL, loadCaseDL_extra, loadCaseLL, loadCaseSL, loadCaseSL_OP, loadCaseDL_LL, loadCaseLL_LL, loadCaseDL_PL, loadCaseLL_PL };
-                var loadCombinations = new List<LoadCombination> { loadCombDL, loadCombLL, loadCombSL, loadCombSLS };
-
-                // Define the analysis settings
-                var settingsULS = new CombItem();
-                var settingsSLS = new CombItem(PL: false, Cr: true);
-                var combItems = new List<CombItem> { settingsULS, settingsULS, settingsULS, settingsSLS };
-                var comb = new Comb
+                else if (i == 2)
                 {
-                    NLEmaxiter = 30,
-                    PLdefloadstep = 20,
-                    PLminloadstep = 2,
-                    PlKeepLoadStep = true,
-                    PlTolerance = 1,
-                    PLmaxeqiter = 50,
-                    PlShellLayers = 10,
-                    NLSMohr = true,
-                    NLSinitloadstep = 10,
-                    NLSminloadstep = 10,
-                    NLSactiveelemratio = 5,
-                    NLSplasticelemratio = 5,
-                    CRloadstep = 10,
-                    CRmaxiter = 30,
-                    CRstifferror = 2,
-                    CombItem = combItems,
-                };
-                var analysis = Analysis.StaticAnalysis(comb, calcCase: true, calccomb: true);
-
-                // Define reinforcement properties - net
-                var srfReinf = new List<SurfaceReinforcement>();
-                MaterialDatabase materialeData = MaterialDatabase.GetDefault("DK");
-
-                // Netarmering
-                for (int i = 0; i < _netReinforcement.Count; i++)
-                {
-                    var reinforcement = materialeData.MaterialByName(_netReinforcement[i].Kvalitet);
-                    var wire = new Wire(_netReinforcement[i].Diameter / 1000f, reinforcement, WireProfileType.Ribbed);
-
-                    if (i == 0)
-                    {
-                        var bar = new Straight(ReinforcementDirection.X, _netReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Top, _netReinforcement[i].Dæklag / 1000f);
-                        var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
-                        srfReinf.Add(straightReinf);
-                    }
-                    else if (i == 1)
-                    {
-                        var bar = new Straight(ReinforcementDirection.Y, _netReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Top, _netReinforcement[i].Dæklag / 1000f);
-                        var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
-                        srfReinf.Add(straightReinf);
-                    }
-                    else if (i == 2)
-                    {
-                        var bar = new Straight(ReinforcementDirection.X, _netReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Bottom, _netReinforcement[i].Dæklag / 1000f);
-                        var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
-                        srfReinf.Add(straightReinf);
-                    }
-                    else
-                    {
-                        var bar = new Straight(ReinforcementDirection.Y, _netReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Bottom, _netReinforcement[i].Dæklag / 1000f);
-                        var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
-                        srfReinf.Add(straightReinf);
-                    }
+                    var bar = new Straight(ReinforcementDirection.X, _additionalReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Bottom, _additionalReinforcement[i].Dæklag / 1000f);
+                    var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
+                    srfReinf.Add(straightReinf);
                 }
-
-                // Løse stænger
-                for (int i = 0; i < _additionalReinforcement.Count; i++)
+                else
                 {
-                    if (_additionalReinforcement[i].Diameter == 0)
-                    {
-                        continue;
-                    }
-
-                    var reinforcement = materialeData.MaterialByName(_additionalReinforcement[i].Kvalitet);
-                    var wire = new Wire(_additionalReinforcement[i].Diameter / 1000f, reinforcement, WireProfileType.Ribbed);
-
-                    if (i == 0)
-                    {
-                        var bar = new Straight(ReinforcementDirection.X, _additionalReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Top, _additionalReinforcement[i].Dæklag / 1000f);
-                        var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
-                        srfReinf.Add(straightReinf);
-                    }
-                    else if (i == 1)
-                    {
-                        var bar = new Straight(ReinforcementDirection.Y, _additionalReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Top, _additionalReinforcement[i].Dæklag / 1000f);
-                        var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
-                        srfReinf.Add(straightReinf);
-                    }
-                    else if (i == 2)
-                    {
-                        var bar = new Straight(ReinforcementDirection.X, _additionalReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Bottom, _additionalReinforcement[i].Dæklag / 1000f);
-                        var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
-                        srfReinf.Add(straightReinf);
-                    }
-                    else
-                    {
-                        var bar = new Straight(ReinforcementDirection.Y, _additionalReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Bottom, _additionalReinforcement[i].Dæklag / 1000f);
-                        var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
-                        srfReinf.Add(straightReinf);
-                    }
+                    var bar = new Straight(ReinforcementDirection.Y, _additionalReinforcement[i].Afstand / 1000f, FemDesign.GenericClasses.Face.Bottom, _additionalReinforcement[i].Dæklag / 1000f);
+                    var straightReinf = SurfaceReinforcement.DefineStraightSurfaceReinforcement(region, bar, wire);
+                    srfReinf.Add(straightReinf);
                 }
+            }
 
-                var reinfSlab = FemDesign.Reinforcement.SurfaceReinforcement.AddReinforcementToSlab(slab, srfReinf);
-                elements.Add(reinfSlab);
+            var reinfSlab = FemDesign.Reinforcement.SurfaceReinforcement.AddReinforcementToSlab(slab, srfReinf);
+            elements.Add(reinfSlab);
 
-               
 
-                // Set up the model
-                var model = new FemDesign.Model(Country.DK);
-                model.AddElements(elements);
-                model.AddLoads(loads);
-                model.AddLoadCases(loadCases);
-                model.AddLoadCombinations(loadCombinations);
 
-                // Documentation
-                string relativePathDocTemplate = System.IO.Path.Combine("Model\\FEM-Design tab", "Repos_Doc_Template.dsc");
-                string relativePathDocTemplateDeploy = System.IO.Path.Combine("Model\\FEM-Design tab", "Repos_Doc_Template - Deploy.dsc");
-                string filepathDocTemplate = System.IO.Path.GetFullPath(relativePathDocTemplate);
+            // Set up the model
+            var model = new FemDesign.Model(Country.DK);
+            model.AddElements(elements);
+            model.AddLoads(loads);
+            model.AddLoadCases(loadCases);
+            model.AddLoadCombinations(loadCombinations);
 
-                
+            // Documentation
+            string relativePathDocTemplate = System.IO.Path.Combine("Model\\FEM-Design tab", "Repos_Doc_Template.dsc");
+            string relativePathDocTemplateDeploy = System.IO.Path.Combine("Model\\FEM-Design tab", "Repos_Doc_Template - Deploy.dsc");
+            string filepathDocTemplate = System.IO.Path.GetFullPath(relativePathDocTemplate);
 
-                // Adding dimension lines
-                int j = 0;
-                foreach (Point3d point in points)
-                {
-                    int nextI = (j + 1) % _coord.Count;
 
-                    Vector3d edgeDirection = points[nextI] - point;
-                    edgeDirection.Normalize();
-                    Vector3d perpDirection = new Vector3d(-edgeDirection.Y, edgeDirection.X, 0);
-                    Plane plane = new Plane(point, edgeDirection, perpDirection);
 
-                    var dim = new DimensionLinear(new List<Point3d> { points[j], points[nextI] }, plane);
-                    model.AddLinearDimension(dim, true);
-                    j++;
-                }
+            // Adding dimension lines
+            int j = 0;
+            foreach (Point3d point in points)
+            {
+                int nextI = (j + 1) % _coord.Count;
 
-                // create a direct link to FEM-Design
-                try
-                {
-                    using (var femDesign = new FemDesign.FemDesignConnection($@"C:\Program Files\StruSoft\FEM-Design 23\", _FEMInBg))
+                Vector3d edgeDirection = points[nextI] - point;
+                edgeDirection.Normalize();
+                Vector3d perpDirection = new Vector3d(-edgeDirection.Y, edgeDirection.X, 0);
+                Plane plane = new Plane(point, edgeDirection, perpDirection);
+
+                var dim = new DimensionLinear(new List<Point3d> { points[j], points[nextI] }, plane);
+                model.AddLinearDimension(dim, true);
+                j++;
+            }
+
+            // create a direct link to FEM-Design
+            try
+            {
+                // Select newest version of FEM-Design
+                string femDesign_path = Directory.Exists($@"C:\Program Files\StruSoft\FEM-Design 24\") ? 
+                    $@"C:\Program Files\StruSoft\FEM-Design 24\" : 
+                    $@"C:\Program Files\StruSoft\FEM-Design 23\";
+
+                    using (var femDesign = new FemDesign.FemDesignConnection(femDesign_path, _FEMInBg))
                     {
                         // Update meshsize and initialize model
                         model.Entities.Slabs[0].SlabPart.MeshSize = 0.15;

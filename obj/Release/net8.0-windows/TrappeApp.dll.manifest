@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="TrappeApp.exe" version="1.1.6.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="TrappeApp.exe" version="1.1.8.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="stairs_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -99,22 +99,31 @@
       <dsig:DigestValue>0bMMM5hhlwlntEKfEhDdXy7Y/X7MKZ26QqBlMIztsHY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Model\FEM-Design tab\Repos_Doc_Template - Deploy.dsc" size="1281081">
+  <file name="Model\FEM-Design tab\Doc_Template - Deploy.dsc" size="1184263">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>DQhK2yBVd+O4jVhnlW9vS0AofuS7zyTP1t9D8KFgHTY=</dsig:DigestValue>
+      <dsig:DigestValue>ITJkzTZ/hnPKOl0JRhvL3qF+n5Qc7EsnLUhbzosOcvg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Model\FEM-Design tab\Repos_Doc_Template.dsc" size="1344786">
+  <file name="Model\FEM-Design tab\Doc_template_NoSnowLoad.dsc" size="1184268">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jg2Hq2cXg7rN9WN10PDY+AIGPOWriO3AThqN/a1VPzw=</dsig:DigestValue>
+      <dsig:DigestValue>FAbm1HUDADyZervu29LP3IOKKKkT0ytQ0G8+tUs2sgc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\FEM-Design tab\Doc_template_SnowLoad.dsc" size="1313116">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8oXTLVAWCTBlmlZDAPT09uBk7owC9l7wM1QXEBuSlhw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm" size="650083">
@@ -198,13 +207,13 @@
       <dsig:DigestValue>V/oZOmZ+qZr2iGyCRelPjZZaoZt1ZQ1wqNKd9VFWjtc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TrappeApp.dll" size="669184">
+  <file name="TrappeApp.dll" size="693248">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1s8BcuEKhcdwVNDA3J+P9nEM4TSXVDKyfh3drvhHDas=</dsig:DigestValue>
+      <dsig:DigestValue>clQO+v2VQXiaL+dpL9jpvQ938JIKzi1XzTEQjo+g8UA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TrappeApp.exe" size="249856">
@@ -213,7 +222,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R1ps2xxpHr0nJls+70uXkARND+xbu5Avarf0GQxmweE=</dsig:DigestValue>
+      <dsig:DigestValue>cZqZLqkLtQb5gW1McMkGo8GIN1nWgEnLWDwPaec/EX0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TrappeApp.runtimeconfig.json" size="515">

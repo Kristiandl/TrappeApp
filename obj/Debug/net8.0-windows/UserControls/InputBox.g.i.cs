@@ -60,7 +60,7 @@ namespace Dalton_Trapper.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TrappeApp;component/usercontrols/inputbox.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TrappeApp;V1.0.0.0;component/usercontrols/inputbox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UserControls\InputBox.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -389,7 +389,7 @@ namespace Dalton_Trapper.ViewModel
 
             if (type == "Ligeløb")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobEC_190701.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobEC_190701 rev250327.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Ligeløb}.xlsm");
 

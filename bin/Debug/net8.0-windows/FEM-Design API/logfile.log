@@ -3947,3 +3947,1777 @@ cmdlistgen:'$ MODULECOM LISTGEN'
 listgen successful
 t: 03/26 11.08.07.346
 Script file finished
+step: cmdopen
+t: 04/10 09.19.59.283
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 09.20.01.719
+Script file finished
+step: cmdconfig
+t: 04/10 09.20.02.419
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 09.20.02.424
+Script file finished
+step: cmdconfig
+t: 04/10 09.20.02.811
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 09.20.02.828
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 09.20.03.228
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 09.20.03.228
+Script file finished
+step: cmdlistgen
+t: 04/10 09.20.03.644
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 09.20.03.645
+step: cmdlistgen
+t: 04/10 09.20.03.657
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 09.20.03.663
+Script file finished
+step: cmdlistgen
+t: 04/10 09.20.04.044
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 09.20.04.044
+Script file finished
+step: cmdopen
+t: 04/10 09.54.36.467
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  5ba82abf-c716-4e94-9cc5-0a110d5ccbfe; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{ce88…}"!
+Where:  0f27dd00-c006-447c-9148-98941f3c2590; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{8f30…}"!
+
+t: 04/10 09.54.38.897
+Script file finished
+step: cmdconfig
+t: 04/10 09.54.39.470
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 09.54.39.475
+Script file finished
+step: cmdconfig
+t: 04/10 09.54.39.871
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 09.54.39.877
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 09.54.40.295
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 09.54.40.327
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 09.54.40.786
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 09.54.54.817
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 09.54.55.377
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 09.54.56.188
+Script file finished
+step: cmdlistgen
+t: 04/10 09.54.56.271
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 09.54.56.282
+step: cmdlistgen
+t: 04/10 09.54.56.283
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 09.54.56.287
+Script file finished
+step: cmdlistgen
+t: 04/10 09.54.56.613
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 09.54.56.613
+Script file finished
+step: cmdopen
+t: 04/10 10.02.14.312
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 10.02.16.866
+Script file finished
+step: cmdconfig
+t: 04/10 10.02.17.599
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 10.02.17.617
+Script file finished
+step: cmdconfig
+t: 04/10 10.02.18.016
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 10.02.18.023
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 10.02.18.419
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 10.02.18.452
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 10.02.18.886
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 10.02.34.359
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 10.02.35.078
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 10.02.36.331
+Script file finished
+step: cmdlistgen
+t: 04/10 10.02.36.399
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.02.36.411
+step: cmdlistgen
+t: 04/10 10.02.36.420
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.02.36.428
+Script file finished
+step: cmdlistgen
+t: 04/10 10.02.36.604
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.02.36.619
+Script file finished
+step: cmdopen
+t: 04/10 10.33.57.743
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  cf38ccfc-1a20-4572-b98d-5d58dc223819; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{4022…}"!
+Where:  86268418-2312-44f3-b23a-136dcdbf45e6; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{804b…}"!
+
+t: 04/10 10.34.00.069
+Script file finished
+step: cmdconfig
+t: 04/10 10.34.00.794
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 10.34.00.801
+Script file finished
+step: cmdconfig
+t: 04/10 10.34.01.205
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 10.34.01.215
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 10.34.01.605
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 10.34.01.605
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 10.34.02.098
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 10.34.16.483
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 10.34.17.066
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 10.34.17.965
+Script file finished
+step: cmdlistgen
+t: 04/10 10.34.18.060
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.34.18.074
+step: cmdlistgen
+t: 04/10 10.34.18.075
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.34.18.080
+Script file finished
+step: cmdlistgen
+t: 04/10 10.34.18.325
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.34.18.327
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 10.41.59.880
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  4620515f-77cc-437a-95c5-71dd50d68311; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{4cf6…}"!
+Where:  c9bad68f-2d29-4ead-818b-3ac196304825; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{9ecc…}"!
+
+t: 04/10 10.42.02.255
+Script file finished
+step: cmdconfig
+t: 04/10 10.42.02.991
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 10.42.02.993
+Script file finished
+step: cmdconfig
+t: 04/10 10.42.03.386
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 10.42.03.386
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 10.42.03.819
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 10.42.03.819
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 10.42.04.292
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 10.42.18.170
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 10.42.18.766
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 10.42.19.569
+Script file finished
+step: cmdlistgen
+t: 04/10 10.42.19.652
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.42.19.665
+step: cmdlistgen
+t: 04/10 10.42.19.665
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.42.19.671
+Script file finished
+step: cmdlistgen
+t: 04/10 10.42.19.955
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.42.19.965
+Script file finished
+step: cmdopen
+t: 04/10 10.42.48.575
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  529ab48e-c547-4670-89b9-31513c3deaec; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{ab7a…}"!
+Where:  8f7169f6-2438-4644-b778-5d94f9aa72ff; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{8a99…}"!
+
+t: 04/10 10.42.51.097
+Script file finished
+step: cmdconfig
+t: 04/10 10.42.51.845
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 10.42.51.846
+Script file finished
+step: cmdconfig
+t: 04/10 10.42.52.258
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 10.42.52.298
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 10.42.52.658
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 10.42.52.658
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 10.42.53.123
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 10.43.07.109
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 10.43.07.729
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 10.43.08.642
+Script file finished
+step: cmdlistgen
+t: 04/10 10.43.08.702
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.43.08.710
+step: cmdlistgen
+t: 04/10 10.43.08.710
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.43.08.720
+Script file finished
+step: cmdlistgen
+t: 04/10 10.43.08.966
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 10.43.08.973
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 11.30.47.201
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  75fcdaee-9ed2-47a2-b608-3f68fbf696de; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{a132…}"!
+Where:  f120cda7-46a6-4450-8379-ac3632665771; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{cf48…}"!
+
+t: 04/10 11.30.49.738
+Script file finished
+step: cmdconfig
+t: 04/10 11.30.50.680
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 11.30.50.688
+Script file finished
+step: cmdconfig
+t: 04/10 11.30.51.076
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 11.30.51.082
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 11.30.51.488
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 11.30.51.488
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 11.30.51.965
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 11.31.05.941
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 11.31.06.570
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 11.31.07.464
+Script file finished
+step: cmdlistgen
+t: 04/10 11.31.07.524
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.31.07.542
+step: cmdlistgen
+t: 04/10 11.31.07.544
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.31.07.544
+Script file finished
+step: cmdlistgen
+t: 04/10 11.31.07.776
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.31.07.785
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 11.34.45.789
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  9ad07083-7f7b-4141-a18e-005ee22c56e3; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{4a23…}"!
+Where:  bdc97e22-cfe5-4ee0-8295-f9b8af7ed646; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{484f…}"!
+
+t: 04/10 11.34.48.071
+Script file finished
+step: cmdconfig
+t: 04/10 11.34.48.880
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 11.34.48.883
+Script file finished
+step: cmdconfig
+t: 04/10 11.34.49.281
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 11.34.49.291
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 11.34.49.698
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 11.34.49.698
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 11.34.50.168
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 11.35.04.404
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 11.35.04.961
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 11.35.05.892
+Script file finished
+step: cmdlistgen
+t: 04/10 11.35.05.973
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.35.05.989
+step: cmdlistgen
+t: 04/10 11.35.05.990
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.35.05.996
+Script file finished
+step: cmdlistgen
+t: 04/10 11.35.06.228
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.35.06.235
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 11.43.27.545
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  5f98d0ee-bfde-473a-ba7d-f103156e3366; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{4850…}"!
+Where:  f4e40f33-a894-41c9-92e0-50dbf79c593a; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{a3c0…}"!
+
+t: 04/10 11.43.29.890
+Script file finished
+step: cmdconfig
+t: 04/10 11.43.30.578
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 11.43.30.584
+Script file finished
+step: cmdconfig
+t: 04/10 11.43.30.989
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 11.43.30.997
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 11.43.31.390
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 11.43.31.391
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 11.43.31.852
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 11.43.45.883
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 11.43.46.429
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 11.43.47.326
+Script file finished
+step: cmdlistgen
+t: 04/10 11.43.47.408
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.43.47.416
+step: cmdlistgen
+t: 04/10 11.43.47.416
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.43.47.416
+Script file finished
+step: cmdlistgen
+t: 04/10 11.43.47.684
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.43.47.691
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 11.45.11.232
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 11.45.13.604
+Script file finished
+step: cmdconfig
+t: 04/10 11.45.14.330
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 11.45.14.349
+Script file finished
+step: cmdconfig
+t: 04/10 11.45.14.728
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 11.45.14.728
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 11.45.15.129
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 11.45.15.131
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 11.45.15.604
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 11.45.30.470
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 11.45.31.045
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 11.45.31.955
+Script file finished
+step: cmdlistgen
+t: 04/10 11.45.32.070
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.45.32.082
+step: cmdlistgen
+t: 04/10 11.45.32.083
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.45.32.087
+Script file finished
+step: cmdlistgen
+t: 04/10 11.45.32.457
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 11.45.32.464
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 12.33.59.415
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  6ee70148-17f2-4e58-a4f6-49a51d575823; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{4ad3…}"!
+Where:  c22e99c2-d508-4589-bf87-73bd82fe2c74; Name:  ; Type:  surface load; Message: Can't create this item, because it belongs a non existent load case "{73e6…}"!
+
+t: 04/10 12.34.01.780
+Script file finished
+step: cmdconfig
+t: 04/10 12.34.02.444
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 12.34.02.446
+Script file finished
+step: cmdconfig
+t: 04/10 12.34.02.855
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 12.34.02.862
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 12.34.03.263
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 12.34.03.263
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 12.34.03.757
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 12.34.17.964
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 12.34.18.581
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 12.34.19.408
+Script file finished
+step: cmdlistgen
+t: 04/10 12.34.19.493
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 12.34.19.504
+step: cmdlistgen
+t: 04/10 12.34.19.507
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 12.34.19.511
+Script file finished
+step: cmdlistgen
+t: 04/10 12.34.19.785
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 12.34.19.792
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 12.38.02.675
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 12.38.05.721
+Script file finished
+step: cmdconfig
+t: 04/10 12.38.06.386
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 12.38.06.392
+Script file finished
+step: cmdconfig
+t: 04/10 12.38.06.783
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 12.38.06.795
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 12.38.07.194
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 12.38.07.197
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 12.38.07.691
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 12.38.22.940
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 12.38.23.516
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 12.38.24.587
+Script file finished
+step: cmdlistgen
+t: 04/10 12.38.24.648
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 12.38.24.662
+step: cmdlistgen
+t: 04/10 12.38.24.664
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 12.38.24.670
+Script file finished
+step: cmdlistgen
+t: 04/10 12.38.24.905
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 12.38.24.916
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 13.01.44.404
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 13.01.46.764
+Script file finished
+step: cmdconfig
+t: 04/10 13.01.47.443
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 13.01.47.474
+Script file finished
+step: cmdconfig
+t: 04/10 13.01.47.859
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 13.01.47.859
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 13.01.48.258
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 13.01.48.260
+Script file finished
+step: cmdlistgen
+t: 04/10 13.01.48.659
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.01.48.669
+step: cmdlistgen
+t: 04/10 13.01.48.669
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.01.48.675
+Script file finished
+step: cmdlistgen
+t: 04/10 13.01.49.077
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.01.49.078
+Script file finished
+step: cmdopen
+t: 04/10 13.03.17.142
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 13.03.19.448
+Script file finished
+step: cmdconfig
+t: 04/10 13.03.20.264
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 13.03.20.297
+Script file finished
+step: cmdconfig
+t: 04/10 13.03.20.669
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 13.03.20.669
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 13.03.21.072
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 13.03.21.074
+Script file finished
+step: cmdlistgen
+t: 04/10 13.03.21.488
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.03.21.499
+step: cmdlistgen
+t: 04/10 13.03.21.500
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.03.21.505
+Script file finished
+step: cmdlistgen
+t: 04/10 13.03.21.894
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.03.21.905
+Script file finished
+step: cmdopen
+t: 04/10 13.04.00.381
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 13.04.02.837
+Script file finished
+step: cmdconfig
+t: 04/10 13.04.03.514
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 13.04.03.519
+Script file finished
+step: cmdconfig
+t: 04/10 13.04.03.906
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 13.04.03.906
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 13.04.04.308
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 13.04.04.310
+Script file finished
+step: cmdlistgen
+t: 04/10 13.04.04.708
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.04.04.713
+step: cmdlistgen
+t: 04/10 13.04.04.713
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.04.04.723
+Script file finished
+step: cmdlistgen
+t: 04/10 13.04.05.121
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.04.05.126
+Script file finished
+step: cmdopen
+t: 04/10 13.04.48.304
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 13.04.51.076
+Script file finished
+step: cmdconfig
+t: 04/10 13.04.51.814
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 13.04.51.838
+Script file finished
+step: cmdconfig
+t: 04/10 13.04.52.214
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 13.04.52.214
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 13.04.52.630
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 13.04.52.631
+Script file finished
+step: cmdlistgen
+t: 04/10 13.04.53.033
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.04.53.044
+step: cmdlistgen
+t: 04/10 13.04.53.046
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.04.53.050
+Script file finished
+step: cmdlistgen
+t: 04/10 13.04.53.427
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.04.53.437
+Script file finished
+step: cmdopen
+t: 04/10 13.34.32.787
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 13.34.35.169
+Script file finished
+step: cmdconfig
+t: 04/10 13.34.35.862
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 13.34.35.871
+Script file finished
+step: cmdconfig
+t: 04/10 13.34.36.266
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 13.34.36.273
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 13.34.36.676
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 13.34.36.677
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 13.34.37.158
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 13.34.51.082
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 13.34.51.739
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 13.34.52.639
+Script file finished
+step: cmdlistgen
+t: 04/10 13.34.52.701
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.34.52.715
+step: cmdlistgen
+t: 04/10 13.34.52.717
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.34.52.722
+Script file finished
+step: cmdlistgen
+t: 04/10 13.34.52.974
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.34.52.977
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 13.35.51.601
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 13.35.54.115
+Script file finished
+step: cmdconfig
+t: 04/10 13.35.54.919
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 13.35.54.921
+Script file finished
+step: cmdconfig
+t: 04/10 13.35.55.334
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 13.35.55.341
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 13.35.55.754
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 13.35.55.756
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 13.35.56.224
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 13.36.11.366
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 13.36.12.017
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 13.36.12.924
+Script file finished
+step: cmdlistgen
+t: 04/10 13.36.12.988
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.36.13.000
+step: cmdlistgen
+t: 04/10 13.36.13.000
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.36.13.008
+Script file finished
+step: cmdlistgen
+t: 04/10 13.36.13.246
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.36.13.255
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 13.53.09.245
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 13.53.11.608
+Script file finished
+step: cmdconfig
+t: 04/10 13.53.12.309
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 13.53.12.311
+Script file finished
+step: cmdconfig
+t: 04/10 13.53.12.723
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 13.53.12.726
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 13.53.13.124
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 13.53.13.126
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 13.53.13.618
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 13.53.27.608
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 13.53.28.227
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 13.53.29.056
+Script file finished
+step: cmdlistgen
+t: 04/10 13.53.29.146
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.53.29.159
+step: cmdlistgen
+t: 04/10 13.53.29.160
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.53.29.166
+Script file finished
+step: cmdlistgen
+t: 04/10 13.53.29.461
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.53.29.467
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 13.56.32.836
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 13.56.35.287
+Script file finished
+step: cmdconfig
+t: 04/10 13.56.36.096
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 13.56.36.105
+Script file finished
+step: cmdconfig
+t: 04/10 13.56.36.511
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 13.56.36.521
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 13.56.36.911
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 13.56.36.911
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 13.56.37.379
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 13.56.52.472
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 13.56.53.008
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 13.56.53.941
+Script file finished
+step: cmdlistgen
+t: 04/10 13.56.54.049
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.56.54.059
+step: cmdlistgen
+t: 04/10 13.56.54.070
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.56.54.070
+Script file finished
+step: cmdlistgen
+t: 04/10 13.56.54.450
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 13.56.54.463
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.03.18.916
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.03.21.411
+Script file finished
+step: cmdconfig
+t: 04/10 14.03.22.281
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.03.22.297
+Script file finished
+step: cmdconfig
+t: 04/10 14.03.22.697
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.03.22.703
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.03.23.099
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.03.23.103
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.03.23.593
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.03.37.701
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.03.38.346
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.03.39.230
+Script file finished
+step: cmdlistgen
+t: 04/10 14.03.39.291
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.03.39.302
+step: cmdlistgen
+t: 04/10 14.03.39.302
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.03.39.308
+Script file finished
+step: cmdlistgen
+t: 04/10 14.03.39.548
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.03.39.552
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.14.47.460
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.14.49.846
+Script file finished
+step: cmdconfig
+t: 04/10 14.14.50.413
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.14.50.419
+Script file finished
+step: cmdconfig
+t: 04/10 14.14.50.808
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.14.50.808
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.14.51.218
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.14.51.219
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.14.51.694
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.15.05.999
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.15.06.671
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.15.07.549
+Script file finished
+step: cmdlistgen
+t: 04/10 14.15.07.625
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.15.07.637
+step: cmdlistgen
+t: 04/10 14.15.07.638
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.15.07.644
+Script file finished
+step: cmdlistgen
+t: 04/10 14.15.07.878
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.15.07.885
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.15.55.172
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.15.57.696
+Script file finished
+step: cmdconfig
+t: 04/10 14.15.58.507
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.15.58.509
+Script file finished
+step: cmdconfig
+t: 04/10 14.15.58.916
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.15.58.924
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.15.59.321
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.15.59.323
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.15.59.789
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.16.13.759
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.16.14.362
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.16.15.271
+Script file finished
+step: cmdlistgen
+t: 04/10 14.16.15.332
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.16.15.343
+step: cmdlistgen
+t: 04/10 14.16.15.345
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.16.15.349
+Script file finished
+step: cmdlistgen
+t: 04/10 14.16.15.620
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.16.15.627
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.22.00.168
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.22.02.562
+Script file finished
+step: cmdconfig
+t: 04/10 14.22.03.319
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.22.03.331
+Script file finished
+step: cmdconfig
+t: 04/10 14.22.03.714
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.22.03.714
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.22.04.131
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.22.04.131
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.22.04.610
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.22.18.937
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.22.19.624
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.22.20.415
+Script file finished
+step: cmdlistgen
+t: 04/10 14.22.20.469
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.22.20.478
+step: cmdlistgen
+t: 04/10 14.22.20.480
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.22.20.483
+Script file finished
+step: cmdlistgen
+t: 04/10 14.22.20.849
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.22.20.858
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.23.24.047
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.23.26.419
+Script file finished
+step: cmdconfig
+t: 04/10 14.23.27.078
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.23.27.086
+Script file finished
+step: cmdconfig
+t: 04/10 14.23.27.493
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.23.27.500
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.23.27.892
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.23.27.893
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.23.28.359
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.23.43.841
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.23.44.381
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.23.45.249
+Script file finished
+step: cmdlistgen
+t: 04/10 14.23.45.344
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.23.45.355
+step: cmdlistgen
+t: 04/10 14.23.45.356
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.23.45.361
+Script file finished
+step: cmdlistgen
+t: 04/10 14.23.45.638
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.23.45.642
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.30.55.246
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  00b4e82d-b3d5-464c-b27e-b6e54f5597c9; Name:  ; Type:  load combination "ULS (6.10a) - Dominerende egenlast"; Message:  Can't create this item, because can't add case {ef73…}!
+Where:  00b4e82d-b3d5-464c-b27e-b6e54f5597c9; Name:  ; Type:  load combination "ULS (6.10a) - Dominerende egenlast"; Message:  Can't create this item, because can't add case {6d62…}!
+Where:  8fd66043-f21d-46e1-8c51-aee5e5037674; Name:  ; Type:  load combination "ULS (6.10b) - Dominerende nyttelast"; Message:  Can't create this item, because can't add case {ef73…}!
+Where:  8fd66043-f21d-46e1-8c51-aee5e5037674; Name:  ; Type:  load combination "ULS (6.10b) - Dominerende nyttelast"; Message:  Can't create this item, because can't add case {6d62…}!
+Where:  8fd66043-f21d-46e1-8c51-aee5e5037674; Name:  ; Type:  load combination "ULS (6.10b) - Dominerende nyttelast"; Message:  Can't create this item, because can't add case {dd78…}!
+Where:  8fd66043-f21d-46e1-8c51-aee5e5037674; Name:  ; Type:  load combination "ULS (6.10b) - Dominerende nyttelast"; Message:  Can't create this item, because can't add case {6a39…}!
+Where:  4113476e-544c-46da-a3c4-3a8403abe5d3; Name:  ; Type:  load combination "SLS - Kvasi-permanent"; Message:  Can't create this item, because can't add case {ef73…}!
+Where:  4113476e-544c-46da-a3c4-3a8403abe5d3; Name:  ; Type:  load combination "SLS - Kvasi-permanent"; Message:  Can't create this item, because can't add case {6d62…}!
+Where:  4113476e-544c-46da-a3c4-3a8403abe5d3; Name:  ; Type:  load combination "SLS - Kvasi-permanent"; Message:  Can't create this item, because can't add case {dd78…}!
+Where:  4113476e-544c-46da-a3c4-3a8403abe5d3; Name:  ; Type:  load combination "SLS - Kvasi-permanent"; Message:  Can't create this item, because can't add case {6a39…}!
+Where:  33c8e823-0fe8-4719-ae10-ded134fef221; Name:  ; Type:  load combination "Rotation"; Message:  Can't create this item, because can't add case {ef73…}!
+Where:  33c8e823-0fe8-4719-ae10-ded134fef221; Name:  ; Type:  load combination "Rotation"; Message:  Can't create this item, because can't add case {6d62…}!
+Where:  33c8e823-0fe8-4719-ae10-ded134fef221; Name:  ; Type:  load combination "Rotation"; Message:  Can't create this item, because can't add case {dd78…}!
+Where:  33c8e823-0fe8-4719-ae10-ded134fef221; Name:  ; Type:  load combination "Rotation"; Message:  Can't create this item, because can't add case {6a39…}!
+Where:  bcd0b722-8e7f-435f-ad87-d912638f4262; Name:  ; Type:  line load; Message: Can't create this item, because it belongs a non existent load case "{ef73…}"!
+Where:  5d627a5d-9be7-42a4-8710-f2425a10f236; Name:  ; Type:  line load; Message: Can't create this item, because it belongs a non existent load case "{dd78…}"!
+Where:  720e277f-3329-45e2-93db-08509a51e449; Name:  ; Type:  line load; Message: Can't create this item, because it belongs a non existent load case "{ef73…}"!
+Where:  64239648-d7d5-4485-8112-33e21ca29b7f; Name:  ; Type:  line load; Message: Can't create this item, because it belongs a non existent load case "{dd78…}"!
+
+t: 04/10 14.30.57.557
+Script file finished
+step: cmdconfig
+t: 04/10 14.30.58.365
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.30.58.370
+Script file finished
+step: cmdconfig
+t: 04/10 14.30.58.759
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.30.58.769
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.30.59.162
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.30.59.163
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.30.59.653
+cmdcalculation:'; CXL $MODULE CALC'
+No declared load combination.
+analysis
+t: 04/10 14.31.00.026
+aborting script execution
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.31.00.859
+cmdcalculation:'; CXL $MODULE CALC'
+No declared load combination.
+analysis
+t: 04/10 14.31.01.029
+aborting script execution
+Script file finished
+step: cmdlistgen
+t: 04/10 14.31.01.394
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.31.01.408
+step: cmdlistgen
+t: 04/10 14.31.01.410
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.31.01.415
+Script file finished
+step: cmdlistgen
+t: 04/10 14.31.01.809
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.31.01.809
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.33.46.121
+cmdopen:'; CXL CS2SHELL OPEN'
+Model loading problems: 
+Where:  de669280-24eb-4a2d-ae89-3813110908e4; Name:  ; Type:  load combination "ULS (6.10a) - Dominerende egenlast"; Message:  Can't create this item, because can't add case {3736…}!
+Where:  e34b19d4-cb90-4849-a3f0-422fec00c013; Name:  ; Type:  load combination "ULS (6.10b) - Dominerende nyttelast"; Message:  Can't create this item, because can't add case {3736…}!
+Where:  e34b19d4-cb90-4849-a3f0-422fec00c013; Name:  ; Type:  load combination "ULS (6.10b) - Dominerende nyttelast"; Message:  Can't create this item, because can't add case {05f2…}!
+Where:  f7710b04-fa41-4bad-a1a3-0ae7f97ba2cd; Name:  ; Type:  load combination "SLS - Kvasi-permanent"; Message:  Can't create this item, because can't add case {3736…}!
+Where:  f7710b04-fa41-4bad-a1a3-0ae7f97ba2cd; Name:  ; Type:  load combination "SLS - Kvasi-permanent"; Message:  Can't create this item, because can't add case {05f2…}!
+Where:  bab9b9f2-9ca3-4d9e-8edc-6fab179f0e1a; Name:  ; Type:  load combination "Rotation"; Message:  Can't create this item, because can't add case {3736…}!
+Where:  bab9b9f2-9ca3-4d9e-8edc-6fab179f0e1a; Name:  ; Type:  load combination "Rotation"; Message:  Can't create this item, because can't add case {05f2…}!
+
+t: 04/10 14.33.48.490
+Script file finished
+step: cmdconfig
+t: 04/10 14.33.49.249
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.33.49.254
+Script file finished
+step: cmdconfig
+t: 04/10 14.33.49.649
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.33.49.656
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.33.50.053
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.33.50.055
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.33.50.541
+cmdcalculation:'; CXL $MODULE CALC'
+No declared load combination.
+analysis
+t: 04/10 14.33.50.891
+aborting script execution
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.33.51.592
+cmdcalculation:'; CXL $MODULE CALC'
+No declared load combination.
+analysis
+t: 04/10 14.33.51.752
+aborting script execution
+Script file finished
+step: cmdlistgen
+t: 04/10 14.33.52.094
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.33.52.106
+step: cmdlistgen
+t: 04/10 14.33.52.107
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.33.52.111
+Script file finished
+step: cmdlistgen
+t: 04/10 14.33.52.498
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.33.52.504
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.47.01.373
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.47.03.811
+Script file finished
+step: cmdconfig
+t: 04/10 14.47.04.533
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.47.04.533
+Script file finished
+step: cmdconfig
+t: 04/10 14.47.04.939
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.47.04.946
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.47.05.346
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.47.05.346
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.47.05.836
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.47.20.025
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.47.20.608
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.47.21.489
+Script file finished
+step: cmdlistgen
+t: 04/10 14.47.21.549
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.47.21.559
+step: cmdlistgen
+t: 04/10 14.47.21.561
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.47.21.566
+Script file finished
+step: cmdlistgen
+t: 04/10 14.47.21.816
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.47.21.825
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.49.06.615
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.49.09.271
+Script file finished
+step: cmdconfig
+t: 04/10 14.49.10.028
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.49.10.033
+Script file finished
+step: cmdconfig
+t: 04/10 14.49.10.425
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.49.10.435
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.49.10.828
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.49.10.828
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.49.11.325
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.49.25.515
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.49.26.175
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.49.27.055
+Script file finished
+step: cmdlistgen
+t: 04/10 14.49.27.111
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.49.27.121
+step: cmdlistgen
+t: 04/10 14.49.27.121
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.49.27.131
+Script file finished
+step: cmdlistgen
+t: 04/10 14.49.27.379
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.49.27.386
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.50.51.429
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.50.54.102
+Script file finished
+step: cmdconfig
+t: 04/10 14.50.54.857
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.50.54.857
+Script file finished
+step: cmdconfig
+t: 04/10 14.50.55.273
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.50.55.281
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.50.55.678
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.50.55.680
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.50.56.154
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.51.11.785
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.51.12.357
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.51.13.434
+Script file finished
+step: cmdlistgen
+t: 04/10 14.51.13.523
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.51.13.530
+step: cmdlistgen
+t: 04/10 14.51.13.530
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.51.13.540
+Script file finished
+step: cmdlistgen
+t: 04/10 14.51.13.811
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.51.13.811
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.52.37.732
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.52.40.320
+Script file finished
+step: cmdconfig
+t: 04/10 14.52.40.928
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.52.40.934
+Script file finished
+step: cmdconfig
+t: 04/10 14.52.41.336
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.52.41.343
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.52.41.745
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.52.41.746
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.52.42.228
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.52.56.465
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.52.56.981
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.52.57.915
+Script file finished
+step: cmdlistgen
+t: 04/10 14.52.57.970
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.52.57.980
+step: cmdlistgen
+t: 04/10 14.52.57.980
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.52.57.986
+Script file finished
+step: cmdlistgen
+t: 04/10 14.52.58.237
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.52.58.243
+Script file finished
+step: cmdchild
+Script file finished
+step: cmdopen
+t: 04/10 14.54.27.803
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 04/10 14.54.30.186
+Script file finished
+step: cmdconfig
+t: 04/10 14.54.30.950
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 04/10 14.54.30.950
+Script file finished
+step: cmdconfig
+t: 04/10 14.54.31.344
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 04/10 14.54.31.344
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 04/10 14.54.31.763
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 04/10 14.54.31.767
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 04/10 14.54.32.252
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.54.42.559
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 04/10 14.54.43.153
+cmdcalculation:'; CXL $MODULE CALC'
+t: 04/10 14.54.44.002
+Script file finished
+step: cmdlistgen
+t: 04/10 14.54.44.099
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.54.44.110
+step: cmdlistgen
+t: 04/10 14.54.44.110
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.54.44.114
+Script file finished
+step: cmdlistgen
+t: 04/10 14.54.44.344
+cmdlistgen:'$ MODULECOM LISTGEN'
+listgen successful
+t: 04/10 14.54.44.350
+Script file finished
+step: cmdchild
+Script file finished

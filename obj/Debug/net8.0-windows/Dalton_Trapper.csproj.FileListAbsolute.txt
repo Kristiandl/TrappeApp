@@ -57,8 +57,6 @@ C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\T
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\cfg_Agressiv.xml
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\cfg_EkstraAgressiv.xml
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\cfg_Standard.xml
-C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\Repos_Doc_Template - Deploy.dsc
-C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\Repos_Doc_Template.dsc
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\TrappeApp.deps.json
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\TrappeApp.runtimeconfig.json
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\TrappeApp.dll
@@ -115,3 +113,8 @@ C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\T
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 17012025.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\Projektering tab\Beregningsark\Rytmisk_personlast_bef.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Debug\net8.0-windows\View\TestPage.g.cs
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Debug\net8.0-windows\View\TestPage.baml
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\Doc_template_NoSnowLoad.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\Doc_template_SnowLoad.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Debug\net8.0-windows\Model\FEM-Design tab\Doc_Template - Deploy.dsc

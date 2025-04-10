@@ -15,4 +15,8 @@
         <view:Femdesign />
     </DataTemplate>
 
+    <DataTemplate DataType="{x:Type vm:TestPageVM}">
+        <view:TestPage />
+    </DataTemplate>
+
 </ResourceDictionary>

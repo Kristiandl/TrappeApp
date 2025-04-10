@@ -12,10 +12,17 @@ namespace Dalton_Trapper.ViewModel
             get { return _currentView; }
             set { _currentView = value; OnPropertyChanged(); }
         }
+        private Visibility _testPageVisibility;
+        public Visibility TestPageVisibility
+        {
+            get { return _testPageVisibility; }
+            set { _testPageVisibility = value; OnPropertyChanged(); }
+        }
 
         public ICommand HomeCommand { get; set; }
         public ICommand ProjekteringCommand { get; set; }
         public ICommand FemdesignCommand { get; set; }
+        public ICommand TestPageCommand { get; set; }
 
 
         private void Home(object obj)
@@ -30,11 +37,15 @@ namespace Dalton_Trapper.ViewModel
         {
             ConfirmAndNavigate(new FemdesignVM());
         }
+        private void TestPage(object obj)
+        {
+            ConfirmAndNavigate(new TestPageVM());
+        }
 
         private void ConfirmAndNavigate(object newView)
         {
-            // Check if current view is FemdesignVM and we're navigating away
-            if (_currentView is FemdesignVM && !(newView is FemdesignVM))
+            // Check if current view is FemdesignVM or TestPage and we're navigating away
+            if (_currentView is FemdesignVM && !(newView is FemdesignVM) || _currentView is TestPageVM && !(newView is TestPageVM))
             {
                 var result = MessageBox.Show(
                     "Du er på vej væk fra FEM-Design fanen. Al indtastet data vil blive slettet. Er du sikker på du vil fortsætte væk fra fanen?",
@@ -57,9 +68,13 @@ namespace Dalton_Trapper.ViewModel
             HomeCommand = new RelayCommand(Home);
             ProjekteringCommand = new RelayCommand(Projektering);
             FemdesignCommand = new RelayCommand(Femdesign);
+            TestPageCommand = new RelayCommand(TestPage);
 
             // Startup Page
             CurrentView = new HomeVM();
+
+            // Only show testpage for KDL
+            TestPageVisibility = Environment.UserName.ToLower() == "kdl" ? Visibility.Visible : Visibility.Hidden;
         }
     }
 }

@@ -317,6 +317,13 @@ namespace Dalton_Trapper.Model
             var loadCombLL = new LoadCombination("ULS (6.10b) - Dominerende nyttelast", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.0), (loadCaseDL_extra, Kfi * 1.0), (loadCaseDL_LL, Kfi * 1.0), (loadCaseDL_PL, Kfi * 1.0), (loadCaseLL, Kfi * 1.5), (loadCaseLL_LL, Kfi * 1.5), (loadCaseLL_PL, Kfi * 1.5), (loadCaseSL, Kfi * 0.45));
             var loadCombSL = new LoadCombination("ULS (6.10b) - Sneophobning", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.0), (loadCaseSL_OP, Kfi * 1.5));
             var loadCombSLS = new LoadCombination("SLS - Kvasi-permanent", LoadCombType.ServiceabilityQuasiPermanent, (loadCaseDL, 1.0), (loadCaseDL_extra, 1.0), (loadCaseDL_LL, 1.0), (loadCaseDL_PL, 1.0), (loadCaseLL, psi2_q), (loadCaseLL_LL, psi2_q), (loadCaseLL_PL, psi2_q));
+            var loadCombRotation = new LoadCombination("Rotation", LoadCombType.UltimateOrdinary, (loadCaseDL, 0.9), (loadCaseDL_extra, 0), (loadCaseDL_LL, Kfi * 1.0), (loadCaseDL_PL, Kfi * 1.0), (loadCaseLL, 0), (loadCaseLL_LL, Kfi * 1.5), (loadCaseLL_PL, Kfi * 1.5), (loadCaseSL, Kfi * 0));
+
+            if (snowload == 0)
+            {
+                loadCombLL = new LoadCombination("ULS (6.10b) - Dominerende nyttelast", LoadCombType.UltimateOrdinary, (loadCaseDL, Kfi * 1.0), (loadCaseDL_extra, Kfi * 1.0), (loadCaseDL_LL, Kfi * 1.0), (loadCaseDL_PL, Kfi * 1.0), (loadCaseLL, Kfi * 1.5), (loadCaseLL_LL, Kfi * 1.5), (loadCaseLL_PL, Kfi * 1.5));
+                loadCombRotation = new LoadCombination("Rotation", LoadCombType.UltimateOrdinary, (loadCaseDL, 0.9), (loadCaseDL_extra, 0), (loadCaseDL_LL, Kfi * 1.0), (loadCaseDL_PL, Kfi * 1.0), (loadCaseLL, 0), (loadCaseLL_LL, Kfi * 1.5), (loadCaseLL_PL, Kfi * 1.5));
+            }
 
             // Define loads //
 
@@ -333,8 +340,15 @@ namespace Dalton_Trapper.Model
 
             loads.Add(surfaceLoad);
             loads.Add(surfaceLoad_DL_extra);
-            loads.Add(surfaceLoad_SL);
-            loads.Add(surfaceLoad_SL_OP);
+
+            if (snowload != 0)
+            {
+                loads.Add(surfaceLoad_SL);
+            }
+            if (snowload2 != 0)
+            {
+                loads.Add(surfaceLoad_SL_OP);
+            }
 
             // Looping through collection of point loads
             for (int i = 0; i < _pointLoads.Count; i++)
@@ -389,14 +403,35 @@ namespace Dalton_Trapper.Model
                 }
             }
 
-            // Combine all loadcases and -combinations
-            var loadCases = new List<LoadCase> { loadCaseDL, loadCaseDL_extra, loadCaseLL, loadCaseSL, loadCaseSL_OP, loadCaseDL_LL, loadCaseLL_LL, loadCaseDL_PL, loadCaseLL_PL };
-            var loadCombinations = new List<LoadCombination> { loadCombDL, loadCombLL, loadCombSL, loadCombSLS };
-
-            // Define the analysis settings
+            // Combine all loadcases and -combinations. Only adds snow loads if present
             var settingsULS = new CombItem();
             var settingsSLS = new CombItem(PL: false, Cr: true);
-            var combItems = new List<CombItem> { settingsULS, settingsULS, settingsULS, settingsSLS };
+            var combItems = new List<CombItem> { settingsULS , settingsULS , settingsSLS , settingsULS };
+            var loadCases = new List<LoadCase> { loadCaseDL, loadCaseDL_extra, loadCaseLL , loadCaseDL_LL , loadCaseLL_LL , loadCaseDL_PL, loadCaseLL_PL };
+            var loadCombinations = new List<LoadCombination> { loadCombDL, loadCombLL, loadCombSLS, loadCombRotation };
+
+            //if (_lineLoads.Count > 0) // If lineloads are present
+            //{
+            //    loadCases.Add(loadCaseDL_LL);
+            //    loadCases.Add(loadCaseLL_LL);
+            //}
+            //if (_pointLoads.Count > 0) // If pointloads are present
+            //{
+            //    loadCases.Add(loadCaseDL_PL);
+            //    loadCases.Add(loadCaseLL_PL);
+            //}
+            if (snowload != 0) // If snowload is present
+            {
+                loadCases.Add(loadCaseSL);
+            }
+            if (snowload2 != 0) // If sneophobning is present
+            {
+                loadCases.Add(loadCaseSL_OP);
+                loadCombinations = new List<LoadCombination> { loadCombDL, loadCombLL, loadCombSL, loadCombSLS, loadCombRotation };
+                combItems = new List<CombItem> { settingsULS, settingsULS, settingsULS, settingsSLS, settingsULS };
+            }     
+
+            // Define the analysis settings
             var comb = new Comb
             {
                 NLEmaxiter = 30,
@@ -494,8 +529,6 @@ namespace Dalton_Trapper.Model
             var reinfSlab = FemDesign.Reinforcement.SurfaceReinforcement.AddReinforcementToSlab(slab, srfReinf);
             elements.Add(reinfSlab);
 
-
-
             // Set up the model
             var model = new FemDesign.Model(Country.DK);
             model.AddElements(elements);
@@ -504,11 +537,13 @@ namespace Dalton_Trapper.Model
             model.AddLoadCombinations(loadCombinations);
 
             // Documentation
-            string relativePathDocTemplate = System.IO.Path.Combine("Model\\FEM-Design tab", "Repos_Doc_Template.dsc");
-            string relativePathDocTemplateDeploy = System.IO.Path.Combine("Model\\FEM-Design tab", "Repos_Doc_Template - Deploy.dsc");
+            string relativePathDocTemplate = System.IO.Path.Combine("Model\\FEM-Design tab", "Doc_template_NoSnowLoad.dsc");
+            if (snowload2 != 0)
+            {
+                relativePathDocTemplate = System.IO.Path.Combine("Model\\FEM-Design tab", "Doc_template_SnowLoad.dsc");
+            }
+            string relativePathDocTemplateDeploy = System.IO.Path.Combine("Model\\FEM-Design tab", "Doc_Template - Deploy.dsc");
             string filepathDocTemplate = System.IO.Path.GetFullPath(relativePathDocTemplate);
-
-
 
             // Adding dimension lines
             int j = 0;

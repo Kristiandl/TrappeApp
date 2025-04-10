@@ -16,6 +16,7 @@
     <None Remove="Images\img_femdesign.png" />
     <None Remove="Images\img_home.png" />
     <None Remove="Images\img_projektering.png" />
+    <None Remove="Images\img_testpage.png" />
     <None Remove="Images\minimize_def.png" />
     <None Remove="Images\minimize_mo.png" />
     <None Remove="Images\shutdown_def.png" />
@@ -23,6 +24,8 @@
     <None Remove="Model\cfg_Agressiv.xml" />
     <None Remove="Model\cfg_EkstraAgressiv.xml" />
     <None Remove="Model\cfg_Standard.xml" />
+    <None Remove="Model\FEM-Design tab\Doc_template_NoSnowLoad.dsc" />
+    <None Remove="Model\FEM-Design tab\Doc_template_SnowLoad.dsc" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm" />
@@ -72,10 +75,13 @@
     <Content Include="Model\FEM-Design tab\cfg_Standard.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Model\FEM-Design tab\Repos_Doc_Template - Deploy.dsc">
+    <Content Include="Model\FEM-Design tab\Doc_template_NoSnowLoad.dsc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Model\FEM-Design tab\Repos_Doc_Template.dsc">
+    <Content Include="Model\FEM-Design tab\Doc_template_SnowLoad.dsc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\FEM-Design tab\Doc_Template - Deploy.dsc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm">
@@ -109,6 +115,7 @@
     <Resource Include="Images\img_femdesign.png" />
     <Resource Include="Images\img_home.png" />
     <Resource Include="Images\img_projektering.png" />
+    <Resource Include="Images\img_testpage.png" />
     <Resource Include="Images\minimize_def.png" />
     <Resource Include="Images\minimize_mo.png" />
     <Resource Include="Images\shutdown_def.png" />

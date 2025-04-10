@@ -1,0 +1,255 @@
+﻿<UserControl x:Class="Dalton_Trapper.View.TestPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Dalton_Trapper.ViewModel"
+             xmlns:util="clr-namespace:Dalton_Trapper.Utilities"
+             xmlns:uc="clr-namespace:Dalton_Trapper.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="800"
+             d:DesignWidth="1300"
+             Style="{StaticResource Page_Style}">
+
+    <UserControl.Resources>
+        <util:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <util:EnumToBooleanConverter x:Key="EnumToBooleanConverter"/>
+        <util:BoolRadioButtonToVisibilityConverter x:Key="BoolRadioButtonToVisibilityConverter" />
+        <CollectionViewSource x:Key="CoordCollection" Source="{Binding Coord}"/>
+        <CollectionViewSource x:Key="FormCollection" Source="{Binding FormOptions}"/>
+        <CollectionViewSource x:Key="KvalitetListe" Source="{Binding KvalitetListe}"/>
+    </UserControl.Resources>
+    
+    <Grid Margin="15,65,15,15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="InputColumn" Width="640"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition x:Name="VisualiseringColumn" Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Column="1" Fill="#444554" Panel.ZIndex="-1"/>    
+        <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" BorderThickness="0">
+
+            <TabControl x:Name="TabControl" Background="Transparent" BorderBrush="#444554" BorderThickness="0,2,0,0">
+
+                <!-- Geometri tab-->
+                <TabItem Header="Geometri" Style="{StaticResource TabItem_Style}" >
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel HorizontalAlignment="Left" Margin="5,5,0,2">
+                            <uc:InputBox Label="Elementnavn" Text="{Binding SlabName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                         LabelWidth="275" InputWidth="130"/>
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Left" Margin="5,2,0,2">
+                            <uc:InputBox Label="Pladetykkelse [mm]" Text="{Binding PlateThickness, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                         LabelWidth="275" InputWidth="130"/>
+                        </StackPanel>
+
+                        <StackPanel HorizontalAlignment="Left" Margin="5,2,0,10">
+                            <uc:InputComboBox Label="Betonstyrke" 
+                                              Items="{Binding BetonstyrkeListe}" 
+                                              SelectedItem="{Binding Betonstyrke, Mode=TwoWay}" 
+                                              LabelWidth="275" InputWidth="130" ContentWidth="72"/>
+                        </StackPanel>
+
+                        <TextBlock Text="Indtast koordinater for plade MED uret." Style="{StaticResource Text_Style_TabText}" />
+                        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Coord}" 
+                                  SelectionUnit="FullRow" SelectionMode="Extended" RowHeaderWidth="0"
+                                  Width="220" CanUserAddRows="True" HorizontalAlignment="Left"
+                                  CanUserDeleteRows="True" IsReadOnly="False" CanUserSortColumns="False"
+                                  Style="{StaticResource DataGridStyle}"
+                                  util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Header="ID" Width="1.1*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding ID}" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Header="X [mm]" Width="2*" Binding="{Binding X}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Y [mm]" Width="2*" Binding="{Binding Y}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTemplateColumn Width="Auto">
+                                    <!-- Add button -->
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.AddRowCommandCoord, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\add_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Add row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <!-- Delete button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.DeleteRowCommandCoord, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\delete_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Delete row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Points}" 
+                                  SelectionUnit="FullRow" SelectionMode="Extended" RowHeaderWidth="0"
+                                  Width="220" CanUserAddRows="True" HorizontalAlignment="Left"
+                                  CanUserDeleteRows="True" IsReadOnly="False" CanUserSortColumns="False"
+                                  Style="{StaticResource DataGridStyle}"
+                                  util:DataGridBehaviors.ClearSelectionOnLostFocus="True">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Header="ID" Width="1.1*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding ID}" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Header="X [mm]" Width="2*" Binding="{Binding X}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTextColumn Header="Y [mm]" Width="2*" Binding="{Binding Y}" ElementStyle="{StaticResource DataGridTextColumnElementStyle}" EditingElementStyle="{StaticResource DataGridEditingElementStyle}"/>
+                                <DataGridTemplateColumn Width="Auto">
+                                    <!-- Add button -->
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.AddRowCommandCoord, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                    CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\add_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Add row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <!-- Delete button -->
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.DeleteRowCommandCoord, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                    CommandParameter="{Binding}"  Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <Image Source="Icons\delete_icon.png" Style="{StaticResource Icon_Style}" ToolTip="Delete row" />
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </ScrollViewer>
+
+        <!-- Right hand side -->
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="Visualisering" Height="85*" MinHeight="200"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="15*" MinHeight="100"/>
+            </Grid.RowDefinitions>
+
+            <Canvas x:Name="DrawingCanvas" VerticalAlignment="Center" HorizontalAlignment="Center" Height="600" Width="600">
+                <Path Data="{Binding SlabGeometry}" Stroke="Black" StrokeThickness="3" Fill="Gray"/>
+                <!--<Path Data="{Binding PointLoadGeometry}" Stroke="Red" StrokeThickness="2"/>
+                <Path Data="{Binding LineLoadGeometry}" Stroke="Red" StrokeThickness="2"/>
+                <Path Data="{Binding PointSupportGeometry}" Fill="Green" Stroke="Black" StrokeThickness="1"/>
+                <Path Data="{Binding LineSupportGeometry}" Stroke="Green" StrokeThickness="7"/>
+                <Path Data="{Binding CanvasDimensionLines}" Stroke="Yellow" StrokeThickness="1"/>-->
+                <Path Data="{Binding PointGeometry}" Stroke="Black" StrokeThickness="2" Fill="Red">
+                    <Path.InputBindings>
+                        <MouseBinding MouseAction="LeftClick"
+                                      Command="{Binding DataContext.StartDragCommand, RelativeSource={RelativeSource AncestorType=Canvas}}"
+                                      CommandParameter="{Binding}"/>
+                    </Path.InputBindings>
+                </Path>
+
+                <!-- Draggable Points --><!--
+                <ItemsControl ItemsSource="{Binding Points}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Ellipse Width="10" Height="10" Fill="Red"
+                         Canvas.Left="{Binding X}"
+                         Canvas.Top="{Binding Y}">
+                                <Ellipse.InputBindings>
+                                    <MouseBinding MouseAction="LeftClick"
+                                      Command="{Binding DataContext.StartDragCommand, RelativeSource={RelativeSource AncestorType=Canvas}}"
+                                      CommandParameter="{Binding}" />
+                                </Ellipse.InputBindings>
+                            </Ellipse>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>-->
+
+
+
+
+
+                <!-- Labels (Corners, supports and loads) --><!--
+                <ItemsControl ItemsSource="{Binding CanvasLabels}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="Canvas.Left" Value="{Binding X}" />
+                            <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ID}" Style="{StaticResource Text_Style_TabText}" FontWeight="Bold" Foreground="{Binding Colour}">
+                                <TextBlock.RenderTransform>
+                                    <ScaleTransform ScaleY="-1"/>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding DimensionlineLabels}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="Canvas.Left" Value="{Binding X}" />
+                            <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ID}" 
+                                       Style="{StaticResource Text_Style_TabText}" 
+                                       Foreground="{Binding Colour}">
+                                --><!-- Apply transformations (Flip + Rotate) --><!--
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        --><!-- Flip vertically (Y-axis) --><!--
+                                        <ScaleTransform ScaleY="-1" />
+
+                                        --><!-- Rotate using bound angle (assumes your ViewModel provides a property called 'Angle') --><!--
+                                        <RotateTransform Angle="{Binding Angle}" />
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>-->
+                <!-- Flip vertical -->
+                <Canvas.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                    </TransformGroup>
+                </Canvas.LayoutTransform>
+            </Canvas>
+
+            <Rectangle Grid.Row="1" Fill="#444554" Panel.ZIndex="-1"/>
+
+            
+        </Grid>
+    </Grid>
+</UserControl>

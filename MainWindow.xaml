@@ -72,6 +72,17 @@
                                        Style="{StaticResource Text_Style}" />
                         </Grid>
                     </Menu:Btn>
+
+                    <!--// Test page //-->
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding TestPageCommand}" Visibility="{Binding TestPageVisibility}">
+                        <Grid>
+                            <Image Source="Images/img_testpage.png"
+                                   Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Test-side"
+                                       Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
                 </StackPanel>
                 <TextBlock x:Name="AppVersion" Style="{StaticResource Text_Style_Bottom}" VerticalAlignment="Bottom"/>
             </Grid>

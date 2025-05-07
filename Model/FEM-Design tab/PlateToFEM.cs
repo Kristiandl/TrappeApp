@@ -565,9 +565,11 @@ namespace Dalton_Trapper.Model
             try
             {
                 // Select newest version of FEM-Design
-                string femDesign_path = Directory.Exists($@"C:\Program Files\StruSoft\FEM-Design 24\") ? 
-                    $@"C:\Program Files\StruSoft\FEM-Design 24\" : 
-                    $@"C:\Program Files\StruSoft\FEM-Design 23\";
+                //string femDesign_path = Directory.Exists($@"C:\Program Files\StruSoft\FEM-Design 24\") ? 
+                //    $@"C:\Program Files\StruSoft\FEM-Design 24\" : 
+                //    $@"C:\Program Files\StruSoft\FEM-Design 23\";
+
+                string femDesign_path = $@"C:\Program Files\StruSoft\FEM-Design 23\";
 
                     using (var femDesign = new FemDesign.FemDesignConnection(femDesign_path, _FEMInBg))
                     {
@@ -629,12 +631,12 @@ namespace Dalton_Trapper.Model
 
                                 if (snowload == 0)
                                 {
-                                    string updatedContent = fileContent.Replace("Repos XXX", slabName).Replace("CCX", CC).Replace("KFIX", Kfi.ToString()).Replace(" - Sneophobning (6.10b)", "").Replace("RevnEXXX", crackWdithConclusion);
+                                    string updatedContent = fileContent.Replace("Repos XXX", slabName).Replace("CCX", CC).Replace("KFIX", Kfi.ToString()).Replace(" - Sneophobning (6.10b)", "").Replace("revneXXX", crackWdithConclusion);
                                     File.WriteAllText(relativePathDocTemplateDeploy, updatedContent);
                                 }
                                 else
                                 {
-                                    string updatedContent = fileContent.Replace("Repos XXX", slabName).Replace("CCX", CC).Replace("KFIX", Kfi.ToString()).Replace("RevnEXXX", crackWdithConclusion);
+                                    string updatedContent = fileContent.Replace("Repos XXX", slabName).Replace("CCX", CC).Replace("KFIX", Kfi.ToString()).Replace("revneXXX", crackWdithConclusion);
                                     File.WriteAllText(relativePathDocTemplateDeploy, updatedContent);
                                 }
 

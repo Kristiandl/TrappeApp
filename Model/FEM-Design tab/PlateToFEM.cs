@@ -565,11 +565,10 @@ namespace Dalton_Trapper.Model
             try
             {
                 // Select newest version of FEM-Design
-                //string femDesign_path = Directory.Exists($@"C:\Program Files\StruSoft\FEM-Design 24\") ? 
-                //    $@"C:\Program Files\StruSoft\FEM-Design 24\" : 
-                //    $@"C:\Program Files\StruSoft\FEM-Design 23\";
+                string femDesign_path = Directory.Exists($@"C:\Program Files\StruSoft\FEM-Design 24\") ? 
+                    $@"C:\Program Files\StruSoft\FEM-Design 24\" : 
+                    $@"C:\Program Files\StruSoft\FEM-Design 23\";
 
-                string femDesign_path = $@"C:\Program Files\StruSoft\FEM-Design 23\";
 
                     using (var femDesign = new FemDesign.FemDesignConnection(femDesign_path, _FEMInBg))
                     {

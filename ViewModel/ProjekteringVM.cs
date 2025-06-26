@@ -5,9 +5,11 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Shapes;
 using Drawing = Dalton_Trapper.Model.Projektering_tab.Drawing;
 using Excel = Microsoft.Office.Interop.Excel;
 using ImportExport = Dalton_Trapper.Model.Projektering_tab.ImportExport;
+using Path = System.IO.Path;
 
 namespace Dalton_Trapper.ViewModel
 {
@@ -24,6 +26,7 @@ namespace Dalton_Trapper.ViewModel
             SelectedDrawings = new ObservableCollection<Drawing>();
             SelectedCalculations = new ObservableCollection<Calculation>();
             TegningerHeader = "Tegninger";
+            BeregningerHeader = "Beregninger";
 
             // Commands           
             OpenDrawingCommand = new RelayCommand(OpenDrawing);
@@ -289,6 +292,7 @@ namespace Dalton_Trapper.ViewModel
                 if (!string.IsNullOrEmpty(parentFolder) && Directory.Exists(parentFolder))
                 {
                     LoadFolderContents(parentFolder, "Calculation");
+                    SetCalculationHeader(CurrentCalculationFolder);
                 }
                 else
                 {
@@ -936,6 +940,20 @@ namespace Dalton_Trapper.ViewModel
                 }
             }
         }
+
+        private String _beregningerHeader;
+        public String BeregningerHeader
+        {
+            get => _beregningerHeader;
+            set
+            {
+                if (_beregningerHeader != value)
+                {
+                    _beregningerHeader = value;
+                    OnPropertyChanged(nameof(BeregningerHeader));
+                }
+            }
+        }
         #endregion
 
         #region Save and import functions
@@ -1100,6 +1118,7 @@ namespace Dalton_Trapper.ViewModel
                     };
                     Calculations.Add(calculation);
                 }
+                SetCalculationHeader(calculationFolderPath);
             }
             catch (Exception)
             {
@@ -1131,6 +1150,7 @@ namespace Dalton_Trapper.ViewModel
                         };
                         Calculations.Add(calculation);
                     }
+                    SetCalculationHeader(calculationFolderPath2);
                 }
                 catch (Exception)
                 {
@@ -1213,6 +1233,7 @@ namespace Dalton_Trapper.ViewModel
                         };
                         Calculations.Add(calculation);
                     }
+                    SetCalculationHeader(CurrentCalculationFolder);
                 }
                 catch (Exception e)
                 {
@@ -1223,22 +1244,13 @@ namespace Dalton_Trapper.ViewModel
 
         private void SetDrawingHeader(string folderPath)
         {
-            // Hvis færdige tegninger
-            if (folderPath == $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\07.Tegninger\\CRH-Projekt\\15 Trapper-Reposer og Skakte\\4 Færdige PDF tegninger" 
-                || folderPath == $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\07.Tegninger\\1 - CRH-Projekt\\15 Trapper-Reposer og Skakte\\4 Færdige PDF tegninger")
-            {
-                TegningerHeader = "Færdige tegninger";
-            }
-            // Hvis rettede tegninger
-            else if (folderPath == $"S:\\{ProjectInfo.ProjectNumber.Substring(0, 3)}\\{ProjectInfo.ProjectNumber}\\09.Beregninger\\Elementstatik\\15 Trapper-Reposer og Skakte\\02 Rettede tegninger") 
-            {
-                TegningerHeader = "Rettede tegninger";
-            }
-            // Alle andre tilfælde
-            else
-            {
-                TegningerHeader = "Tegninger";
-            }   
+            string directory = new DirectoryInfo(folderPath).Name;
+            TegningerHeader = "Tegninger: " + directory;
+        }
+        private void SetCalculationHeader(string folderPath)
+        {
+            string directory = new DirectoryInfo(folderPath).Name;
+            BeregningerHeader = "Beregninger: " + directory;
         }
         #endregion
     }

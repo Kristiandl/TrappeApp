@@ -1,28 +1,20 @@
 Point support group, Reactions, Load comb.: ULS (6.10a) - Dominerende egenlast
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.1	0.220	0.000	0.000	149	0.000	0.000	4.575	0.000	0.000	0.000	4.575	0.000	1 ULS (6.10a) - Dominerende egenlast
-PS.2	0.930	0.000	0.000	475	0.000	0.000	-23.191	0.000	0.000	0.000	23.191	0.000	1 ULS (6.10a) - Dominerende egenlast
-PS.3	1.210	2.280	0.000	617	0.000	0.000	-19.458	0.000	0.000	0.000	19.458	0.000	1 ULS (6.10a) - Dominerende egenlast
+PS.22	3.465	2.632	0.000	1295	0.000	0.000	-48.875	0.000	0.000	0.000	48.875	0.000	1 ULS (6.10a) - Dominerende egenlast
 
 Point support group, Reactions, Load comb.: ULS (6.10b) - Dominerende nyttelast
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.1	0.220	0.000	0.000	149	0.000	0.000	8.000	0.000	0.000	0.000	8.000	0.000	2 ULS (6.10b) - Dominerende nyttelast
-PS.2	0.930	0.000	0.000	475	0.000	0.000	-40.753	0.000	0.000	0.000	40.753	0.000	2 ULS (6.10b) - Dominerende nyttelast
-PS.3	1.210	2.280	0.000	617	0.000	0.000	-34.234	0.000	0.000	0.000	34.234	0.000	2 ULS (6.10b) - Dominerende nyttelast
+PS.22	3.465	2.632	0.000	1295	0.000	0.000	-66.531	0.000	0.000	0.000	66.531	0.000	2 ULS (6.10b) - Dominerende nyttelast
 
 Point support group, Reactions, Load comb.: SLS - Kvasi-permanent
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.1	0.220	0.000	0.000	149	0.000	0.000	6.414	0.000	0.000	0.000	6.414	0.000	3 SLS - Kvasi-permanent
-PS.2	0.930	0.000	0.000	475	0.000	0.000	-27.150	0.000	0.000	0.000	27.150	0.000	3 SLS - Kvasi-permanent
-PS.3	1.210	2.280	0.000	617	0.000	0.000	-21.916	0.000	0.000	0.000	21.916	0.000	3 SLS - Kvasi-permanent
+PS.22	3.465	2.632	0.000	1295	0.000	0.000	-51.355	0.000	0.000	0.000	51.355	0.000	3 SLS - Kvasi-permanent
 
 Point support group, Reactions, Load comb.: Rotation
 ID	x	y	z	Node	Fx'	Fy'	Fz'	Mx'	My'	Mz'	Fr	Mr	Comb.
 [-]	[m]	[m]	[m]	[-]	[kN]	[kN]	[kN]	[kNm]	[kNm]	[kNm]	[kN]	[kNm]	[-]
-PS.1	0.220	0.000	0.000	149	0.000	0.000	8.453	0.000	0.000	0.000	8.453	0.000	4 Rotation
-PS.2	0.930	0.000	0.000	475	0.000	0.000	-33.996	0.000	0.000	0.000	33.996	0.000	4 Rotation
-PS.3	1.210	2.280	0.000	617	0.000	0.000	-26.364	0.000	0.000	0.000	26.364	0.000	4 Rotation
+PS.22	3.465	2.632	0.000	1295	0.000	0.000	-45.156	0.000	0.000	0.000	45.156	0.000	4 Rotation
 

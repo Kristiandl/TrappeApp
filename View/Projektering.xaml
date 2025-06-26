@@ -49,13 +49,13 @@
                     <Hyperlink Command="{Binding CommandTegningsmappe}" TextDecorations="None">
                         <TextBlock Text="{Binding TegningerHeader}" Style="{StaticResource Text_Style_TabText_Header}" Margin="0"/>
                     </Hyperlink>
-                </TextBlock>
-                <TextBlock >
+                </TextBlock >
+                <TextBlock Width="522">
                     <Hyperlink Command="{Binding CommandBeregningsmappe}" TextDecorations="None">
-                        <TextBlock Text="Beregninger" Style="{StaticResource Text_Style_TabText_Header}" Margin="0,0,418,0"/>
+                        <TextBlock Text="{Binding BeregningerHeader}" Style="{StaticResource Text_Style_TabText_Header}" Margin="0"/>
                     </Hyperlink>
                 </TextBlock>
-                <TextBlock Text="Opret ny beregning" Style="{StaticResource Text_Style_TabText_Header}"/>
+                <TextBlock Text="Opret ny beregning" Style="{StaticResource Text_Style_TabText_Header}" TextDecorations="None" Margin="0"/>
             </StackPanel>
 
             <!-- Midtersektion - Indhold -->

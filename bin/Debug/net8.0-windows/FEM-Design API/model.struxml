@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" country="DK" standard="EC" soil_as_solid="false" convertid="00000000-0000-0000-0000-000000000000" guid="2be31816-ad4a-4247-a9ca-bd13a17c984e" end_time="2025-05-07T09:28:29.231" start_time="1970-01-01T00:00:00.000" source_software="FEM-Design API SDK 23.7.5.0" struxml_version="01.00.000" xmlns="urn:strusoft">
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" country="DK" standard="EC" soil_as_solid="false" convertid="00000000-0000-0000-0000-000000000000" guid="6972e7cf-a52c-4e14-b907-e5e7bf705ddf" end_time="2025-05-26T12:43:55.965" start_time="1970-01-01T00:00:00.000" source_software="FEM-Design API SDK 23.7.5.0" struxml_version="01.00.000" xmlns="urn:strusoft">
   <entities>
     <foundations />
-    <slab last_change="2025-05-07T09:28:29.205" guid="39fd9f8d-60e1-4a71-8bfe-145302f86783" action="added" name="@Plate1.1" type="plate" stage="1">
-      <slab_part last_change="2025-05-07T09:28:29.203" guid="f8a7e480-9bf7-43db-9a19-d21519c35937" action="added" name="@Plate1.1.1" align_offset="0" ortho_alfa="0" ortho_ratio="1" mesh_size="0.15" complex_material="269c0974-3647-4617-9f2b-7763bd542f43" alignment="center" ecc_calc="false" ecc_crack="false">
+    <slab last_change="2025-05-26T12:43:55.965" guid="6f2c5c30-da73-45f9-81dc-e6b29c125cdf" action="added" name="@Plate1.8" type="plate" stage="1">
+      <slab_part last_change="2025-05-26T12:43:55.965" guid="b2c33a01-5a47-40c4-a136-89f7da506cfd" action="added" name="@Plate1.8.1" align_offset="0" ortho_alfa="0" ortho_ratio="1" mesh_size="0.15" complex_material="9c983223-0727-4217-9671-bddb37f6fae3" alignment="center" ecc_calc="false" ecc_crack="false">
         <contour>
           <edge type="line" start_angle="0" end_angle="0">
             <point x="0" y="0" z="0" />
-            <point x="0" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="0" y="2.28" z="0" />
-            <point x="1.43" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
+            <point x="2.315" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="2.28" z="0" />
-            <point x="1.43" y="1.29" z="0" />
+            <point x="2.315" y="1.46" z="0" />
+            <point x="2.315" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="1.29" z="0" />
-            <point x="1.29" y="1.29" z="0" />
+            <point x="2.315" y="2.782" z="0" />
+            <point x="3.615" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="1.29" z="0" />
-            <point x="1.29" y="0.99" z="0" />
+            <point x="3.615" y="2.782" z="0" />
+            <point x="3.615" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="0.99" z="0" />
-            <point x="1.15" y="0.99" z="0" />
+            <point x="3.615" y="1.46" z="0" />
+            <point x="6.1" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0.99" z="0" />
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="1.46" z="0" />
+            <point x="6.1" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="0" z="0" />
             <point x="0" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
         </contour>
-        <thickness x="0" y="0" z="0" val="0.25999999046325684" />
+        <thickness x="0" y="0" z="0" val="0.2680000066757202" />
         <local_pos x="0" y="0" z="0" />
         <local_x x="1" y="0" z="0" />
         <local_y x="0" y="1" z="0" />
@@ -62,63 +62,63 @@
       </slab_part>
       <end />
     </slab>
-    <surface_reinforcement_parameters last_change="2025-05-07T09:28:29.230" guid="661ad666-fdc1-4ede-b756-69ebd084f418" action="added" single_layer_reinforcement="false">
-      <base_shell guid="f8a7e480-9bf7-43db-9a19-d21519c35937" />
+    <surface_reinforcement_parameters last_change="2025-05-26T12:43:55.965" guid="04ad5c1f-bc90-4290-b257-88fcf9a39682" action="added" single_layer_reinforcement="false">
+      <base_shell guid="b2c33a01-5a47-40c4-a136-89f7da506cfd" />
       <center x="0" y="0" z="0" polar_system="false" />
       <x_direction x="1" y="0" z="0" />
       <y_direction x="0" y="1" z="0" />
     </surface_reinforcement_parameters>
-    <surface_reinforcement last_change="2025-05-07T09:28:29.223" guid="035d88d8-0881-438e-859b-d4cfe5cf0a83" action="added">
-      <base_shell guid="f8a7e480-9bf7-43db-9a19-d21519c35937" />
-      <surface_reinforcement_parameters guid="661ad666-fdc1-4ede-b756-69ebd084f418" />
-      <straight space="0.15000000596046448" face="top" cover="0.045" direction="x" />
+    <surface_reinforcement last_change="2025-05-26T12:43:55.965" guid="6ee220af-b65b-4c28-b0ef-583adf2d77a8" action="added">
+      <base_shell guid="b2c33a01-5a47-40c4-a136-89f7da506cfd" />
+      <surface_reinforcement_parameters guid="04ad5c1f-bc90-4290-b257-88fcf9a39682" />
+      <straight space="0.10000000149011612" face="top" cover="0.053" direction="x" />
       <wire diameter="0.008" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
       <region>
         <contour>
           <edge type="line" start_angle="0" end_angle="0">
             <point x="0" y="0" z="0" />
-            <point x="0" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="0" y="2.28" z="0" />
-            <point x="1.43" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
+            <point x="2.315" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="2.28" z="0" />
-            <point x="1.43" y="1.29" z="0" />
+            <point x="2.315" y="1.46" z="0" />
+            <point x="2.315" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="1.29" z="0" />
-            <point x="1.29" y="1.29" z="0" />
+            <point x="2.315" y="2.782" z="0" />
+            <point x="3.615" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="1.29" z="0" />
-            <point x="1.29" y="0.99" z="0" />
+            <point x="3.615" y="2.782" z="0" />
+            <point x="3.615" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="0.99" z="0" />
-            <point x="1.15" y="0.99" z="0" />
+            <point x="3.615" y="1.46" z="0" />
+            <point x="6.1" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0.99" z="0" />
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="1.46" z="0" />
+            <point x="6.1" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="0" z="0" />
             <point x="0" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
@@ -126,57 +126,57 @@
         </contour>
       </region>
     </surface_reinforcement>
-    <surface_reinforcement last_change="2025-05-07T09:28:29.224" guid="c8c208ec-69ef-4f48-8356-acad31224c34" action="added">
-      <base_shell guid="f8a7e480-9bf7-43db-9a19-d21519c35937" />
-      <surface_reinforcement_parameters guid="661ad666-fdc1-4ede-b756-69ebd084f418" />
-      <straight space="0.15000000596046448" face="top" cover="0.035" direction="y" />
-      <wire diameter="0.01" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
+    <surface_reinforcement last_change="2025-05-26T12:43:55.965" guid="ab0df3e1-506b-4c35-becd-3698fb14b527" action="added">
+      <base_shell guid="b2c33a01-5a47-40c4-a136-89f7da506cfd" />
+      <surface_reinforcement_parameters guid="04ad5c1f-bc90-4290-b257-88fcf9a39682" />
+      <straight space="0.10000000149011612" face="top" cover="0.045" direction="y" />
+      <wire diameter="0.008" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
       <region>
         <contour>
           <edge type="line" start_angle="0" end_angle="0">
             <point x="0" y="0" z="0" />
-            <point x="0" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="0" y="2.28" z="0" />
-            <point x="1.43" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
+            <point x="2.315" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="2.28" z="0" />
-            <point x="1.43" y="1.29" z="0" />
+            <point x="2.315" y="1.46" z="0" />
+            <point x="2.315" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="1.29" z="0" />
-            <point x="1.29" y="1.29" z="0" />
+            <point x="2.315" y="2.782" z="0" />
+            <point x="3.615" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="1.29" z="0" />
-            <point x="1.29" y="0.99" z="0" />
+            <point x="3.615" y="2.782" z="0" />
+            <point x="3.615" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="0.99" z="0" />
-            <point x="1.15" y="0.99" z="0" />
+            <point x="3.615" y="1.46" z="0" />
+            <point x="6.1" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0.99" z="0" />
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="1.46" z="0" />
+            <point x="6.1" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="0" z="0" />
             <point x="0" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
@@ -184,57 +184,57 @@
         </contour>
       </region>
     </surface_reinforcement>
-    <surface_reinforcement last_change="2025-05-07T09:28:29.224" guid="cbf4b94a-3b0b-416a-8244-7285b25d2d44" action="added">
-      <base_shell guid="f8a7e480-9bf7-43db-9a19-d21519c35937" />
-      <surface_reinforcement_parameters guid="661ad666-fdc1-4ede-b756-69ebd084f418" />
-      <straight space="0.15000000596046448" face="bottom" cover="0.049" direction="x" />
-      <wire diameter="0.012" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
+    <surface_reinforcement last_change="2025-05-26T12:43:55.965" guid="374a5d6e-b8c7-4574-8381-0f8e1443c6c5" action="added">
+      <base_shell guid="b2c33a01-5a47-40c4-a136-89f7da506cfd" />
+      <surface_reinforcement_parameters guid="04ad5c1f-bc90-4290-b257-88fcf9a39682" />
+      <straight space="0.10000000149011612" face="bottom" cover="0.043" direction="x" />
+      <wire diameter="0.008" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
       <region>
         <contour>
           <edge type="line" start_angle="0" end_angle="0">
             <point x="0" y="0" z="0" />
-            <point x="0" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="0" y="2.28" z="0" />
-            <point x="1.43" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
+            <point x="2.315" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="2.28" z="0" />
-            <point x="1.43" y="1.29" z="0" />
+            <point x="2.315" y="1.46" z="0" />
+            <point x="2.315" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="1.29" z="0" />
-            <point x="1.29" y="1.29" z="0" />
+            <point x="2.315" y="2.782" z="0" />
+            <point x="3.615" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="1.29" z="0" />
-            <point x="1.29" y="0.99" z="0" />
+            <point x="3.615" y="2.782" z="0" />
+            <point x="3.615" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="0.99" z="0" />
-            <point x="1.15" y="0.99" z="0" />
+            <point x="3.615" y="1.46" z="0" />
+            <point x="6.1" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0.99" z="0" />
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="1.46" z="0" />
+            <point x="6.1" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="0" z="0" />
             <point x="0" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
@@ -242,57 +242,57 @@
         </contour>
       </region>
     </surface_reinforcement>
-    <surface_reinforcement last_change="2025-05-07T09:28:29.224" guid="bbb5d16d-7c5d-4538-b516-2a0095eed6cd" action="added">
-      <base_shell guid="f8a7e480-9bf7-43db-9a19-d21519c35937" />
-      <surface_reinforcement_parameters guid="661ad666-fdc1-4ede-b756-69ebd084f418" />
-      <straight space="0.15000000596046448" face="bottom" cover="0.035" direction="y" />
-      <wire diameter="0.014" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
+    <surface_reinforcement last_change="2025-05-26T12:43:55.965" guid="3d07bb15-795e-44cd-af89-21839cc7954c" action="added">
+      <base_shell guid="b2c33a01-5a47-40c4-a136-89f7da506cfd" />
+      <surface_reinforcement_parameters guid="04ad5c1f-bc90-4290-b257-88fcf9a39682" />
+      <straight space="0.10000000149011612" face="bottom" cover="0.035" direction="y" />
+      <wire diameter="0.008" reinforcing_material="0d94ddc2-3f19-486d-988e-d32f6a47fc82" />
       <region>
         <contour>
           <edge type="line" start_angle="0" end_angle="0">
             <point x="0" y="0" z="0" />
-            <point x="0" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="0" y="2.28" z="0" />
-            <point x="1.43" y="2.28" z="0" />
+            <point x="0" y="1.46" z="0" />
+            <point x="2.315" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="2.28" z="0" />
-            <point x="1.43" y="1.29" z="0" />
+            <point x="2.315" y="1.46" z="0" />
+            <point x="2.315" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.43" y="1.29" z="0" />
-            <point x="1.29" y="1.29" z="0" />
+            <point x="2.315" y="2.782" z="0" />
+            <point x="3.615" y="2.782" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="1.29" z="0" />
-            <point x="1.29" y="0.99" z="0" />
+            <point x="3.615" y="2.782" z="0" />
+            <point x="3.615" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.29" y="0.99" z="0" />
-            <point x="1.15" y="0.99" z="0" />
+            <point x="3.615" y="1.46" z="0" />
+            <point x="6.1" y="1.46" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0.99" z="0" />
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="1.46" z="0" />
+            <point x="6.1" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
           </edge>
           <edge type="line" start_angle="0" end_angle="0">
-            <point x="1.15" y="0" z="0" />
+            <point x="6.1" y="0" z="0" />
             <point x="0" y="0" z="0" />
             <normal x="0" y="1" z="0" />
             <x_axis x="1" y="0" z="0" />
@@ -301,101 +301,77 @@
       </region>
     </surface_reinforcement>
     <loads>
-      <line_load last_change="2025-05-07T09:28:29.215" guid="1db1f037-e7d2-4552-9712-2038243fb7c0" action="added" load_case="81916946-6abf-4395-a6f8-1f0729663bb1" comment="" load_type="force" load_dir="constant" load_projection="false">
+      <line_load last_change="2025-05-26T12:43:55.965" guid="a3865ce6-20d0-4b18-b58a-ba0a55a3893d" action="added" load_case="d8ea4a86-4383-4cb5-a027-a076a3b32fb9" comment="" load_type="force" load_dir="constant" load_projection="false">
         <edge type="line" start_angle="0" end_angle="0">
-          <point x="1.43" y="2.28" z="0" />
-          <point x="1.43" y="1.29" z="0" />
-          <normal x="0.9899999999999998" y="-0" z="-0" />
-          <x_axis x="0" y="-1" z="0" />
+          <point x="2.315" y="1.782" z="0" />
+          <point x="2.315" y="2.782" z="0" />
+          <normal x="-1" y="-0" z="-0" />
+          <x_axis x="0" y="1" z="0" />
         </edge>
         <direction x="0" y="0" z="-1" />
         <normal x="0" y="0" z="1" />
-        <load x="1.43" y="2.28" z="0" val="9.399999618530273" />
-        <load x="1.43" y="1.29" z="0" val="9.399999618530273" />
+        <load x="2.315" y="1.782" z="0" val="18" />
+        <load x="2.315" y="2.782" z="0" val="18" />
       </line_load>
-      <line_load last_change="2025-05-07T09:28:29.216" guid="4c55f058-0564-4769-846d-6d6d1e8ae2ab" action="added" load_case="09bde64f-4264-4fca-88a7-86bdc734da5b" comment="" load_type="force" load_dir="constant" load_projection="false">
+      <line_load last_change="2025-05-26T12:43:55.965" guid="8c3d9c33-3c1a-4081-b523-378e9b1d0a69" action="added" load_case="10e50368-06a1-478f-9b3d-82cb7d31ff00" comment="" load_type="force" load_dir="constant" load_projection="false">
         <edge type="line" start_angle="0" end_angle="0">
-          <point x="1.43" y="2.28" z="0" />
-          <point x="1.43" y="1.29" z="0" />
-          <normal x="0.9899999999999998" y="-0" z="-0" />
-          <x_axis x="0" y="-1" z="0" />
+          <point x="2.315" y="1.782" z="0" />
+          <point x="2.315" y="2.782" z="0" />
+          <normal x="-1" y="-0" z="-0" />
+          <x_axis x="0" y="1" z="0" />
         </edge>
         <direction x="0" y="0" z="-1" />
         <normal x="0" y="0" z="1" />
-        <load x="1.43" y="2.28" z="0" val="6.900000095367432" />
-        <load x="1.43" y="1.29" z="0" val="6.900000095367432" />
+        <load x="2.315" y="1.782" z="0" val="8" />
+        <load x="2.315" y="2.782" z="0" val="8" />
       </line_load>
-      <line_load last_change="2025-05-07T09:28:29.216" guid="5d8ec102-1f65-459d-95dc-8d0adc385807" action="added" load_case="81916946-6abf-4395-a6f8-1f0729663bb1" comment="" load_type="force" load_dir="constant" load_projection="false">
-        <edge type="line" start_angle="0" end_angle="0">
-          <point x="1.15" y="0.99" z="0" />
-          <point x="1.15" y="0" z="0" />
-          <normal x="0.99" y="-0" z="-0" />
-          <x_axis x="0" y="-1" z="0" />
-        </edge>
-        <direction x="0" y="0" z="-1" />
-        <normal x="0" y="0" z="1" />
-        <load x="1.15" y="0.99" z="0" val="9.399999618530273" />
-        <load x="1.15" y="0" z="0" val="9.399999618530273" />
-      </line_load>
-      <line_load last_change="2025-05-07T09:28:29.216" guid="dde840de-4da5-471d-b52e-e49d37855223" action="added" load_case="09bde64f-4264-4fca-88a7-86bdc734da5b" comment="" load_type="force" load_dir="constant" load_projection="false">
-        <edge type="line" start_angle="0" end_angle="0">
-          <point x="1.15" y="0.99" z="0" />
-          <point x="1.15" y="0" z="0" />
-          <normal x="0.99" y="-0" z="-0" />
-          <x_axis x="0" y="-1" z="0" />
-        </edge>
-        <direction x="0" y="0" z="-1" />
-        <normal x="0" y="0" z="1" />
-        <load x="1.15" y="0.99" z="0" val="6.900000095367432" />
-        <load x="1.15" y="0" z="0" val="6.900000095367432" />
-      </line_load>
-      <surface_load last_change="2025-05-07T09:28:29.215" guid="378d224f-2b00-449a-a877-5952b665b621" action="added" load_case="fa1f4650-c515-4ff7-8d60-0a3f034335a3" comment="" load_type="force" load_projection="false">
+      <surface_load last_change="2025-05-26T12:43:55.965" guid="fa72dc3e-a253-45d6-8401-fa53fa53b088" action="added" load_case="767c8f32-0509-4548-aba5-a0d0fa373e77" comment="" load_type="force" load_projection="false">
         <region>
           <contour>
             <edge type="line" start_angle="0" end_angle="0">
               <point x="0" y="0" z="0" />
-              <point x="0" y="2.28" z="0" />
+              <point x="0" y="1.46" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="0" y="2.28" z="0" />
-              <point x="1.43" y="2.28" z="0" />
+              <point x="0" y="1.46" z="0" />
+              <point x="2.315" y="1.46" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.43" y="2.28" z="0" />
-              <point x="1.43" y="1.29" z="0" />
+              <point x="2.315" y="1.46" z="0" />
+              <point x="2.315" y="2.782" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.43" y="1.29" z="0" />
-              <point x="1.29" y="1.29" z="0" />
+              <point x="2.315" y="2.782" z="0" />
+              <point x="3.615" y="2.782" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.29" y="1.29" z="0" />
-              <point x="1.29" y="0.99" z="0" />
+              <point x="3.615" y="2.782" z="0" />
+              <point x="3.615" y="1.46" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.29" y="0.99" z="0" />
-              <point x="1.15" y="0.99" z="0" />
+              <point x="3.615" y="1.46" z="0" />
+              <point x="6.1" y="1.46" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.15" y="0.99" z="0" />
-              <point x="1.15" y="0" z="0" />
+              <point x="6.1" y="1.46" z="0" />
+              <point x="6.1" y="0" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.15" y="0" z="0" />
+              <point x="6.1" y="0" z="0" />
               <point x="0" y="0" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
@@ -403,55 +379,55 @@
           </contour>
         </region>
         <direction x="0" y="0" z="-1" />
-        <load x="0" y="0" z="0" val="5" />
+        <load x="0" y="0" z="0" val="3" />
       </surface_load>
-      <surface_load last_change="2025-05-07T09:28:29.215" guid="2fe240ea-5421-4bcd-99fb-318f810cb682" action="added" load_case="a77826c8-acfd-4ec9-a898-eb62bccd69b1" comment="" load_type="force" load_projection="false">
+      <surface_load last_change="2025-05-26T12:43:55.965" guid="34c32cdd-6c0b-48f9-aa91-8ee150274484" action="added" load_case="d6ecf04e-d7db-42a5-bf76-d8b00fbe1c44" comment="" load_type="force" load_projection="false">
         <region>
           <contour>
             <edge type="line" start_angle="0" end_angle="0">
               <point x="0" y="0" z="0" />
-              <point x="0" y="2.28" z="0" />
+              <point x="0" y="1.46" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="0" y="2.28" z="0" />
-              <point x="1.43" y="2.28" z="0" />
+              <point x="0" y="1.46" z="0" />
+              <point x="2.315" y="1.46" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.43" y="2.28" z="0" />
-              <point x="1.43" y="1.29" z="0" />
+              <point x="2.315" y="1.46" z="0" />
+              <point x="2.315" y="2.782" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.43" y="1.29" z="0" />
-              <point x="1.29" y="1.29" z="0" />
+              <point x="2.315" y="2.782" z="0" />
+              <point x="3.615" y="2.782" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.29" y="1.29" z="0" />
-              <point x="1.29" y="0.99" z="0" />
+              <point x="3.615" y="2.782" z="0" />
+              <point x="3.615" y="1.46" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.29" y="0.99" z="0" />
-              <point x="1.15" y="0.99" z="0" />
+              <point x="3.615" y="1.46" z="0" />
+              <point x="6.1" y="1.46" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.15" y="0.99" z="0" />
-              <point x="1.15" y="0" z="0" />
+              <point x="6.1" y="1.46" z="0" />
+              <point x="6.1" y="0" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
             </edge>
             <edge type="line" start_angle="0" end_angle="0">
-              <point x="1.15" y="0" z="0" />
+              <point x="6.1" y="0" z="0" />
               <point x="0" y="0" z="0" />
               <normal x="0" y="1" z="0" />
               <x_axis x="1" y="0" z="0" />
@@ -459,51 +435,51 @@
           </contour>
         </region>
         <direction x="0" y="0" z="-1" />
-        <load x="0" y="0" z="0" val="0.15000000596046448" />
+        <load x="0" y="0" z="0" val="0.6000000238418579" />
       </surface_load>
-      <load_case last_change="2025-05-07T09:28:29.207" guid="0d5139a9-f8d0-437d-ada8-d220f76e6da7" action="added" name="Egenlast - Repos" type="dead_load" duration_class="permanent" />
-      <load_case last_change="2025-05-07T09:28:29.207" guid="a77826c8-acfd-4ec9-a898-eb62bccd69b1" action="added" name="Fri permanent last" type="static" duration_class="permanent" />
-      <load_case last_change="2025-05-07T09:28:29.207" guid="fa1f4650-c515-4ff7-8d60-0a3f034335a3" action="added" name="Nyttelast - Repos" type="static" duration_class="permanent" />
-      <load_case last_change="2025-05-07T09:28:29.207" guid="81916946-6abf-4395-a6f8-1f0729663bb1" action="added" name="Egenlast - Linjelaster" type="static" duration_class="permanent" />
-      <load_case last_change="2025-05-07T09:28:29.207" guid="09bde64f-4264-4fca-88a7-86bdc734da5b" action="added" name="Nyttelast - Linjelaster" type="static" duration_class="permanent" />
-      <load_case last_change="2025-05-07T09:28:29.207" guid="e5c62893-9115-42a2-ac7f-5ea2f2442d00" action="added" name="Egenlast - Punktlaster" type="static" duration_class="permanent" />
-      <load_case last_change="2025-05-07T09:28:29.207" guid="6ce983db-d340-4c6b-93d8-62199ec91171" action="added" name="Nyttelast - Punktlaster" type="static" duration_class="permanent" />
-      <load_combination last_change="2025-05-07T09:28:29.207" guid="52a24142-3766-4086-aefc-6fad77500494" action="added" name="ULS (6.10a) - Dominerende egenlast" type="ultimate_ordinary">
-        <load_case gamma="1.2" guid="0d5139a9-f8d0-437d-ada8-d220f76e6da7" />
-        <load_case gamma="1.2" guid="81916946-6abf-4395-a6f8-1f0729663bb1" />
-        <load_case gamma="1.2" guid="e5c62893-9115-42a2-ac7f-5ea2f2442d00" />
-        <load_case gamma="1.2" guid="a77826c8-acfd-4ec9-a898-eb62bccd69b1" />
+      <load_case last_change="2025-05-26T12:43:55.965" guid="f3a24457-e6f4-47b6-810c-b6b8da702202" action="added" name="Egenlast - Repos" type="dead_load" duration_class="permanent" />
+      <load_case last_change="2025-05-26T12:43:55.965" guid="d6ecf04e-d7db-42a5-bf76-d8b00fbe1c44" action="added" name="Fri permanent last" type="static" duration_class="permanent" />
+      <load_case last_change="2025-05-26T12:43:55.965" guid="767c8f32-0509-4548-aba5-a0d0fa373e77" action="added" name="Nyttelast - Repos" type="static" duration_class="permanent" />
+      <load_case last_change="2025-05-26T12:43:55.965" guid="d8ea4a86-4383-4cb5-a027-a076a3b32fb9" action="added" name="Egenlast - Linjelaster" type="static" duration_class="permanent" />
+      <load_case last_change="2025-05-26T12:43:55.965" guid="10e50368-06a1-478f-9b3d-82cb7d31ff00" action="added" name="Nyttelast - Linjelaster" type="static" duration_class="permanent" />
+      <load_case last_change="2025-05-26T12:43:55.965" guid="002cc2aa-fd77-4aef-8b29-327897ecdcb9" action="added" name="Egenlast - Punktlaster" type="static" duration_class="permanent" />
+      <load_case last_change="2025-05-26T12:43:55.965" guid="65e9625d-7b7b-4106-8fbe-8b8cbb5cb643" action="added" name="Nyttelast - Punktlaster" type="static" duration_class="permanent" />
+      <load_combination last_change="2025-05-26T12:43:55.965" guid="a4c11b6f-4303-4e44-8b25-63a12b7ae40d" action="added" name="ULS (6.10a) - Dominerende egenlast" type="ultimate_ordinary">
+        <load_case gamma="1.2" guid="f3a24457-e6f4-47b6-810c-b6b8da702202" />
+        <load_case gamma="1.2" guid="d8ea4a86-4383-4cb5-a027-a076a3b32fb9" />
+        <load_case gamma="1.2" guid="002cc2aa-fd77-4aef-8b29-327897ecdcb9" />
+        <load_case gamma="1.2" guid="d6ecf04e-d7db-42a5-bf76-d8b00fbe1c44" />
       </load_combination>
-      <load_combination last_change="2025-05-07T09:28:29.214" guid="895069e9-c155-42f1-97a6-b659bafab2ad" action="added" name="ULS (6.10b) - Dominerende nyttelast" type="ultimate_ordinary">
-        <load_case gamma="1" guid="0d5139a9-f8d0-437d-ada8-d220f76e6da7" />
-        <load_case gamma="1" guid="a77826c8-acfd-4ec9-a898-eb62bccd69b1" />
-        <load_case gamma="1" guid="81916946-6abf-4395-a6f8-1f0729663bb1" />
-        <load_case gamma="1" guid="e5c62893-9115-42a2-ac7f-5ea2f2442d00" />
-        <load_case gamma="1.5" guid="fa1f4650-c515-4ff7-8d60-0a3f034335a3" />
-        <load_case gamma="1.5" guid="09bde64f-4264-4fca-88a7-86bdc734da5b" />
-        <load_case gamma="1.5" guid="6ce983db-d340-4c6b-93d8-62199ec91171" />
+      <load_combination last_change="2025-05-26T12:43:55.965" guid="13936d11-65a8-48a4-8d0e-629b71494a08" action="added" name="ULS (6.10b) - Dominerende nyttelast" type="ultimate_ordinary">
+        <load_case gamma="1" guid="f3a24457-e6f4-47b6-810c-b6b8da702202" />
+        <load_case gamma="1" guid="d6ecf04e-d7db-42a5-bf76-d8b00fbe1c44" />
+        <load_case gamma="1" guid="d8ea4a86-4383-4cb5-a027-a076a3b32fb9" />
+        <load_case gamma="1" guid="002cc2aa-fd77-4aef-8b29-327897ecdcb9" />
+        <load_case gamma="1.5" guid="767c8f32-0509-4548-aba5-a0d0fa373e77" />
+        <load_case gamma="1.5" guid="10e50368-06a1-478f-9b3d-82cb7d31ff00" />
+        <load_case gamma="1.5" guid="65e9625d-7b7b-4106-8fbe-8b8cbb5cb643" />
       </load_combination>
-      <load_combination last_change="2025-05-07T09:28:29.214" guid="f6f0032f-4ddd-474f-b872-9fe6ed42ca06" action="added" name="SLS - Kvasi-permanent" type="serviceability_quasi_permanent">
-        <load_case gamma="1" guid="0d5139a9-f8d0-437d-ada8-d220f76e6da7" />
-        <load_case gamma="1" guid="a77826c8-acfd-4ec9-a898-eb62bccd69b1" />
-        <load_case gamma="1" guid="81916946-6abf-4395-a6f8-1f0729663bb1" />
-        <load_case gamma="1" guid="e5c62893-9115-42a2-ac7f-5ea2f2442d00" />
-        <load_case gamma="0.5" guid="fa1f4650-c515-4ff7-8d60-0a3f034335a3" />
-        <load_case gamma="0.5" guid="09bde64f-4264-4fca-88a7-86bdc734da5b" />
-        <load_case gamma="0.5" guid="6ce983db-d340-4c6b-93d8-62199ec91171" />
+      <load_combination last_change="2025-05-26T12:43:55.965" guid="362269da-4c6b-49b9-ba58-fb7ae3bc3de3" action="added" name="SLS - Kvasi-permanent" type="serviceability_quasi_permanent">
+        <load_case gamma="1" guid="f3a24457-e6f4-47b6-810c-b6b8da702202" />
+        <load_case gamma="1" guid="d6ecf04e-d7db-42a5-bf76-d8b00fbe1c44" />
+        <load_case gamma="1" guid="d8ea4a86-4383-4cb5-a027-a076a3b32fb9" />
+        <load_case gamma="1" guid="002cc2aa-fd77-4aef-8b29-327897ecdcb9" />
+        <load_case gamma="0.5" guid="767c8f32-0509-4548-aba5-a0d0fa373e77" />
+        <load_case gamma="0.5" guid="10e50368-06a1-478f-9b3d-82cb7d31ff00" />
+        <load_case gamma="0.5" guid="65e9625d-7b7b-4106-8fbe-8b8cbb5cb643" />
       </load_combination>
-      <load_combination last_change="2025-05-07T09:28:29.214" guid="22d04a79-751a-4e5e-bc7b-7c01106c2c36" action="added" name="Rotation" type="ultimate_ordinary">
-        <load_case gamma="0.9" guid="0d5139a9-f8d0-437d-ada8-d220f76e6da7" />
-        <load_case gamma="0" guid="a77826c8-acfd-4ec9-a898-eb62bccd69b1" />
-        <load_case gamma="1" guid="81916946-6abf-4395-a6f8-1f0729663bb1" />
-        <load_case gamma="1" guid="e5c62893-9115-42a2-ac7f-5ea2f2442d00" />
-        <load_case gamma="0" guid="fa1f4650-c515-4ff7-8d60-0a3f034335a3" />
-        <load_case gamma="1.5" guid="09bde64f-4264-4fca-88a7-86bdc734da5b" />
-        <load_case gamma="1.5" guid="6ce983db-d340-4c6b-93d8-62199ec91171" />
+      <load_combination last_change="2025-05-26T12:43:55.965" guid="930871be-cb4d-409d-9654-f5ab05418a64" action="added" name="Rotation" type="ultimate_ordinary">
+        <load_case gamma="0.9" guid="f3a24457-e6f4-47b6-810c-b6b8da702202" />
+        <load_case gamma="0" guid="d6ecf04e-d7db-42a5-bf76-d8b00fbe1c44" />
+        <load_case gamma="1" guid="d8ea4a86-4383-4cb5-a027-a076a3b32fb9" />
+        <load_case gamma="1" guid="002cc2aa-fd77-4aef-8b29-327897ecdcb9" />
+        <load_case gamma="0" guid="767c8f32-0509-4548-aba5-a0d0fa373e77" />
+        <load_case gamma="1.5" guid="10e50368-06a1-478f-9b3d-82cb7d31ff00" />
+        <load_case gamma="1.5" guid="65e9625d-7b7b-4106-8fbe-8b8cbb5cb643" />
       </load_combination>
     </loads>
     <supports>
-      <point_support last_change="2025-05-07T09:28:29.206" guid="99376f54-98a6-4c81-a34e-bd495fc9b803" action="added" name="@PS.1" stage="1">
+      <point_support last_change="2025-05-26T12:43:55.965" guid="816d7d12-358d-4df2-a699-fccf74056ac1" action="added" name="@PS.22" stage="1">
         <group>
           <local_x x="1" y="0" z="0" />
           <local_y x="0" y="1" z="0" />
@@ -512,31 +488,9 @@
             <rotations x_neg="0" x_pos="0" y_neg="0" y_pos="0" z_neg="0" z_pos="0" />
           </rigidity>
         </group>
-        <position x="0.22" y="0" z="0" />
+        <position x="3.465" y="2.632" z="0" />
       </point_support>
-      <point_support last_change="2025-05-07T09:28:29.206" guid="fad19d9b-bd81-4a7b-ad70-84e4e18120b2" action="added" name="@PS.2" stage="1">
-        <group>
-          <local_x x="1" y="0" z="0" />
-          <local_y x="0" y="1" z="0" />
-          <rigidity xsi:type="RigidityDataType3" detach="">
-            <motions x_neg="10000000000" x_pos="10000000000" y_neg="10000000000" y_pos="10000000000" z_neg="10000000000" z_pos="10000000000" />
-            <rotations x_neg="0" x_pos="0" y_neg="0" y_pos="0" z_neg="0" z_pos="0" />
-          </rigidity>
-        </group>
-        <position x="0.93" y="0" z="0" />
-      </point_support>
-      <point_support last_change="2025-05-07T09:28:29.206" guid="2d86cb56-76cc-4296-b874-d8534a448571" action="added" name="@PS.3" stage="1">
-        <group>
-          <local_x x="1" y="0" z="0" />
-          <local_y x="0" y="1" z="0" />
-          <rigidity xsi:type="RigidityDataType3" detach="">
-            <motions x_neg="10000000000" x_pos="10000000000" y_neg="10000000000" y_pos="10000000000" z_neg="10000000000" z_pos="10000000000" />
-            <rotations x_neg="0" x_pos="0" y_neg="0" y_pos="0" z_neg="0" z_pos="0" />
-          </rigidity>
-        </group>
-        <position x="1.21" y="2.28" z="0" />
-      </point_support>
-      <line_support last_change="2025-05-07T09:28:29.207" guid="ccdd986d-5e48-4830-94b4-164bd67c4fd3" action="added" name="@S.4" moving_local="false" stage="1">
+      <line_support last_change="2025-05-26T12:43:55.965" guid="5c0e4d40-0464-443b-b79d-f6013878f855" action="added" name="@S.23" moving_local="false" stage="1">
         <group>
           <local_x x="0" y="1" z="0" />
           <local_y x="-1" y="-0" z="-0" />
@@ -546,9 +500,26 @@
           </rigidity>
         </group>
         <edge type="line" start_angle="0" end_angle="0">
-          <point x="0" y="1.12" z="0" />
-          <point x="0" y="2.09" z="0" />
-          <normal x="-0.9699999999999998" y="-0" z="-0" />
+          <point x="0" y="0" z="0" />
+          <point x="0" y="1.46" z="0" />
+          <normal x="-1.46" y="-0" z="-0" />
+          <x_axis x="0" y="1" z="0" />
+        </edge>
+        <normal x="0" y="1" z="0" />
+      </line_support>
+      <line_support last_change="2025-05-26T12:43:55.965" guid="124cef3c-fa49-4d2c-9161-2caee92685c6" action="added" name="@S.24" moving_local="false" stage="1">
+        <group>
+          <local_x x="0" y="1" z="0" />
+          <local_y x="-1" y="-0" z="-0" />
+          <rigidity xsi:type="RigidityDataType3" detach="">
+            <motions x_neg="10000000" x_pos="10000000" y_neg="10000000" y_pos="10000000" z_neg="10000000" z_pos="0" />
+            <rotations x_neg="0" x_pos="0" y_neg="0" y_pos="0" z_neg="0" z_pos="0" />
+          </rigidity>
+        </group>
+        <edge type="line" start_angle="0" end_angle="0">
+          <point x="6.1" y="0" z="0" />
+          <point x="6.1" y="1.46" z="0" />
+          <normal x="-1.46" y="-0" z="-0" />
           <x_axis x="0" y="1" z="0" />
         </edge>
         <normal x="0" y="1" z="0" />
@@ -558,8 +529,8 @@
   </entities>
   <sections />
   <materials>
-    <material last_change="2025-05-07T09:28:29.197" guid="269c0974-3647-4617-9f2b-7763bd542f43" action="modified" standard="EC" country="S" name="C30/37">
-      <concrete mass="2.54842" E_0="0" E_1="0" E_2="0" nu_0="0" nu_1="0" nu_2="0" alfa_0="0" alfa_1="0" alfa_2="0" G_0="0" G_1="0" G_2="0" Fck="30" Fck_cube="37" Fctk="2" Fctm="2.9" Ecm="33000" gammaC_0="1.4" gammaC_1="1.2" gammaCE="1.2" gammaS_0="1.2" gammaS_1="1.15" alfaCc="1" alfaCt="1" Fcd_0="0" Fcd_1="25" Fctd_0="0" Fctd_1="1.66666666666667" Ecd_0="0" Ecd_1="27500" Epsc2="0.002" Epscu2="0.0035" Epsc3="0.00175" Epscu3="0.0035" environment="0" creep="0" creep_sls="3" creep_slf="3" creep_slc="3" shrinkage="0" nu="0.2" alfa="0.00001">
+    <material last_change="2025-05-26T12:43:55.964" guid="9c983223-0727-4217-9671-bddb37f6fae3" action="modified" standard="EC" country="S" name="C40/50">
+      <concrete mass="2.54842" E_0="0" E_1="0" E_2="0" nu_0="0" nu_1="0" nu_2="0" alfa_0="0" alfa_1="0" alfa_2="0" G_0="0" G_1="0" G_2="0" Fck="40" Fck_cube="50" Fctk="2.5" Fctm="3.5" Ecm="35000" gammaC_0="1.4" gammaC_1="1.2" gammaCE="1.2" gammaS_0="1.2" gammaS_1="1.15" alfaCc="1" alfaCt="1" Fcd_0="0" Fcd_1="33.3333333333333" Fctd_0="0" Fctd_1="2.08333333333333" Ecd_0="0" Ecd_1="29166.6666666667" Epsc2="0.002" Epscu2="0.0035" Epsc3="0.00175" Epscu3="0.0035" environment="0" creep="0" creep_sls="3" creep_slf="3" creep_slc="3" shrinkage="0" nu="0.2" alfa="0.00001">
         <plastic_analysis_data>
           <U elasto_plastic_behaviour="false" plastic_hardening="true" concrete_crushing="true" concrete_crushing_option="Prager" tension_strength="true" tension_stiffening="true" tension_stiffening_option="Hinton" tension_stiffening_param="0.5" reduced_compression_strength="true" reduced_compression_strength_option="Vecchio 1" reduced_compression_strength_param="0.55" reduced_transverse_shear_stiffnes="false" ultimate_strain="true" />
           <Sq elasto_plastic_behaviour="false" plastic_hardening="true" concrete_crushing="true" concrete_crushing_option="Prager" tension_strength="true" tension_stiffening="true" tension_stiffening_option="Hinton" tension_stiffening_param="0.5" reduced_compression_strength="true" reduced_compression_strength_option="Vecchio 1" reduced_compression_strength_param="0.55" reduced_transverse_shear_stiffnes="false" ultimate_strain="true" />
@@ -570,7 +541,7 @@
     </material>
   </materials>
   <reinforcing_materials>
-    <material last_change="2025-05-07T09:28:29.224" guid="0d94ddc2-3f19-486d-988e-d32f6a47fc82" action="modified" standard="EC" country="DK" name="K">
+    <material last_change="2025-05-26T12:43:55.965" guid="0d94ddc2-3f19-486d-988e-d32f6a47fc82" action="modified" standard="EC" country="DK" name="K">
       <reinforcing_steel fyk="500" Es="200000" Epsilon_uk="0.05" Epsilon_ud="0.045" k="1.08" />
     </material>
   </reinforcing_materials>
@@ -578,9 +549,9 @@
   <line_connection_types />
   <ptc_strand_types />
   <geometry>
-    <linear_dimension guid="9c4ceaca-b472-4eca-99a4-41f72899a079" last_change="2025-05-07T09:28:29.282" action="added">
+    <linear_dimension guid="ebe9c6c2-3576-46c9-9099-53d780b11fba" last_change="2025-05-26T12:43:55.965" action="added">
       <point x="0" y="0" z="0" />
-      <point x="0" y="2.28" z="0" />
+      <point x="0" y="1.46" z="0" />
       <position x="0" y="0" z="0" />
       <plane_x x="0" y="1" z="0" />
       <plane_y x="-1" y="0" z="0" />
@@ -594,10 +565,10 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="394157b8-9e92-4c4b-8dc4-914cbccca09e" last_change="2025-05-07T09:28:29.288" action="added">
-      <point x="0" y="2.28" z="0" />
-      <point x="1.43" y="2.28" z="0" />
-      <position x="0" y="2.28" z="0" />
+    <linear_dimension guid="1f75ca1a-e15a-481d-9dda-b8e647057f97" last_change="2025-05-26T12:43:55.965" action="added">
+      <point x="0" y="1.46" z="0" />
+      <point x="2.315" y="1.46" z="0" />
+      <position x="0" y="1.46" z="0" />
       <plane_x x="1" y="0" z="0" />
       <plane_y x="-0" y="1" z="0" />
       <dimension_line />
@@ -610,10 +581,42 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="c41a26fa-af91-4fc1-8bbe-55737d97837e" last_change="2025-05-07T09:28:29.288" action="added">
-      <point x="1.43" y="2.28" z="0" />
-      <point x="1.43" y="1.29" z="0" />
-      <position x="1.43" y="2.28" z="0" />
+    <linear_dimension guid="75f12611-65b5-47f5-94da-6aee1b81cfdf" last_change="2025-05-26T12:43:55.965" action="added">
+      <point x="2.315" y="1.46" z="0" />
+      <point x="2.315" y="2.782" z="0" />
+      <position x="2.315" y="1.46" z="0" />
+      <plane_x x="0" y="1" z="0" />
+      <plane_y x="-1" y="0" z="0" />
+      <dimension_line />
+      <extension_line extension_a="0.005" extension_b="0.005" offset_c="0.005" />
+      <arrow />
+      <font />
+      <text value="0">
+        <position x="0" y="0" z="0" />
+        <plane_x x="0" y="0" z="0" />
+        <plane_y x="0" y="0" z="0" />
+      </text>
+    </linear_dimension>
+    <linear_dimension guid="9da97190-3e77-4bba-8968-89e0debfe464" last_change="2025-05-26T12:43:55.965" action="added">
+      <point x="2.315" y="2.782" z="0" />
+      <point x="3.615" y="2.782" z="0" />
+      <position x="2.315" y="2.782" z="0" />
+      <plane_x x="1" y="0" z="0" />
+      <plane_y x="-0" y="1" z="0" />
+      <dimension_line />
+      <extension_line extension_a="0.005" extension_b="0.005" offset_c="0.005" />
+      <arrow />
+      <font />
+      <text value="0">
+        <position x="0" y="0" z="0" />
+        <plane_x x="0" y="0" z="0" />
+        <plane_y x="0" y="0" z="0" />
+      </text>
+    </linear_dimension>
+    <linear_dimension guid="7d045e5b-efea-4542-8dac-8730e21e56c8" last_change="2025-05-26T12:43:55.965" action="added">
+      <point x="3.615" y="2.782" z="0" />
+      <point x="3.615" y="1.46" z="0" />
+      <position x="3.615" y="2.782" z="0" />
       <plane_x x="0" y="-1" z="0" />
       <plane_y x="1" y="0" z="0" />
       <dimension_line />
@@ -626,12 +629,12 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="7a9bd58a-d429-41d1-bcc6-f16fafc42428" last_change="2025-05-07T09:28:29.288" action="added">
-      <point x="1.43" y="1.29" z="0" />
-      <point x="1.29" y="1.29" z="0" />
-      <position x="1.43" y="1.29" z="0" />
-      <plane_x x="-1" y="0" z="0" />
-      <plane_y x="-0" y="-1" z="0" />
+    <linear_dimension guid="e4ab9793-ef45-4b44-981b-fadda1350e4e" last_change="2025-05-26T12:43:55.965" action="added">
+      <point x="3.615" y="1.46" z="0" />
+      <point x="6.1" y="1.46" z="0" />
+      <position x="3.615" y="1.46" z="0" />
+      <plane_x x="1" y="0" z="0" />
+      <plane_y x="-0" y="1" z="0" />
       <dimension_line />
       <extension_line extension_a="0.005" extension_b="0.005" offset_c="0.005" />
       <arrow />
@@ -642,10 +645,10 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="97e09389-21a8-4954-96b8-598793fd8d37" last_change="2025-05-07T09:28:29.288" action="added">
-      <point x="1.29" y="1.29" z="0" />
-      <point x="1.29" y="0.99" z="0" />
-      <position x="1.29" y="1.29" z="0" />
+    <linear_dimension guid="ea8a0c31-6d1c-4c6c-a403-880584d0d1cf" last_change="2025-05-26T12:43:55.965" action="added">
+      <point x="6.1" y="1.46" z="0" />
+      <point x="6.1" y="0" z="0" />
+      <position x="6.1" y="1.46" z="0" />
       <plane_x x="0" y="-1" z="0" />
       <plane_y x="1" y="0" z="0" />
       <dimension_line />
@@ -658,42 +661,10 @@
         <plane_y x="0" y="0" z="0" />
       </text>
     </linear_dimension>
-    <linear_dimension guid="3242f91d-9824-4da1-a157-f3e12475c412" last_change="2025-05-07T09:28:29.288" action="added">
-      <point x="1.29" y="0.99" z="0" />
-      <point x="1.15" y="0.99" z="0" />
-      <position x="1.29" y="0.99" z="0" />
-      <plane_x x="-1" y="0" z="0" />
-      <plane_y x="-0" y="-1" z="0" />
-      <dimension_line />
-      <extension_line extension_a="0.005" extension_b="0.005" offset_c="0.005" />
-      <arrow />
-      <font />
-      <text value="0">
-        <position x="0" y="0" z="0" />
-        <plane_x x="0" y="0" z="0" />
-        <plane_y x="0" y="0" z="0" />
-      </text>
-    </linear_dimension>
-    <linear_dimension guid="f91fc790-3312-43a1-95f6-60776b0c7f97" last_change="2025-05-07T09:28:29.288" action="added">
-      <point x="1.15" y="0.99" z="0" />
-      <point x="1.15" y="0" z="0" />
-      <position x="1.15" y="0.99" z="0" />
-      <plane_x x="0" y="-1" z="0" />
-      <plane_y x="1" y="0" z="0" />
-      <dimension_line />
-      <extension_line extension_a="0.005" extension_b="0.005" offset_c="0.005" />
-      <arrow />
-      <font />
-      <text value="0">
-        <position x="0" y="0" z="0" />
-        <plane_x x="0" y="0" z="0" />
-        <plane_y x="0" y="0" z="0" />
-      </text>
-    </linear_dimension>
-    <linear_dimension guid="2b5f64f4-ac1c-4c76-a435-a6ea8fce0e5d" last_change="2025-05-07T09:28:29.288" action="added">
-      <point x="1.15" y="0" z="0" />
+    <linear_dimension guid="53d30d99-636d-48c6-9385-c7ccda4504c3" last_change="2025-05-26T12:43:55.965" action="added">
+      <point x="6.1" y="0" z="0" />
       <point x="0" y="0" z="0" />
-      <position x="1.15" y="0" z="0" />
+      <position x="6.1" y="0" z="0" />
       <plane_x x="-1" y="0" z="0" />
       <plane_y x="-0" y="-1" z="0" />
       <dimension_line />

@@ -26,12 +26,25 @@
     <None Remove="Model\cfg_Standard.xml" />
     <None Remove="Model\FEM-Design tab\Doc_template_NoSnowLoad.dsc" />
     <None Remove="Model\FEM-Design tab\Doc_template_SnowLoad.dsc" />
+    <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A med balusterben _v 1.0_2023_rev 0.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A uden ben _v_ 1.0_2023_rev 0.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2023 rev 0.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsx" />
+    <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Regneark gelænder Type A med balusterben _v 1.0_2023_rev 0.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Regneark gelænder Type A uden ben _v_ 1.0_2023_rev 0.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Regneark gelænder Type A v 1.0 _2023 rev 0.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Regneark gelænder Type A v 1.0 _2023 rev 0.xlsx" />
+    <None Remove="Model\Projektering tab\Beregningsark\Regneark gelænder Type X_v 1.0_2023 rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 09012023.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 17012025.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Rytmisk_personlast_bef.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Type A med balusterben _v 1.0_2023_rev 0.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Type A uden ben _v_ 1.0_2023_rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm" />
     <None Remove="Model\Projektering tab\Tjekliste.docx" />
     <None Remove="Model\Repos_Doc_Template - Deploy.dsc" />
@@ -84,6 +97,15 @@
     <Content Include="Model\FEM-Design tab\Doc_Template - Deploy.dsc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2023 rev 0.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -94,6 +116,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\Type A med balusterben _v 1.0_2023_rev 0.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\Type A uden ben _v_ 1.0_2023_rev 0.xlsm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm">

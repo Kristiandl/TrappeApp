@@ -17,7 +17,7 @@ namespace Dalton_Trapper.Utilities
             {
                 return new BitmapImage(new Uri("pack://application:,,,/View/Icons/folder_icon.png"));
             }
-            else if (extension == ".pdf")
+            else if (extension == ".pdf" || extension == ".PDF")
             {
                 return new BitmapImage(new Uri("pack://application:,,,/View/Icons/pdf_icon.png"));
             }

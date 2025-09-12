@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="TrappeApp.exe" version="1.1.13.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="TrappeApp.exe" version="1.1.24.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="stairs_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -126,6 +126,33 @@
       <dsig:DigestValue>1spR4BCqXOfSibU4MrZESLEMWexwOKsGNrRyuVIl3C8=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2023 rev 0.xlsm" size="199405">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Zm1FnHuINXi1WXc+auN4FGubjHgQqbSwTyOv3uBoTq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsm" size="200413">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g/TtSwwBLvJnQM3+C45WChnRkq6fV2E0qcn9PqF7uk8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm" size="178472">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h75nIzbuT2mFUAjyWFq4xevwn+zBjDYV/G7tStIntng=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm" size="650083">
     <hash>
       <dsig:Transforms>
@@ -162,6 +189,24 @@
       <dsig:DigestValue>tAESkbVzwO38Q/fGU9s7AuT0NcEnmKuFVdK1/dUwIH8=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Model\Projektering tab\Beregningsark\Type A med balusterben _v 1.0_2023_rev 0.xlsm" size="441646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9HWg/2CkLO56xgaFpUuDnGye4unbk84OokQBX8LAOhQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Beregningsark\Type A uden ben _v_ 1.0_2023_rev 0.xlsm" size="188083">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Fx22h6FXDOfRCPOh8qKSiSBo5s/NXi85e4G9TRR7M1M=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm" size="881674">
     <hash>
       <dsig:Transforms>
@@ -171,13 +216,13 @@
       <dsig:DigestValue>JhKDj7fEsGuTQgmNcrDZFqv8yed628067XWM7guL+ig=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Model\Projektering tab\Tjekliste.docx" size="22445">
+  <file name="Model\Projektering tab\Tjekliste.docx" size="22544">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dONW8WrfafhR1qIREnkzPLjF4vqSGy8PXpeMpZvbz5o=</dsig:DigestValue>
+      <dsig:DigestValue>08Cs3+5aUEGCU6OHsw3m7Zqmxj4su9RZC4zkY2jZB74=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Newtonsoft.Json.dll" size="711952">
@@ -207,22 +252,22 @@
       <dsig:DigestValue>V/oZOmZ+qZr2iGyCRelPjZZaoZt1ZQ1wqNKd9VFWjtc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TrappeApp.dll" size="692736">
+  <file name="TrappeApp.dll" size="697344">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ir7tXsqHPH6g9Zvtw0QhP/EatUjwNnPfQzWxlIXmgJI=</dsig:DigestValue>
+      <dsig:DigestValue>sTi8Eyr9wOLtBcByvLbtvtPzVOjPiZkIvI2RYUCh41M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TrappeApp.exe" size="249344">
+  <file name="TrappeApp.exe" size="249856">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>qWfK7oEMMbrpZTJarvgBRfcduTEHgaTj+gQpHqgokL0=</dsig:DigestValue>
+      <dsig:DigestValue>j0etbKrcfyiRL39jC7+HeTeUk1KbW07KtBYcWE+tiCE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TrappeApp.runtimeconfig.json" size="515">

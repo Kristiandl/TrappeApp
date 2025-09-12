@@ -22,11 +22,14 @@ namespace Dalton_Trapper.ViewModel
 
             // Data lists
             KonsekvensklasseListe = new ObservableCollection<string> { "", "CC2", "CC3" };
+            GelænderListe = new ObservableCollection<string> { "Type A", "Type A u. ben", "Type A m. balusterben", "Type X" };
             MiljøklasseListe = new ObservableCollection<string> { "", "Passiv", "Moderat", "Aggressiv", "Ekstra Aggressiv" };
             SelectedDrawings = new ObservableCollection<Drawing>();
             SelectedCalculations = new ObservableCollection<Calculation>();
             TegningerHeader = "Tegninger";
             BeregningerHeader = "Beregninger";
+            Gelænder = new Gelænder();
+
 
             // Commands           
             OpenDrawingCommand = new RelayCommand(OpenDrawing);
@@ -55,6 +58,7 @@ namespace Dalton_Trapper.ViewModel
             OpretPladeCommand = new RelayCommand(_ => OpretBeregning("Plade"), _ => CanAddFiles(Plade));
             OpretVibrationskomfortCommand = new RelayCommand(_ => OpretBeregning("Vibrationskomfort"), _ => CanAddFiles(Vibrationskomfort));
             OpretRytmiskPersonlastCommand = new RelayCommand(_ => OpretBeregning("RytmiskPersonlast"), _ => CanAddFiles(RytmiskPersonlast));
+            OpretGelænderCommand = new RelayCommand(_ => OpretBeregning("Gelænder"), _ => CanAddFiles(Gelænder.Name) && CanAddFiles(Gelænder.Type));
         }
 
         #region Commands
@@ -79,6 +83,7 @@ namespace Dalton_Trapper.ViewModel
         public ICommand OpretPladeCommand { get; set; }
         public ICommand OpretVibrationskomfortCommand { get; set; }
         public ICommand OpretRytmiskPersonlastCommand { get; set; }
+        public ICommand OpretGelænderCommand { get; set; }
         public ICommand CopyDrawingsCommand { get; set; }
         public ICommand CopyCorrectedDrawingsCommand { get; set; }
         public ICommand SwitchDrawingFolderCommand { get; set; }
@@ -374,26 +379,31 @@ namespace Dalton_Trapper.ViewModel
             Excel.Workbook workbook = null;
             Excel.Worksheet worksheet = null;
             string environmentClass = "";
+            string fck = "";
             if (ProjectInfo.Miljøklasse == "Moderat")
             {
                 environmentClass = "M";
+                fck = "30";
             }
             else if (ProjectInfo.Miljøklasse == "Aggressiv")
             {
                 environmentClass = "A";
+                fck = "35";
             }
             else if (ProjectInfo.Miljøklasse == "Ekstra Aggressiv")
             {
                 environmentClass = "E";
+                fck = "40";
             }
             else
             {
                 environmentClass = "P";
+                fck = "30";
             }
 
             if (type == "Ligeløb")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobEC_190701 rev250327.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobEC_190701 rev25082025.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Ligeløb}.xlsm");
 
@@ -420,7 +430,7 @@ namespace Dalton_Trapper.ViewModel
             }
             else if (type == "Repos")
             {
-                string sheet = "Model\\Projektering tab\\Beregningsark\\reposEC_v2010141 rev 17012025.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\reposEC_v2010141 rev 25082025.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Repos}.xlsm");
 
@@ -447,7 +457,7 @@ namespace Dalton_Trapper.ViewModel
             }
             else if (type == "Knækløb")
             {
-                string sheet = "Model\\Projektering tab\\Beregningsark\\LobrepEC_190701 rev 17012025.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobrepEC_190701 rev 25082025.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Knækløb}.xlsm");
 
@@ -501,7 +511,7 @@ namespace Dalton_Trapper.ViewModel
             }
             else if (type == "Detalje")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\TrdetEC_191017 rev 09012023.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\TrdetEC_191017 rev 25082025.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Detalje}.xlsm");
 
@@ -527,7 +537,7 @@ namespace Dalton_Trapper.ViewModel
             }
             else if (type == "Plade")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\RApladEC_190701.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\RApladEC_190701 rev 25082025.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Plade}.xlsm");
 
@@ -607,6 +617,80 @@ namespace Dalton_Trapper.ViewModel
 
 
                 RytmiskPersonlast = "";
+            }
+            else if (type == "Gelænder")
+            {
+                string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Gelænder.Name}.xlsm");
+                int fckCellRow= 0;
+                int fckCellColumn = 0;
+
+                if (Gelænder.Type == "Type A")
+                {
+                    string sheet = "Model\\Projektering tab\\Beregningsark\\Gelænder Type A v 1.0 _2025 rev 2.xlsm";
+                    fckCellRow = 27;
+                    fckCellColumn = 27;
+
+                    if (File.Exists(newFile))
+                    {
+                        MessageBox.Show($"Filen '{Gelænder.Name}.xlsm' eksisterer i forvejen. Vælg et andet navn.", "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    File.Copy(sheet, newFile);     
+                }
+                else if (Gelænder.Type == "Type A m. balusterben")
+                {
+                    string sheet = "N:\\Projektering\\Tilst\\Gelændere\\Nye regneark_September 2023\\Regneark gelænder Type A med balusterben _v 1.0_2025_rev 2.xlsm";
+                    fckCellRow = 27;
+                    fckCellColumn = 26;
+
+                    if (File.Exists(newFile))
+                    {
+                        MessageBox.Show($"Filen '{Gelænder.Name}.xlsm' eksisterer i forvejen. Vælg et andet navn.", "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    File.Copy(sheet, newFile);
+                }
+                else if (Gelænder.Type == "Type A u. ben")
+                {
+                    string sheet = "N:\\Projektering\\Tilst\\Gelændere\\Nye regneark_September 2023\\Regneark gelænder Type A uden ben _v_ 1.0_2025_rev 2.xlsm";
+                    fckCellRow = 25;
+                    fckCellColumn = 26;
+
+                    if (File.Exists(newFile))
+                    {
+                        MessageBox.Show($"Filen '{Gelænder.Name}.xlsm' eksisterer i forvejen. Vælg et andet navn.", "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    File.Copy(sheet, newFile);
+                }
+                else if (Gelænder.Type == "Type X")
+                {
+                    string sheet = "N:\\Projektering\\Tilst\\Gelændere\\Nye regneark_September 2023\\Regneark gelænder Type X_rev 04_09_2025.xlsm";
+                    fckCellRow = 26;
+                    fckCellColumn = 26;
+
+                    if (File.Exists(newFile))
+                    {
+                        MessageBox.Show($"Filen '{Gelænder.Name}.xlsm' eksisterer i forvejen. Vælg et andet navn.", "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    File.Copy(sheet, newFile);
+                }
+
+                // Updates the sheet with projectinformation
+                excelApp = new Excel.Application();
+                workbook = excelApp.Workbooks.Open(newFile);
+                worksheet = (Excel.Worksheet)workbook.Sheets[1];
+                worksheet.Cells[4, 7] = ProjectInfo.ProjectName;
+                worksheet.Cells[5, 7] = Gelænder.Name;
+                worksheet.Cells[5, 13] = ProjectInfo.ProjectNumber;
+                worksheet.Cells[9, 13] = Environment.UserName.ToUpper();
+                worksheet.Cells[fckCellColumn, fckCellRow] = fck;
+                Gelænder.Name = "";
             }
 
             // Save, close and release objects
@@ -723,6 +807,7 @@ namespace Dalton_Trapper.ViewModel
         public ObservableCollection<string> KonsekvensklasseListe { get; set; }
 
         public ObservableCollection<string> MiljøklasseListe { get; set; }
+        public ObservableCollection<string> GelænderListe { get; set; }
 
 
         private ProjectInfo _projectInfo;
@@ -923,6 +1008,20 @@ namespace Dalton_Trapper.ViewModel
                 {
                     _rytmiskPersonlast = value;
                     OnPropertyChanged(nameof(RytmiskPersonlast));
+                }
+            }
+        }
+
+        private Gelænder _gelænder;
+        public Gelænder Gelænder
+        {
+            get => _gelænder;
+            set
+            {
+                if (_gelænder != value)
+                {
+                    _gelænder = value;
+                    OnPropertyChanged(nameof(Gelænder));
                 }
             }
         }

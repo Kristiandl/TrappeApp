@@ -4,10 +4,15 @@ C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\T
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\Doc_template_NoSnowLoad.dsc
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\Doc_template_SnowLoad.dsc
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\Doc_Template - Deploy.dsc
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2023 rev 0.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 17012025.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Rytmisk_personlast_bef.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Svingløb_v28-10-2022.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Type A med balusterben _v 1.0_2023_rev 0.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Type A uden ben _v_ 1.0_2023_rev 0.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Tjekliste.docx
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.exe

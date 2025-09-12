@@ -13,7 +13,7 @@ namespace Dalton_Trapper.ViewModel
         {
             string user = Environment.UserName.ToLower();
 
-            if (user == "tho")
+            if (user == "tho" || user == "nto")
             {
                 ImgSource = "/Images/FCM_logo_og_agf.png";
             }

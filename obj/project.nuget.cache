@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FApRtCcR4wk=",
+  "dgSpecHash": "HJVuz5WDkwM=",
   "success": true,
   "projectFilePath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Dalton_Trapper.csproj",
   "expectedPackageFiles": [
@@ -12,8 +12,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Package 'FemDesign.Core 23.7.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Dalton_Trapper.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Dalton_Trapper.csproj",
       "libraryId": "FemDesign.Core",
       "targetGraphs": [
         "net8.0-windows7.0"

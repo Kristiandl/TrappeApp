@@ -34,6 +34,7 @@
     <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm" />
+    <None Remove="Model\Projektering tab\Beregningsark\Overslag på reaktioner V03-11-2025.xlsx" />
     <None Remove="Model\Projektering tab\Beregningsark\Regneark gelænder Type A med balusterben _v 1.0_2023_rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Regneark gelænder Type A uden ben _v_ 1.0_2023_rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Regneark gelænder Type A v 1.0 _2023 rev 0.xlsm" />
@@ -107,6 +108,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\Overslag på reaktioner V03-11-2025.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Model\Projektering tab\Beregningsark\reposEC_v2010141 rev 17012025.xlsm">

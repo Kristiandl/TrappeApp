@@ -21,6 +21,8 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/gel%c3%a6nder%20type%20x_v%201.0_2023%20re" +
     "v%200.xlsm")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/lobrepec_190701%20rev%2017012025.xlsm")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/overslag%20p%c3%a5%20reaktioner%20v03-11-2" +
+    "025.xlsx")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/reposec_v2010141%20rev%2017012025.xlsm")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/rytmisk_personlast_bef.xlsm")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/svingl%c3%b8b_v28-10-2022.xlsm")]

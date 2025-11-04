@@ -58,6 +58,7 @@ namespace Dalton_Trapper.ViewModel
             OpretPladeCommand = new RelayCommand(_ => OpretBeregning("Plade"), _ => CanAddFiles(Plade));
             OpretVibrationskomfortCommand = new RelayCommand(_ => OpretBeregning("Vibrationskomfort"), _ => CanAddFiles(Vibrationskomfort));
             OpretRytmiskPersonlastCommand = new RelayCommand(_ => OpretBeregning("RytmiskPersonlast"), _ => CanAddFiles(RytmiskPersonlast));
+            OpretReaktionArkCommand = new RelayCommand(_ => OpretBeregning("ReaktionArk"), _ => CanAddFiles(ReaktionArk));
             OpretGelænderCommand = new RelayCommand(_ => OpretBeregning("Gelænder"), _ => CanAddFiles(Gelænder.Name) && CanAddFiles(Gelænder.Type));
         }
 
@@ -83,6 +84,7 @@ namespace Dalton_Trapper.ViewModel
         public ICommand OpretPladeCommand { get; set; }
         public ICommand OpretVibrationskomfortCommand { get; set; }
         public ICommand OpretRytmiskPersonlastCommand { get; set; }
+        public ICommand OpretReaktionArkCommand { get; set; }
         public ICommand OpretGelænderCommand { get; set; }
         public ICommand CopyDrawingsCommand { get; set; }
         public ICommand CopyCorrectedDrawingsCommand { get; set; }
@@ -618,6 +620,24 @@ namespace Dalton_Trapper.ViewModel
 
                 RytmiskPersonlast = "";
             }
+            else if (type == "ReaktionArk")
+            {
+                string sheet = "Model\\Projektering tab\\Beregningsark\\Overslag på reaktioner V03-11-2025.xlsx";
+
+                string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{ReaktionArk}.xlsx");
+
+                if (File.Exists(newFile))
+                {
+                    MessageBox.Show($"Filen '{ReaktionArk}.xlsx' eksisterer i forvejen. Vælg et andet navn.", "Fejl!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                File.Copy(sheet, newFile);
+
+                ReaktionArk = "";
+                LoadFolderContents(CurrentCalculationFolder, "Calculation");
+                return;
+            }
             else if (type == "Gelænder")
             {
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Gelænder.Name}.xlsm");
@@ -1008,6 +1028,19 @@ namespace Dalton_Trapper.ViewModel
                 {
                     _rytmiskPersonlast = value;
                     OnPropertyChanged(nameof(RytmiskPersonlast));
+                }
+            }
+        }
+        private String _reaktionArk;
+        public String ReaktionArk
+        {
+            get => _reaktionArk;
+            set
+            {
+                if (_reaktionArk != value)
+                {
+                    _reaktionArk = value;
+                    OnPropertyChanged(nameof(ReaktionArk));
                 }
             }
         }

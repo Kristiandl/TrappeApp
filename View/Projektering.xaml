@@ -197,6 +197,13 @@
                                 Width="33" Height="33" VerticalAlignment="Center"
                                 Style="{StaticResource ButtonStyle}" ToolTip="Opret beregning til rytmisk personlast"/>
                     </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <uc:InputBox Label="Reaktioner" Text="{Binding ReaktionArk, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     LabelWidth="150" InputWidth="220" Margin="0,0,20,0"/>
+                        <Button Content="+" Command="{Binding OpretReaktionArkCommand}" 
+                                Width="33" Height="33" VerticalAlignment="Center"
+                                Style="{StaticResource ButtonStyle}" ToolTip="Opret beregning til reaktionsbestemmelser"/>
+                    </StackPanel>
                     <StackPanel Orientation="Vertical">
                         <uc:InputComboBox Label="Gelænder" 
                                                 Items="{Binding GelænderListe}" 

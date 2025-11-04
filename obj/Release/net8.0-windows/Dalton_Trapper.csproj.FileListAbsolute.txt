@@ -127,6 +127,7 @@ C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\T
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\Projektering tab\Beregningsark\Type A med balusterben _v 1.0_2023_rev 0.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\Projektering tab\Beregningsark\Type A uden ben _v_ 1.0_2023_rev 0.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\Model\Projektering tab\Beregningsark\Overslag på reaktioner V03-11-2025.xlsx
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.dll.manifest
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\TrappeApp.application
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\obj\Release\net8.0-windows\TrappeApp.dll.manifest

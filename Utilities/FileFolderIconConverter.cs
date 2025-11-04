@@ -21,7 +21,7 @@ namespace Dalton_Trapper.Utilities
             {
                 return new BitmapImage(new Uri("pack://application:,,,/View/Icons/pdf_icon.png"));
             }
-            else if (extension == ".xlsm")
+            else if (extension == ".xlsm" || extension == ".xlsx")
             {
                 return new BitmapImage(new Uri("pack://application:,,,/View/Icons/excel_icon.png"));
             }

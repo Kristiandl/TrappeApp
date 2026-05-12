@@ -100,7 +100,7 @@ namespace Dalton_Trapper.ViewModel
 
 
             BetonstyrkeListe = new ObservableCollection<string> { "C20/25", "C25/30", "C30/37", "C35/45", "C40/50", "C45/55", "C50/60" };
-            Betonstyrke = "C30/37";
+            Betonstyrke = "C35/45";
             
             KonsekvensklasseListe = new ObservableCollection<string> { "CC2", "CC3" };
             Konsekvensklasse = "CC2";

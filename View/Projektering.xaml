@@ -40,7 +40,11 @@
                                   SelectedItem="{Binding ProjectInfo.Miljøklasse, Mode=TwoWay}" 
                                   LabelWidth="110" InputWidth="170" ContentWidth="113" Margin="0,0,35,0"/>
                 <uc:InputBox Label="Nyttelast [kN/m2]" Text="{Binding ProjectInfo.Liveload, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
-                             LabelWidth="160" InputWidth="50"/>
+                             LabelWidth="160" InputWidth="50" Margin="0,0,35,0"/>
+                <uc:InputComboBox Label="Beton/Terrazzo" 
+                                  Items="{Binding BetonListe}" 
+                                  SelectedItem="{Binding ProjectInfo.Betontype, Mode=TwoWay}" 
+                                  LabelWidth="140" InputWidth="130" ContentWidth="73" Margin="0,0,35,0"/>
             </StackPanel>
 
             <!-- Midtersektion - overskrifter -->

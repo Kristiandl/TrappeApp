@@ -10,6 +10,7 @@ namespace Dalton_Trapper.Model.Projektering_tab
         private string _projectName;
         private string _konsekvensklasse;
         private string _miljøklasse;
+        private string _betontype;
         private string _liveload;
 
         public string ProjectNumber
@@ -34,6 +35,12 @@ namespace Dalton_Trapper.Model.Projektering_tab
         {
             get => _miljøklasse;
             set { _miljøklasse = value; OnPropertyChanged(nameof(Miljøklasse)); }
+        }
+
+        public string Betontype
+        {
+            get => _betontype;
+            set { _betontype = value; OnPropertyChanged(nameof(Betontype)); }
         }
 
         public string Liveload

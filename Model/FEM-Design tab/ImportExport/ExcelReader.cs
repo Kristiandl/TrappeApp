@@ -216,8 +216,8 @@ namespace Dalton_Trapper.Model.ImportExport
                 slabData.CC = $"CC{cellData["I9"]}";
                 slabData.RunInBgYes = false;
                 slabData.RunInBgNo = true;
-                slabData.DisconnectYes = false;
-                slabData.DisconnectNo = true;
+                slabData.DisconnectYes = true;
+                slabData.DisconnectNo = false;
                 slabData.RunAnalysisYes = true;
                 slabData.RunAnalysisNo = false;
                 slabData.ApplyDocTemplateYes = false;

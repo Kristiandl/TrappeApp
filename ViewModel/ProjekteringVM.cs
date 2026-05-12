@@ -24,6 +24,7 @@ namespace Dalton_Trapper.ViewModel
             KonsekvensklasseListe = new ObservableCollection<string> { "", "CC2", "CC3" };
             GelænderListe = new ObservableCollection<string> { "Type A", "Type A u. ben", "Type A m. balusterben", "Type X" };
             MiljøklasseListe = new ObservableCollection<string> { "", "Passiv", "Moderat", "Aggressiv", "Ekstra Aggressiv" };
+            BetonListe = new ObservableCollection<string> { "", "Beton", "Terrazzo" };
             SelectedDrawings = new ObservableCollection<Drawing>();
             SelectedCalculations = new ObservableCollection<Calculation>();
             TegningerHeader = "Tegninger";
@@ -382,10 +383,20 @@ namespace Dalton_Trapper.ViewModel
             Excel.Worksheet worksheet = null;
             string environmentClass = "";
             string fck = "";
-            if (ProjectInfo.Miljøklasse == "Moderat")
+            if (ProjectInfo.Miljøklasse == "Passiv" & ProjectInfo.Betontype == "Terrazzo")
+            {
+                environmentClass = "P";
+                fck = "30";
+            }
+            else if (ProjectInfo.Miljøklasse == "Passiv" & ProjectInfo.Betontype == "Beton")
+            {
+                environmentClass = "P";
+                fck = "35";
+            }
+            else if (ProjectInfo.Miljøklasse == "Moderat")
             {
                 environmentClass = "M";
-                fck = "30";
+                fck = "35";
             }
             else if (ProjectInfo.Miljøklasse == "Aggressiv")
             {
@@ -395,17 +406,16 @@ namespace Dalton_Trapper.ViewModel
             else if (ProjectInfo.Miljøklasse == "Ekstra Aggressiv")
             {
                 environmentClass = "E";
-                fck = "40";
+                fck = "45";
             }
             else
             {
-                environmentClass = "P";
                 fck = "30";
             }
 
             if (type == "Ligeløb")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobEC_190701 rev25082025.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobEC_190701 rev15042026.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Ligeløb}.xlsm");
 
@@ -427,12 +437,13 @@ namespace Dalton_Trapper.ViewModel
                 worksheet.Cells[35, 7] = ProjectInfo.Liveload == "5" ? "C" : "A"; // Liveload
                 worksheet.Cells[11, 9] = environmentClass;
                 worksheet.Cells[2, 10] = ProjectInfo.ProjectNumber;
+                worksheet.Cells[6, 15] = ProjectInfo.Betontype == "Terrazzo" ? "ja" : "nej";
 
                 Ligeløb = "";
             }
             else if (type == "Repos")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\reposEC_v2010141 rev 25082025.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\reposEC_v2010141 rev 15042026.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Repos}.xlsm");
 
@@ -454,12 +465,13 @@ namespace Dalton_Trapper.ViewModel
                 worksheet.Cells[44, 7] = ProjectInfo.Liveload == "5" ? "C" : "A"; // Liveload
                 worksheet.Cells[11, 9] = environmentClass;
                 worksheet.Cells[2, 10] = ProjectInfo.ProjectNumber;
+                worksheet.Cells[7, 18] = ProjectInfo.Betontype == "Terrazzo" ? "ja" : "nej";
 
                 Repos = "";
             }
             else if (type == "Knækløb")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobrepEC_190701 rev 25082025.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\LobrepEC_190701 rev 15042026.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Knækløb}.xlsm");
 
@@ -481,6 +493,7 @@ namespace Dalton_Trapper.ViewModel
                 worksheet.Cells[50, 7] = ProjectInfo.Liveload == "5" ? "C" : "A"; // Liveload
                 worksheet.Cells[11, 9] = environmentClass;
                 worksheet.Cells[2, 10] = ProjectInfo.ProjectNumber;
+                worksheet.Cells[20, 14] = ProjectInfo.Betontype == "Terrazzo" ? "ja" : "nej";
 
                 Knækløb = "";
             }
@@ -508,12 +521,13 @@ namespace Dalton_Trapper.ViewModel
                 worksheet.Cells[102, 11] = ProjectInfo.Liveload == "5" ? "Kategori C" : "Kategori A"; // Liveload
                 worksheet.Cells[79, 7] = environmentClass;
                 worksheet.Cells[2, 15] = ProjectInfo.ProjectNumber;
+                worksheet.Cells[80, 23] = ProjectInfo.Betontype == "Terrazzo" ? "Ja" : "Nej";
 
                 Svingløb = "";
             }
             else if (type == "Detalje")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\TrdetEC_191017 rev 25082025.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\TrdetEC_191017 rev 15042026.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Detalje}.xlsm");
 
@@ -534,12 +548,13 @@ namespace Dalton_Trapper.ViewModel
                 worksheet.Cells[9, 9] = ProjectInfo.Konsekvensklasse == "" ? 2 : ProjectInfo.Konsekvensklasse.Substring(ProjectInfo.Konsekvensklasse.Length - 1, 1); // Consequence class
                 worksheet.Cells[11, 9] = environmentClass;
                 worksheet.Cells[2, 10] = ProjectInfo.ProjectNumber;
+                worksheet.Cells[6, 18] = ProjectInfo.Betontype == "Terrazzo" ? "ja" : "nej";
 
                 Detalje = "";
             }
             else if (type == "Plade")
             {
-                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\RApladEC_190701 rev 25082025.xlsm";
+                string sheet = "N:\\Opslag\\Statik\\Dalton statikark\\RApladEC_190701 rev 15042026.xlsm";
 
                 string newFile = System.IO.Path.Combine(CurrentCalculationFolder, $"{Plade}.xlsm");
 
@@ -562,6 +577,7 @@ namespace Dalton_Trapper.ViewModel
                 worksheet.Cells[52, 8] = ProjectInfo.Liveload == "5" ? "5" : "3"; // Liveload intensity
                 worksheet.Cells[31, 9] = environmentClass;
                 worksheet.Cells[2, 10] = ProjectInfo.ProjectNumber;
+                worksheet.Cells[7, 17] = ProjectInfo.Betontype == "Terrazzo" ? "ja" : "nej";
 
                 Plade = "";
             }
@@ -827,6 +843,7 @@ namespace Dalton_Trapper.ViewModel
         public ObservableCollection<string> KonsekvensklasseListe { get; set; }
 
         public ObservableCollection<string> MiljøklasseListe { get; set; }
+        public ObservableCollection<string> BetonListe { get; set; }
         public ObservableCollection<string> GelænderListe { get; set; }
 
 
@@ -1120,6 +1137,7 @@ namespace Dalton_Trapper.ViewModel
                     Konsekvensklasse = ProjectInfo.Konsekvensklasse,
                     Miljøklasse = ProjectInfo.Miljøklasse,
                     Liveload = ProjectInfo.Liveload,
+                    Betontype = ProjectInfo.Betontype,
                 };
 
                 ImportExport.SaveToJson(data, fullPath);
@@ -1160,6 +1178,7 @@ namespace Dalton_Trapper.ViewModel
                     ProjectInfo.Konsekvensklasse = data.Konsekvensklasse;
                     ProjectInfo.Miljøklasse = data.Miljøklasse;
                     ProjectInfo.Liveload = data.Liveload;
+                    ProjectInfo.Betontype = data.Betontype;
                 }
                 else
                 {
@@ -1167,6 +1186,7 @@ namespace Dalton_Trapper.ViewModel
                     ProjectInfo.Konsekvensklasse = "";
                     ProjectInfo.Miljøklasse = "";
                     ProjectInfo.Liveload = "";
+                    ProjectInfo.Betontype = "";
                     Drawings.Clear();
                     Calculations.Clear();
                 }

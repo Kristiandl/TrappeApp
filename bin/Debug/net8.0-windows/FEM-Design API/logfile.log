@@ -9751,3 +9751,40 @@ t: 05/26 14.44.59.613
 Script file finished
 step: cmdchild
 Script file finished
+step: cmdopen
+t: 01/15 08.05.13.537
+cmdopen:'; CXL CS2SHELL OPEN'
+t: 01/15 08.05.16.225
+Script file finished
+step: cmdconfig
+t: 01/15 08.05.16.881
+cmdconfig:'$ MODULECOM APPLYCFG'
+t: 01/15 08.05.16.884
+Script file finished
+step: cmdconfig
+t: 01/15 08.05.17.287
+cmdconfig:'$ MODULECOM APPLYCFG'
+error applying cfg face_0_Lay_0_0_rRectBandMin xml value parse error:  "0" is not a valid real value (min > 0, max = 10000)
+t: 01/15 08.05.17.296
+aborting script execution
+Script file finished
+step: cmdprojdescr
+t: 01/15 08.05.17.821
+cmdprojdescr:'$ MODULECOM PROJDESCR'
+t: 01/15 08.05.17.823
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RESMODE'
+step: cmdcalculation
+t: 01/15 08.05.18.173
+cmdcalculation:'; CXL $MODULE CALC'
+t: 01/15 08.05.27.285
+Script file finished
+Script file finished
+step: cmduser
+cmduser:'; CXL $MODULE RCDESIGN'
+step: cmdcalculation
+t: 01/15 08.05.27.815
+cmdcalculation:'; CXL $MODULE CALC'
+t: 01/15 08.05.28.769
+Script file finished

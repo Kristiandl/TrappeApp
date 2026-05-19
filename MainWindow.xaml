@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="TrappeApp"
         Height="890"
-        Width="1650"
+        Width="1500"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"

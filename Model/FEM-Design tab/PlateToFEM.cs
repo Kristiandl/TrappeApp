@@ -557,6 +557,8 @@ namespace Dalton_Trapper.Model
                 Plane plane = new Plane(point, edgeDirection, perpDirection);
 
                 var dim = new DimensionLinear(new List<Point3d> { points[j], points[nextI] }, plane);
+                    dim.Decimals = 0;
+                    dim.LengthUnit = StruSoft.Interop.StruXml.Data.Lengthunit_type.Mm;
                 model.AddLinearDimension(dim, true);
                 j++;
             }

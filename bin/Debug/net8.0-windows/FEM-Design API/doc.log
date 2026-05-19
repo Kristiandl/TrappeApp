@@ -26987,3 +26987,336 @@ t: 05/26 14.45.11.747
 cmddocitem:'; CXL $MODULE DOCTABLE'
 t: 05/26 14.45.11.905
 step: cmdendsession
+step: cmddocitem
+t: 05/19 09.46.40.310
+cmddocitem:'; CXL DOC DOCUMENT'
+t: 05/19 09.46.42.703
+step: cmddocitem
+t: 05/19 09.46.42.866
+cmddocitem:'; CXL DOC SECTION'
+t: 05/19 09.46.43.771
+step: cmddocitem
+t: 05/19 09.46.43.775
+cmddocitem:'; CXL DOC REPORT'
+t: 05/19 09.46.43.785
+step: cmddocitem
+t: 05/19 09.46.43.789
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.43.837
+step: cmddocitem
+t: 05/19 09.46.43.841
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.43.931
+step: cmddocitem
+t: 05/19 09.46.43.937
+cmddocitem:'; CXL DOC SECTION'
+t: 05/19 09.46.44.812
+step: cmddocitem
+t: 05/19 09.46.44.816
+cmddocitem:'; CXL DOC TITLEBLOCK'
+t: 05/19 09.46.44.867
+step: cmddocitem
+t: 05/19 09.46.44.869
+cmddocitem:'; CXL DOC CONTENTS'
+t: 05/19 09.46.44.911
+step: cmddocitem
+t: 05/19 09.46.44.916
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.44.965
+step: cmddocitem
+t: 05/19 09.46.44.969
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.45.019
+step: cmddocitem
+t: 05/19 09.46.45.022
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.45.067
+step: cmddocitem
+t: 05/19 09.46.45.070
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.45.117
+step: cmddocitem
+t: 05/19 09.46.45.120
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.45.168
+step: cmddocitem
+t: 05/19 09.46.45.171
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.45.215
+step: cmddocitem
+t: 05/19 09.46.45.218
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.45.267
+step: cmddocitem
+t: 05/19 09.46.45.269
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.45.325
+step: cmddocitem
+t: 05/19 09.46.45.328
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.45.389
+step: cmddocitem
+t: 05/19 09.46.45.394
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.45.447
+step: cmddocitem
+t: 05/19 09.46.45.450
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.45.564
+step: cmddocitem
+t: 05/19 09.46.45.568
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.45.684
+step: cmddocitem
+t: 05/19 09.46.45.687
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.45.741
+step: cmddocitem
+t: 05/19 09.46.45.743
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.45.798
+step: cmddocitem
+t: 05/19 09.46.45.801
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.45.854
+step: cmddocitem
+t: 05/19 09.46.45.857
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.45.982
+step: cmddocitem
+t: 05/19 09.46.45.985
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.46.107
+step: cmddocitem
+t: 05/19 09.46.46.112
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.46.224
+step: cmddocitem
+t: 05/19 09.46.46.230
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.46.276
+step: cmddocitem
+t: 05/19 09.46.46.278
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.46.330
+step: cmddocitem
+t: 05/19 09.46.46.333
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.46.384
+step: cmddocitem
+t: 05/19 09.46.46.387
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.46.518
+step: cmddocitem
+t: 05/19 09.46.46.520
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.46.652
+step: cmddocitem
+t: 05/19 09.46.46.656
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.46.770
+step: cmddocitem
+t: 05/19 09.46.46.773
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.46.829
+step: cmddocitem
+t: 05/19 09.46.46.832
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.46.888
+step: cmddocitem
+t: 05/19 09.46.46.891
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.46.948
+step: cmddocitem
+t: 05/19 09.46.46.950
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.47.100
+step: cmddocitem
+t: 05/19 09.46.47.103
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.47.253
+step: cmddocitem
+t: 05/19 09.46.47.256
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.47.401
+step: cmddocitem
+t: 05/19 09.46.47.403
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.47.554
+step: cmddocitem
+t: 05/19 09.46.47.556
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.47.624
+step: cmddocitem
+t: 05/19 09.46.47.626
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.47.695
+step: cmddocitem
+t: 05/19 09.46.47.698
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.47.765
+step: cmddocitem
+t: 05/19 09.46.47.767
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.47.901
+step: cmddocitem
+t: 05/19 09.46.47.905
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.48.050
+step: cmddocitem
+t: 05/19 09.46.48.053
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.48.199
+step: cmddocitem
+t: 05/19 09.46.48.201
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.48.268
+step: cmddocitem
+t: 05/19 09.46.48.270
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.48.391
+step: cmddocitem
+t: 05/19 09.46.48.393
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.48.544
+step: cmddocitem
+t: 05/19 09.46.48.547
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.48.685
+step: cmddocitem
+t: 05/19 09.46.48.687
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.48.826
+step: cmddocitem
+t: 05/19 09.46.48.829
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.48.974
+step: cmddocitem
+t: 05/19 09.46.48.977
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.49.129
+step: cmddocitem
+t: 05/19 09.46.49.132
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.49.199
+step: cmddocitem
+t: 05/19 09.46.49.202
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.49.265
+step: cmddocitem
+t: 05/19 09.46.49.268
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.49.416
+step: cmddocitem
+t: 05/19 09.46.49.419
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.49.486
+step: cmddocitem
+t: 05/19 09.46.49.489
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.49.569
+step: cmddocitem
+t: 05/19 09.46.49.572
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.49.741
+step: cmddocitem
+t: 05/19 09.46.49.744
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.49.917
+step: cmddocitem
+t: 05/19 09.46.49.921
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.50.099
+step: cmddocitem
+t: 05/19 09.46.50.101
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.50.282
+step: cmddocitem
+t: 05/19 09.46.50.285
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.50.366
+step: cmddocitem
+t: 05/19 09.46.50.368
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.50.446
+step: cmddocitem
+t: 05/19 09.46.50.448
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.50.666
+step: cmddocitem
+t: 05/19 09.46.50.668
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.50.873
+step: cmddocitem
+t: 05/19 09.46.50.878
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.51.109
+step: cmddocitem
+t: 05/19 09.46.51.112
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.51.358
+step: cmddocitem
+t: 05/19 09.46.51.362
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.51.500
+step: cmddocitem
+t: 05/19 09.46.51.503
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.51.640
+step: cmddocitem
+t: 05/19 09.46.51.644
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.51.880
+step: cmddocitem
+t: 05/19 09.46.51.884
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.51.991
+step: cmddocitem
+t: 05/19 09.46.51.994
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.52.094
+step: cmddocitem
+t: 05/19 09.46.52.098
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.52.222
+step: cmddocitem
+t: 05/19 09.46.52.225
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.52.481
+step: cmddocitem
+t: 05/19 09.46.52.484
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.52.779
+step: cmddocitem
+t: 05/19 09.46.52.782
+cmddocitem:'; CXL DOC CHAPTER'
+t: 05/19 09.46.52.923
+step: cmddocitem
+t: 05/19 09.46.52.926
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.53.078
+step: cmddocitem
+t: 05/19 09.46.53.081
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.53.337
+step: cmddocitem
+t: 05/19 09.46.53.340
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.53.612
+step: cmddocitem
+t: 05/19 09.46.53.615
+cmddocitem:'; CXL DOC PAGEBREAK'
+t: 05/19 09.46.53.764
+step: cmddocitem
+t: 05/19 09.46.53.766
+cmddocitem:'; CXL DOC TEXTBOX'
+t: 05/19 09.46.53.926
+step: cmddocitem
+t: 05/19 09.46.53.958
+cmddocitem:'; CXL $MODULE DOCGRAPH'
+t: 05/19 09.46.54.202
+step: cmddocitem
+t: 05/19 09.46.54.205
+cmddocitem:'; CXL $MODULE DOCTABLE'
+t: 05/19 09.46.54.452
+step: cmdendsession

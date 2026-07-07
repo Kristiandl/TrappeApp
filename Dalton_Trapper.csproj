@@ -31,6 +31,7 @@
     <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2023 rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsx" />
+    <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 3.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 09012023.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm" />
@@ -47,6 +48,42 @@
     <None Remove="Model\Projektering tab\Beregningsark\Type A med balusterben _v 1.0_2023_rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Type A uden ben _v_ 1.0_2023_rev 0.xlsm" />
     <None Remove="Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A1.2.Afsnitsnummer Konstruktionsgrundlag - Afsnitsnavn.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A1.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A1.2.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A2.2.Afsnitsnummer Statiske beregninger - Afsnitsnavn.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A2.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A2.2.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A3.2.Afsnitsnummer Konstruktionstegninger - Afsnitsnavn.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A3.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A3.2.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A4.2.Afsnitsnummer Konstruktionsændringer - Afsnitsnavn.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A4.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A4.2.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A5.Afsnitsnummer Konstruktion som udført - Afsnitsnavn.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A5.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\A5.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B1.2.Afsnitsnummer Statisk projektredegørelse - Afsnitsnavn.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B1.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B1.2.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B2.1.2.Afsnitsnummer Statisk kontrolplan projektering - Afsnitsnavn.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B2.1.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B2.1.2.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B3.1.2.Afsnitsnummer Statisk kontrolrapport projektering - Afsnitsnavn.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B3.1.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B3.1.2.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B3.2.2.CRH Statisk kontrolrapport udførelse %28fremstilling%29.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B3.2.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\B3.2.2.ny.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\A1.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\A2.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\A3.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\A4.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\A5.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\B1.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\B2.1.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\B3.1.2.docx" />
+    <None Remove="Model\Projektering tab\Statisk dokumentation\old\B3.2.2.docx" />
     <None Remove="Model\Projektering tab\Tjekliste.docx" />
     <None Remove="Model\Repos_Doc_Template - Deploy.dsc" />
     <None Remove="Model\Repos_Doc_Template.dsc" />
@@ -56,11 +93,23 @@
     <None Remove="View\Icons\delete_icon2.png" />
     <None Remove="View\Icons\delete_icon2_disabled.png" />
     <None Remove="View\Icons\delete_icon2_hover.png" />
+    <None Remove="View\Icons\document_icon.png" />
+    <None Remove="View\Icons\document_icon_disabled.png" />
+    <None Remove="View\Icons\document_icon_hover.png" />
     <None Remove="View\Icons\excel_icon.png" />
     <None Remove="View\Icons\FEM-Design_icon.png" />
     <None Remove="View\Icons\folder_icon.png" />
     <None Remove="View\Icons\pdf_icon.png" />
+    <None Remove="View\Icons\percent_icon.png" />
+    <None Remove="View\Icons\percent_icon_disabled.png" />
+    <None Remove="View\Icons\percent_icon_hover.png" />
+    <None Remove="View\Icons\print_icon.png" />
+    <None Remove="View\Icons\print_icon_disabled.png" />
+    <None Remove="View\Icons\print_icon_hover.png" />
     <None Remove="View\Icons\question_mark_icon.png" />
+    <None Remove="View\Icons\sheet_icon.png" />
+    <None Remove="View\Icons\sheet_icon_disabled.png" />
+    <None Remove="View\Icons\sheet_icon_hover.png" />
     <None Remove="View\Icons\switch_icon.png" />
     <None Remove="View\Icons\switch_icon_disabled.png" />
     <None Remove="View\Icons\switch_icon_hover.png" />
@@ -73,6 +122,15 @@
       <VersionMinor>9</VersionMinor>
       <VersionMajor>1</VersionMajor>
       <Guid>00020813-0000-0000-c000-000000000046</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>7</VersionMinor>
+      <VersionMajor>8</VersionMajor>
+      <Guid>00020905-0000-0000-c000-000000000046</Guid>
       <Lcid>0</Lcid>
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
@@ -104,6 +162,9 @@
     <Content Include="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 3.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -131,13 +192,77 @@
     <Content Include="Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\A1.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\A2.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\A3.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\A4.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\A5.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\B1.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\B2.1.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\B3.1.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\B3.2.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\A1.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\A2.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\A3.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\A4.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\A5.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\B1.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\B2.1.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\B3.1.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Projektering tab\Statisk dokumentation\old\B3.2.2.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Model\Projektering tab\Tjekliste.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="stairs_icon.ico" />
+    <Resource Include="View\Icons\percent_icon.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Icons\percent_icon_disabled.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Icons\percent_icon_hover.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
     <PackageReference Include="FemDesign.Core" Version="23.7.5" />
   </ItemGroup>
 
@@ -158,11 +283,20 @@
     <Resource Include="View\Icons\delete_icon2.png" />
     <Resource Include="View\Icons\delete_icon2_disabled.png" />
     <Resource Include="View\Icons\delete_icon2_hover.png" />
+    <Resource Include="View\Icons\document_icon.png" />
+    <Resource Include="View\Icons\document_icon_disabled.png" />
+    <Resource Include="View\Icons\document_icon_hover.png" />
     <Resource Include="View\Icons\excel_icon.png" />
     <Resource Include="View\Icons\FEM-Design_icon.png" />
     <Resource Include="View\Icons\folder_icon.png" />
     <Resource Include="View\Icons\pdf_icon.png" />
+    <Resource Include="View\Icons\print_icon.png" />
+    <Resource Include="View\Icons\print_icon_disabled.png" />
+    <Resource Include="View\Icons\print_icon_hover.png" />
     <Resource Include="View\Icons\question_mark_icon.png" />
+    <Resource Include="View\Icons\sheet_icon.png" />
+    <Resource Include="View\Icons\sheet_icon_disabled.png" />
+    <Resource Include="View\Icons\sheet_icon_hover.png" />
     <Resource Include="View\Icons\switch_icon.png" />
     <Resource Include="View\Icons\switch_icon_disabled.png" />
     <Resource Include="View\Icons\switch_icon_hover.png" />

@@ -157,17 +157,17 @@ namespace Dalton_Trapper.Model.ImportExport
                 }
                 else if (cellData["I11"] == "E")
                 {
-                    slabData.Fck = $"C{cellData["J22"]}/50";
+                    slabData.Fck = $"C{cellData["J22"]}/55";
                     slabData.SelectedEnvironmentClass = "EkstraAgressiv";
                 }
                 else if (cellData["I11"] == "M")
                 {
-                    slabData.Fck = $"C{cellData["J22"]}/37";
+                    slabData.Fck = $"C{cellData["J22"]}/45";
                     slabData.SelectedEnvironmentClass = "Moderat";
                 }
                 else
                 {
-                    slabData.Fck = $"C{cellData["J22"]}/37";
+                    slabData.Fck = $"C{cellData["J22"]}/45";
                     slabData.SelectedEnvironmentClass = "Passiv";
                 }
 

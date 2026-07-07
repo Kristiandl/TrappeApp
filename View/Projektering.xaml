@@ -138,9 +138,25 @@
                                     Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
                                     Style="{StaticResource ButtonStyle}" ToolTip="Kopier markerede filer til valgte tegningsmappe"/>
                             <Button Command="{Binding DeleteCalculationItemCommand}" 
-                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,0"
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
                                     ToolTip="Sletter markerede filer i den valgte beregningsmappe"
                                     Style="{StaticResource ButtonStyleDelete}"/>
+                            <Button Command="{Binding CreateDocsCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
+                                    ToolTip="Opretter statiske dokumenter med informationer fra tjeklisten"
+                                    Style="{StaticResource ButtonStyleCreateDocs}"/>
+                            <Button Command="{Binding DornUdnyttelseTjeklisteCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
+                                    ToolTip="Udfylder udnyttelsgrader på dorne fra beregninger. Gælder kun knækløb- og reposark"
+                                    Style="{StaticResource ButtonStyleDornUdnyttelse}"/>
+                            <Button Command="{Binding PrintPdfCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
+                                    ToolTip="Udskriver PDF af de valgte dokumenter"
+                                    Style="{StaticResource ButtonStylePrintPdf}"/>
+                            <Button Command="{Binding CreateSheetsCommand}" 
+                                    Width="33" Height="33" VerticalAlignment="Top" Margin="7,0,0,15"
+                                    ToolTip="Opretter regneark på baggrund af elementinddeling i tjeklisten"
+                                    Style="{StaticResource ButtonStyleCreateSheets}"/>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>

@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "E+FS0GIYavk=",
+  "dgSpecHash": "/uLMkmVAEU0=",
   "success": true,
   "projectFilePath": "C:\\Users\\kdl\\OneDrive - CRH\\Dokumenter\\Udvikling\\Dalton_Trapper\\Dalton_Trapper\\TrappeApp\\Dalton_Trapper.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kdl\\.nuget\\packages\\documentformat.openxml\\3.5.1\\documentformat.openxml.3.5.1.nupkg.sha512",
+    "C:\\Users\\kdl\\.nuget\\packages\\documentformat.openxml.framework\\3.5.1\\documentformat.openxml.framework.3.5.1.nupkg.sha512",
     "C:\\Users\\kdl\\.nuget\\packages\\femdesign.core\\23.7.5\\femdesign.core.23.7.5.nupkg.sha512",
     "C:\\Users\\kdl\\.nuget\\packages\\fuzzysharp\\2.0.2\\fuzzysharp.2.0.2.nupkg.sha512",
-    "C:\\Users\\kdl\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\kdl\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\kdl\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512"
   ],
   "logs": [
     {

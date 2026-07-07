@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="TrappeApp.exe" version="1.1.30.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="TrappeApp.exe" version="1.2.8.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="stairs_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -54,6 +54,24 @@
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="DocumentFormat.OpenXml.dll" size="7985120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X5bVgBZMwVRpeLcS/sncQl8t3RsY3tX4t3a+vGDKl0I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DocumentFormat.OpenXml.Framework.dll" size="478696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lUXgK4qI099re+/l/edhjt41IRVImLt421SFmWCLnks=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="FemDesign.Core.dll" size="6728192">
     <hash>
       <dsig:Transforms>
@@ -144,6 +162,15 @@
       <dsig:DigestValue>g/TtSwwBLvJnQM3+C45WChnRkq6fV2E0qcn9PqF7uk8=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 3.xlsm" size="201195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1oIutJ2AxFzA9zcUCX13qht/ZoJdDorT8BQJunSNYcg=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm" size="178472">
     <hash>
       <dsig:Transforms>
@@ -225,13 +252,175 @@
       <dsig:DigestValue>JhKDj7fEsGuTQgmNcrDZFqv8yed628067XWM7guL+ig=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Model\Projektering tab\Tjekliste.docx" size="22767">
+  <file name="Model\Projektering tab\Statisk dokumentation\A1.2.docx" size="1109833">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rbHNylqyh0XzR6TmNRgPWA733Jq7fl6uWHSblYrvJFs=</dsig:DigestValue>
+      <dsig:DigestValue>kGZsZdmSyczJJb7mGIWy26FllDSiszcJhVZv+9mBmKg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\A2.2.docx" size="2862909">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2FYsfKJnFCeroJtDgNLtJucEmnZAJuI5GFxaAuPgyEo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\A3.2.docx" size="67555">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uHDXq7ILloox2DEZHIV1ZjiaFgPnoF3UnXCdHHIr9Yw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\A4.2.docx" size="71328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MU7EUochbgxZ6MxQMPF53XzatVi+l0N9EZBjpLxtKWg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\A5.docx" size="70364">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zYcPDOflHVBpwbFt2nPE+riLKKmI30SpAUx4Wy0G9T4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\B1.2.docx" size="84539">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jRAVPyYKYuY3gi1mE32ftAaiyO841H/q53QGjZDJZ+o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\B2.1.2.docx" size="91076">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Jp0QS82r+639HG9jwvKf9ROv6HdU+To6zIhoVGrvIck=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\B3.1.2.docx" size="104719">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c7+m4VQMe6XjNa+NH0kF7O18bl6REXqJiATA3IN1RLM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\B3.2.2.docx" size="15508050">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Vu/NzA6d/xiBZKROxpHA52GB+vgihga+B7Oif4XT464=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\A1.2.docx" size="1109457">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Nj2/byGn6TVRZLWR4mdXIJYYLxJl9M0PegcD2x/8k9c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\A2.2.docx" size="2732195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wzweSv2X0gu3Wwq/zpm2/JnqZMUtjkeumgb0BLeeMwI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\A3.2.docx" size="67201">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+ww514Wam7soTO+LONMIhFwS9miuFxArDZW5caTZ8BM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\A4.2.docx" size="70962">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2cc5Qb7fDiazRCTKBuNQqEKwR5uV/xuRbbO4GCD8N+s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\A5.docx" size="69821">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qzaMy2+iuUv7KrNpNNMp6k2B0IiyQQe8E0AP3czAsc8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\B1.2.docx" size="82248">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WKVAEQz3mIYifhgJZfyfN2qIyKv068/HEFnCxtweaK8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\B2.1.2.docx" size="91195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jxJugDT9yTnUkZhACiRnPDXK0Y+haeL7Oh45KkF/MyA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\B3.1.2.docx" size="103599">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DHtqfl3RHfCLi9PKfky5QkH9+E5+HuXpLCWaWqC9LAw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Statisk dokumentation\old\B3.2.2.docx" size="15505716">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>08l2VhFX6juzfcxeoFkvnzslDhTKyf4uYOQF+62jRd8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model\Projektering tab\Tjekliste.docx" size="23911">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>e3uGMNj52yxPRPOfgl38rXsVpiO7GbWVL2FyFwPZhP0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Newtonsoft.Json.dll" size="711952">
@@ -252,22 +441,31 @@
       <dsig:DigestValue>oLa5pnNwcI5iRxN9oYNcoMsAf7tLy5idUVD6c8B1RiU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TrappeApp.deps.json" size="2172">
+  <file name="System.IO.Packaging.dll" size="142136">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>V/oZOmZ+qZr2iGyCRelPjZZaoZt1ZQ1wqNKd9VFWjtc=</dsig:DigestValue>
+      <dsig:DigestValue>Et3Iv/J5+thWVRp0iU3FK4D6Q31dKzJyLnCuaJkhe3w=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TrappeApp.dll" size="699392">
+  <file name="TrappeApp.deps.json" size="4112">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WtNWU6Vfl+Cp6Q/+5uVwCboViX7EXCpuNYrgfVU+Ymc=</dsig:DigestValue>
+      <dsig:DigestValue>gRY1KrbJFKz4dvTHHt0k0yIUWt1Q+qFQBgHo535l1jM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TrappeApp.dll" size="753664">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tSkJKWgXA5CQdlhqqOFKLTlWnVaAO+CkKvs1oeJYw7I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TrappeApp.exe" size="262656">
@@ -276,7 +474,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>3pb9mi5ddnryiqJ/BRVYTVlkJ3U2+G+5kU8bcau4mEQ=</dsig:DigestValue>
+      <dsig:DigestValue>tMj0T/UpK63sYBPhGGysPoh+/ZLN7oWF4FJc1hk91b0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TrappeApp.runtimeconfig.json" size="515">

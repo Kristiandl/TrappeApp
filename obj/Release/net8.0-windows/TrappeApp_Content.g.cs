@@ -18,6 +18,8 @@
     "%20rev%200.xlsm")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/gel%c3%a6nder%20type%20a%20v%201.0%20_2025" +
     "%20rev%202.xlsm")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/gel%c3%a6nder%20type%20a%20v%201.0%20_2025" +
+    "%20rev%203.xlsm")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/gel%c3%a6nder%20type%20x_v%201.0_2023%20re" +
     "v%200.xlsm")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/lobrepec_190701%20rev%2017012025.xlsm")]
@@ -31,6 +33,24 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/type%20a%20uden%20ben%20_v_%201.0_2023_rev" +
     "%200.xlsm")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/beregningsark/vibrationskomfort_ganglast_bef.xlsm")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/a1.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/a2.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/a3.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/a4.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/a5.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/b1.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/b2.1.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/b3.1.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/b3.2.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/a1.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/a2.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/a3.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/a4.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/a5.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/b1.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/b2.1.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/b3.1.2.docx")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/statisk%20dokumentation/old/b3.2.2.docx")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/projektering%20tab/tjekliste.docx")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("stairs_icon.ico")]
 

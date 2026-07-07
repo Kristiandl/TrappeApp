@@ -330,4 +330,184 @@
         </Setter>
     </Style>
 
+    <Style x:Key="ButtonStyleCreateDocs" TargetType="Button">
+        <Setter Property="Background" Value="#444554"/>
+        <Setter Property="BorderBrush" Value="#444554"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border 
+                    Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    CornerRadius="10">
+                        </Border>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <!-- Image that will switch dynamically -->
+                        <Image x:Name="IconImage"
+                   Source="pack://application:,,,/View/Icons/document_icon.png"
+                   Width="26" Height="26"
+                       Margin="1,0,0,0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <!-- Hover effect -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#5A5B6A"/>
+                            <Setter TargetName="IconImage" Property="Source" Value="pack://application:,,,/View/Icons/document_icon_hover.png"/>
+                        </Trigger>
+                        <!-- Pressed effect -->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#363749"/>
+                        </Trigger>
+                        <!-- Disabled state -->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="#333341"/>
+                            <Setter TargetName="IconImage" Property="Source" Value="pack://application:,,,/View/Icons/document_icon_disabled.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyleDornUdnyttelse" TargetType="Button">
+        <Setter Property="Background" Value="#444554"/>
+        <Setter Property="BorderBrush" Value="#444554"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border 
+                Background="{TemplateBinding Background}" 
+                BorderBrush="{TemplateBinding BorderBrush}" 
+                BorderThickness="{TemplateBinding BorderThickness}" 
+                CornerRadius="10">
+                        </Border>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <!-- Image that will switch dynamically -->
+                        <Image x:Name="IconImage"
+               Source="pack://application:,,,/View/Icons/percent_icon.png"
+               Width="26" Height="26"
+                   Margin="1,0,0,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <!-- Hover effect -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#5A5B6A"/>
+                            <Setter TargetName="IconImage" Property="Source" Value="pack://application:,,,/View/Icons/percent_icon_hover.png"/>
+                        </Trigger>
+                        <!-- Pressed effect -->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#363749"/>
+                        </Trigger>
+                        <!-- Disabled state -->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="#333341"/>
+                            <Setter TargetName="IconImage" Property="Source" Value="pack://application:,,,/View/Icons/percent_icon_disabled.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStylePrintPdf" TargetType="Button">
+        <Setter Property="Background" Value="#444554"/>
+        <Setter Property="BorderBrush" Value="#444554"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border 
+            Background="{TemplateBinding Background}" 
+            BorderBrush="{TemplateBinding BorderBrush}" 
+            BorderThickness="{TemplateBinding BorderThickness}" 
+            CornerRadius="10">
+                        </Border>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <!-- Image that will switch dynamically -->
+                        <Image x:Name="IconImage"
+           Source="pack://application:,,,/View/Icons/print_icon.png"
+           Width="26" Height="26"
+               Margin="0,0,0,0"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <!-- Hover effect -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#5A5B6A"/>
+                            <Setter TargetName="IconImage" Property="Source" Value="pack://application:,,,/View/Icons/print_icon_hover.png"/>
+                        </Trigger>
+                        <!-- Pressed effect -->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#363749"/>
+                        </Trigger>
+                        <!-- Disabled state -->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="#333341"/>
+                            <Setter TargetName="IconImage" Property="Source" Value="pack://application:,,,/View/Icons/print_icon_disabled.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyleCreateSheets" TargetType="Button">
+        <Setter Property="Background" Value="#444554"/>
+        <Setter Property="BorderBrush" Value="#444554"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border 
+        Background="{TemplateBinding Background}" 
+        BorderBrush="{TemplateBinding BorderBrush}" 
+        BorderThickness="{TemplateBinding BorderThickness}" 
+        CornerRadius="10">
+                        </Border>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <!-- Image that will switch dynamically -->
+                        <Image x:Name="IconImage"
+       Source="pack://application:,,,/View/Icons/sheet_icon.png"
+       Width="21" Height="21"
+           Margin="1,0,2,0"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <!-- Hover effect -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#5A5B6A"/>
+                            <Setter TargetName="IconImage" Property="Source" Value="pack://application:,,,/View/Icons/sheet_icon_hover.png"/>
+                        </Trigger>
+                        <!-- Pressed effect -->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#363749"/>
+                        </Trigger>
+                        <!-- Disabled state -->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="#333341"/>
+                            <Setter TargetName="IconImage" Property="Source" Value="pack://application:,,,/View/Icons/sheet_icon_disabled.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 </ResourceDictionary>

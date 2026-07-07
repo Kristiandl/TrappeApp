@@ -6,6 +6,7 @@ C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\T
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\FEM-Design tab\Doc_Template - Deploy.dsc
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2023 rev 0.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 2.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Gelænder Type A v 1.0 _2025 rev 3.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Gelænder Type X_v 1.0_2023 rev 0.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\LobrepEC_190701 rev 17012025.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Overslag på reaktioner V03-11-2025.xlsx
@@ -15,12 +16,33 @@ C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\T
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Type A med balusterben _v 1.0_2023_rev 0.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Type A uden ben _v_ 1.0_2023_rev 0.xlsm
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Beregningsark\Vibrationskomfort_ganglast_bef.xlsm
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\A1.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\A2.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\A3.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\A4.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\A5.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\B1.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\B2.1.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\B3.1.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\B3.2.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\A1.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\A2.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\A3.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\A4.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\A5.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\B1.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\B2.1.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\B3.1.2.docx
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Statisk dokumentation\old\B3.2.2.docx
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Model\Projektering tab\Tjekliste.docx
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.exe
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.dll
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.deps.json
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.runtimeconfig.json
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\TrappeApp.pdb
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\DocumentFormat.OpenXml.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\DocumentFormat.OpenXml.Framework.dll
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\FemDesign.Core.dll
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\FuzzySharp.dll
 C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\Newtonsoft.Json.dll
+C:\Users\kdl\OneDrive - CRH\Dokumenter\Udvikling\Dalton_Trapper\Dalton_Trapper\TrappeApp\bin\Release\net8.0-windows\app.publish\System.IO.Packaging.dll
